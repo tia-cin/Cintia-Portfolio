@@ -20,6 +20,11 @@ import weatherapp from "./assets/projects/cloudy.png";
 import mangaka from "./assets/projects/mangaca-icon.png";
 import dictionary from "./assets/projects/dictionary.png";
 import musicapp from "./assets/projects/music-app.png";
+// skills
+import figma from "./assets/design/figma-icon.svg";
+import illustrator from "./assets/design/illustrator.png";
+import photoshop from "./assets/design/photoshop.png";
+import premiere from "./assets/design/premiere.png";
 
 export const technologies = {
   frontend: [
@@ -160,45 +165,45 @@ export const skills = {
   design: [
     {
       name: "Photoshop",
-      image: "",
+      image: photoshop,
       link: "https://www.photoshop.com/",
     },
     {
       name: "Illustrator",
-      image: "",
+      image: illustrator,
       link: "https://www.adobe.com/products/illustrator/free-trial-download.html",
     },
     {
       name: "Premiere",
-      image: "",
+      image: premiere,
       link: "https://www.adobe.com/products/premiere.html",
     },
     {
       name: "Figma",
-      image: "",
+      image: figma,
       link: "https://www.figma.com/",
     },
   ],
   soft: [
     {
       name: "Team-player",
-      image: "",
+      image: "1",
     },
     {
       name: "Fast-learner",
-      image: "",
+      image: "2",
     },
     {
       name: "Creativity",
-      image: "",
+      image: "3",
     },
     {
       name: "Curious",
-      image: "",
+      image: "4",
     },
     {
       name: "Problem-solver",
-      image: "",
+      image: "5",
     },
   ],
 };
