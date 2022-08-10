@@ -1,3 +1,4 @@
+//tech stack
 import html from "./assets/tech stack/HTML5.svg";
 import css from "./assets/tech stack/CSS3.svg";
 import javascript from "./assets/tech stack/Javascript.svg";
@@ -14,6 +15,11 @@ import mocha from "./assets/tech stack/Mocha.svg";
 import postgresql from "./assets/tech stack/Postgresql.svg";
 import sqlite from "./assets/tech stack/SQLite.svg";
 import webpack from "./assets/tech stack/Webpack.svg";
+// projects
+import weatherapp from "./assets/projects/cloudy.png";
+import mangaka from "./assets/projects/mangaca-icon.png";
+import dictionary from "./assets/projects/dictionary.png";
+import musicapp from "./assets/projects/music-app.png";
 
 export const technologies = {
   frontend: [
@@ -122,14 +128,14 @@ export const social = [
 export const projects = [
   {
     link: "https://weather-app-tia-cin.vercel.app",
-    logo: "https://cdn3.iconfinder.com/data/icons/climate-iconset/40/Cloudy-256.png",
+    logo: weatherapp,
     alt: "cloud-icon",
-    title: "Weather App",
+    title: "Weather Now",
     description: "Real time weather information about any city in the world",
   },
   {
     link: "https://deploy-client-kappa.vercel.app/",
-    logo: "img",
+    logo: mangaka,
     alt: "mangaka-icon",
     description: "E-Commerse app for manga/comics with reader",
     title: "Mangaka",
@@ -138,12 +144,12 @@ export const projects = [
     link: "https://music-app-self.vercel.app",
     title: "Music App",
     description: "Song player app made with Vue JS",
-    logo: "https://cdn-icons-png.flaticon.com/512/2972/2972319.png",
+    logo: musicapp,
     alt: "music-app-icon",
   },
   {
     link: "https://dictionary-app-omega.vercel.app",
-    logo: "dictionary",
+    logo: dictionary,
     alt: "dictionary-app-icon",
     description: "Search any word and find about their definition",
     title: "Dictionary App",

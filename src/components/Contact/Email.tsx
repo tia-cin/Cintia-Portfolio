@@ -39,7 +39,7 @@ export const Email: FC = () => {
               <Grid>Full name</Grid>
             </Grid>
             <Grid>
-              <AccountCircle sx={{ color: "action.active", mr: 1, my: 0.5 }} />
+              <AccountCircle />
               <TextField
                 name="name"
                 id="input-with-sx"
@@ -51,9 +51,7 @@ export const Email: FC = () => {
               <Grid>Email</Grid>
             </Grid>
             <Grid>
-              <AlternateEmailIcon
-                sx={{ color: "action.active", mr: 1, my: 0.5 }}
-              />
+              <AlternateEmailIcon />
               <TextField
                 name="email"
                 id="input-with-sx"
@@ -65,7 +63,7 @@ export const Email: FC = () => {
               <Grid>Subject</Grid>
             </Grid>
             <Grid>
-              <TitleIcon sx={{ color: "action.active", mr: 1, my: 0.5 }} />
+              <TitleIcon />
               <TextField
                 name="subject"
                 id="input-with-sx"
@@ -77,7 +75,7 @@ export const Email: FC = () => {
               <Grid>Message</Grid>
             </Grid>
             <Grid>
-              <SubjectIcon sx={{ color: "action.active", mr: 1, my: 0.5 }} />
+              <SubjectIcon />
               <textarea placeholder="Add your message here" name="message" />
             </Grid>
             <Grid>
