@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // components
-import { Social } from "./components/Contact/Social";
 import { Home } from "./components/Home/Home";
 import { Navbar } from "./components/App/Navbar";
 import { Tech } from "./components/Tech-Stack/Tech";

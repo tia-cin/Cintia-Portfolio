@@ -1,75 +1,109 @@
+import html from "./assets/tech stack/HTML5.svg";
+import css from "./assets/tech stack/CSS3.svg";
+import javascript from "./assets/tech stack/Javascript.svg";
+import reactjs from "./assets/tech stack/React JS.svg";
+import redux from "./assets/tech stack/Redux.svg";
+import typescript from "./assets/tech stack/Typescript.svg";
+import nodejs from "./assets/tech stack/Nodejs.svg";
+import express from "./assets/tech stack/Express.svg";
+import babel from "./assets/tech stack/Babel.svg";
+import bash from "./assets/tech stack/Bash.svg";
+import git from "./assets/tech stack/Git.svg";
+import jest from "./assets/tech stack/Jest.svg";
+import mocha from "./assets/tech stack/Mocha.svg";
+import postgresql from "./assets/tech stack/Postgresql.svg";
+import sqlite from "./assets/tech stack/SQLite.svg";
+import webpack from "./assets/tech stack/Webpack.svg";
+
 export const technologies = {
   frontend: [
     {
       link: "https://www.w3.org/html/",
-      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
-      alt: "html5",
+      logo: html,
+      alt: "HTML5",
     },
     {
       link: "https://www.w3schools.com/css/",
-      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-      alt: "css3",
+      logo: css,
+      alt: "CSS3",
     },
     {
       link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-      alt: "javascript",
+      logo: javascript,
+      alt: "Javascript",
     },
     {
       link: "https://reactjs.org/",
-      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-      alt: "react",
+      logo: reactjs,
+      alt: "React JS",
     },
     {
       link: "https://redux.js.org/",
-      logo: "https://www.svgrepo.com/show/303557/redux-logo.svg",
-      alt: "redux",
+      logo: redux,
+      alt: "Redux",
     },
-
     {
       link: "https://www.typescriptlang.org/",
-      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
-      alt: "typescript",
+      logo: typescript,
+      alt: "Typescript",
     },
   ],
   backend: [
     {
       link: "https://nodejs.org",
-      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
-      alt: "nodejs",
-      wandh: "70",
+      logo: nodejs,
+      alt: "Nodejs",
     },
     {
       link: "https://expressjs.com",
-      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
-      alt: "expressjs",
+      logo: express,
+      alt: "Express",
     },
   ],
   testing: [
     {
       link: "https://jestjs.io",
-      logo: "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg",
-      alt: "jest",
+      logo: jest,
+      alt: "Jest",
     },
     {
       link: "https://mochajs.org",
-      logo: "https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg",
-      alt: "mocha",
+      logo: mocha,
+      alt: "Mocha",
     },
   ],
   database: [
     {
       link: "https://www.postgresql.org",
-      logo: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg",
-      alt: "postgresql",
-      wandh: "70",
+      logo: postgresql,
+      alt: "PostgreSQL",
+    },
+    {
+      link: "https://www.sqlite.org/index.html",
+      logo: sqlite,
+      alt: "SQLite",
     },
   ],
   others: [
     {
       link: "https://git-scm.com/",
-      logo: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
-      alt: "git",
+      logo: git,
+      alt: "Git",
+    },
+    {
+      link: "https://www.gnu.org/software/bash/",
+      logo: bash,
+      alt: "Bash",
+    },
+    {
+      link: "https://webpack.js.org/",
+      logo: webpack,
+      alt: "Webpack",
+    },
+    {
+      link: "https://babel.dev/",
+      logo: babel,
+      alt: "Babel",
     },
   ],
 };
@@ -117,48 +151,48 @@ export const projects = [
 ];
 
 export const skills = {
-  adobe: [
+  design: [
     {
       name: "Photoshop",
       image: "",
-      link: "",
+      link: "https://www.photoshop.com/",
     },
     {
       name: "Illustrator",
       image: "",
-      link: "",
+      link: "https://www.adobe.com/products/illustrator/free-trial-download.html",
     },
     {
       name: "Premiere",
       image: "",
-      link: "",
+      link: "https://www.adobe.com/products/premiere.html",
+    },
+    {
+      name: "Figma",
+      image: "",
+      link: "https://www.figma.com/",
     },
   ],
   soft: [
     {
       name: "Team-player",
       image: "",
-      link: "",
     },
     {
       name: "Fast-learner",
       image: "",
-      link: "",
     },
     {
       name: "Creativity",
       image: "",
-      link: "",
     },
     {
       name: "Curious",
       image: "",
-      link: "",
     },
     {
       name: "Problem-solver",
       image: "",
-      link: "",
     },
   ],
 };
