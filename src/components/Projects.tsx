@@ -11,33 +11,40 @@ import {
   Typography,
 } from "@mui/material";
 
-export const Projects: FC = () => {
+interface ProjectsProps {
+  link: string;
+  logo: string;
+  alt: string;
+  title: string;
+  description: string;
+}
+export const Projects: FC<ProjectsProps> = ({
+  link,
+  logo,
+  alt,
+  title,
+  description,
+}) => {
   return (
-    <Grid container direction="row">
-      {projects.map((p, i) => {
-        return (
-          <Card sx={{ maxWidth: 345 }} key={i}>
-            <Grid item>
-              <CardMedia component="img" image={p.logo} alt={p.alt} />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  {p.title}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {p.description}
-                </Typography>
-              </CardContent>
-            </Grid>
-            <Grid item>
-              <Link to={p.link}>
-                <Button size="small" color="primary">
-                  Check it out
-                </Button>
-              </Link>
-            </Grid>
-          </Card>
-        );
-      })}
-    </Grid>
+    <Card sx={{ maxWidth: 345 }}>
+      <Grid item>
+        <CardMedia component="img" image={logo} alt={alt} />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            {title}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {description}
+          </Typography>
+        </CardContent>
+      </Grid>
+      <Grid item>
+        <Link to={link}>
+          <Button size="small" color="primary">
+            Check it out
+          </Button>
+        </Link>
+      </Grid>
+    </Card>
   );
 };
