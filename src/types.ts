@@ -25,6 +25,12 @@ import figma from "./assets/design/figma-icon.svg";
 import illustrator from "./assets/design/illustrator.png";
 import photoshop from "./assets/design/photoshop.png";
 import premiere from "./assets/design/premiere.png";
+// frameworks
+import bootstrap from "./assets/frameworks/bootstrap.png";
+import less from "./assets/frameworks/lesscss-icon.svg";
+import materialui from "./assets/frameworks/material-ui-logo (1).png";
+import sass from "./assets/frameworks/sass-lang-icon.svg";
+import tailwind from "./assets/frameworks/tailwindcss-icon.svg";
 
 export const technologies = {
   frontend: [
@@ -93,6 +99,33 @@ export const technologies = {
       link: "https://www.sqlite.org/index.html",
       logo: sqlite,
       alt: "SQLite",
+    },
+  ],
+  ui: [
+    {
+      link: "https://lesscss.org/",
+      logo: less,
+      alt: "LessCSS",
+    },
+    {
+      link: "https://sass-lang.com",
+      logo: sass,
+      alt: "Sass",
+    },
+    {
+      link: "https:/mui.com",
+      logo: materialui,
+      alt: "Material-UI",
+    },
+    {
+      link: "https://getbootstrap.com",
+      logo: bootstrap,
+      alt: "Bootstrap",
+    },
+    {
+      link: "https://tailwind.com",
+      logo: tailwind,
+      alt: "Tailwind",
     },
   ],
   others: [
@@ -187,23 +220,18 @@ export const skills = {
   soft: [
     {
       name: "Team-player",
-      image: "1",
     },
     {
       name: "Fast-learner",
-      image: "2",
     },
     {
       name: "Creativity",
-      image: "3",
     },
     {
       name: "Curious",
-      image: "4",
     },
     {
       name: "Problem-solver",
-      image: "5",
     },
   ],
 };

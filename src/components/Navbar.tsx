@@ -1,8 +1,7 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
 // MUI
-import Stack from "@mui/material/Stack";
-import Box from "@mui/material/Box";
+import { Stack, Box } from "@mui/material";
 // icons
 import HomeIcon from "@mui/icons-material/HomeRounded";
 import HubRoundedIcon from "@mui/icons-material/HubRounded";

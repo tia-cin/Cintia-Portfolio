@@ -1,12 +1,15 @@
 import React, { FC } from "react";
-import { projects } from "../../types";
+import { projects } from "../types";
 import { Link } from "react-router-dom";
 // MUI
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { Button, Grid } from "@mui/material";
+import {
+  Button,
+  Grid,
+  Card,
+  CardContent,
+  CardMedia,
+  Typography,
+} from "@mui/material";
 
 export const Projects: FC = () => {
   return (

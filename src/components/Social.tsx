@@ -1,8 +1,8 @@
 import React, { FC } from "react";
-import { social } from "../../types";
+import { social } from "../types";
 import { Link } from "react-router-dom";
 // MUI
-import Stack from "@mui/material/Stack";
+import { Stack } from "@mui/material";
 // icons
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
