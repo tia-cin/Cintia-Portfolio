@@ -1,12 +1,13 @@
 import React, { FC } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // components
-import { Social } from "./components/Social";
-import { Home } from "./components/Home";
-import { Navbar } from "./components/Navbar";
-import { Tech } from "./components/Tech";
-import { Contact } from "./components/Contact";
-import { Experience } from "./components/Experience";
+import { Social } from "./components/Contact/Social";
+import { Home } from "./components/Home/Home";
+import { Navbar } from "./components/App/Navbar";
+import { Tech } from "./components/Tech-Stack/Tech";
+import { Contact } from "./components/Contact/Contact";
+import { Experience } from "./components/Projects/Experience";
+import { Skills } from "./components/Skills/Skills";
 
 export const App: FC = () => {
   return (
@@ -17,9 +18,9 @@ export const App: FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/tech" element={<Tech />} />
           <Route path="/projects" element={<Experience />} />
+          <Route path="/skills" element={<Skills />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Social />
       </div>
     </BrowserRouter>
   );
