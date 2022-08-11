@@ -8,8 +8,6 @@ import blob1 from "../../assets/svgs/output-onlinepngtools (1).png";
 import blob2 from "../../assets/svgs/output-onlinepngtools (2).png";
 import blob3 from "../../assets/svgs/output-onlinepngtools (3).png";
 import blob4 from "../../assets/svgs/output-onlinepngtools (4).png";
-import blob5 from "../../assets/svgs/output-onlinepngtools (5).png";
-import blob6 from "../../assets/svgs/output-onlinepngtools (6).png";
 import blob7 from "../../assets/svgs/output-onlinepngtools (7).png";
 import blob8 from "../../assets/svgs/output-onlinepngtools (8).png";
 
@@ -46,20 +44,20 @@ export const Home: FC = () => {
   return (
     <main style={{ height: "90vh" }}>
       <StyledGrid container justifyContent="center">
-        <Grid item>
-          <Typography variant="h1" className="animated" id="8">
+        <Grid item sx={{ margin: "2em" }}>
+          <Typography variant="h1" className="animated" id="2">
             Hi, I'm Cintia a
           </Typography>
-          <Typography variant="h2" className="animated" id="6">
+          <Typography variant="h2" className="animated" id="-3">
             Frontend Developer
           </Typography>
         </Grid>
-        <Grid item>
+        <Grid item sx={{ margin: "2em" }}>
           <Avatar
             src={profile}
             className="animated"
             id="-5"
-            sx={{ width: 200, height: 200 }}
+            sx={{ width: 200, height: 200, backgroundColor: "#51ABB2" }}
           />
         </Grid>
         <img
@@ -68,7 +66,7 @@ export const Home: FC = () => {
           width="100"
           height="100"
           className="animated"
-          id="45"
+          id="5"
         />
         <img
           src={blob2}
@@ -76,7 +74,7 @@ export const Home: FC = () => {
           width="100"
           height="100"
           className="animated"
-          id="-98"
+          id="-5"
         />
         <img
           src={blob3}
@@ -84,7 +82,7 @@ export const Home: FC = () => {
           width="100"
           height="100"
           className="animated"
-          id="47"
+          id="4"
         />
         <img
           src={blob4}
@@ -92,31 +90,7 @@ export const Home: FC = () => {
           width="100"
           height="100"
           className="animated"
-          id="-25"
-        />
-        <img
-          src={blob5}
-          alt="svg"
-          width="100"
-          height="100"
-          className="animated"
-          id="-79"
-        />
-        <img
-          src={blob5}
-          alt="svg"
-          width="100"
-          height="100"
-          className="animated"
-          id="76"
-        />
-        <img
-          src={blob6}
-          alt="svg"
-          width="100"
-          height="100"
-          className="animated"
-          id="-48"
+          id="-2"
         />
         <img
           src={blob7}
@@ -124,7 +98,7 @@ export const Home: FC = () => {
           width="100"
           height="100"
           className="animated"
-          id="77"
+          id="1"
         />
         <img
           src={blob8}
@@ -132,7 +106,7 @@ export const Home: FC = () => {
           width="100"
           height="100"
           className="animated"
-          id="-71"
+          id="-1"
         />
       </StyledGrid>
     </main>

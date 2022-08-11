@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Links } from "../Links";
 // MUI
-import { Stack } from "@mui/material";
+import { Grid } from "@mui/material";
 // icons
 import HomeIcon from "@mui/icons-material/HomeRounded";
 import HubRoundedIcon from "@mui/icons-material/HubRounded";
@@ -12,22 +12,40 @@ import ChatIcon from "@mui/icons-material/Chat";
 export const Navbar: FC = () => {
   return (
     <nav>
-      <Stack
+      <Grid
+        container
+        sx={{ mt: "1em" }}
         direction="row"
         justifyContent="space-evenly"
         alignItems="center"
         spacing={2}
       >
-        <Links link="/" name="Home" icon={<HomeIcon />} />
-        <Links link="/tech" name="Technologies" icon={<HubRoundedIcon />} />
+        <Links
+          link="/"
+          name="Home"
+          icon={<HomeIcon sx={{ fontSize: "2.5em" }} />}
+        />
+        <Links
+          link="/tech"
+          name="Tech"
+          icon={<HubRoundedIcon sx={{ fontSize: "2.5em" }} />}
+        />
         <Links
           link="/projects"
           name="Projects"
-          icon={<WorkspacePremiumRoundedIcon />}
+          icon={<WorkspacePremiumRoundedIcon sx={{ fontSize: "2.5em" }} />}
         />
-        <Links link="/skills" name="Skills" icon={<WorkRoundedIcon />} />
-        <Links link="/contact" name="Contact" icon={<ChatIcon />} />
-      </Stack>
+        <Links
+          link="/skills"
+          name="Skills"
+          icon={<WorkRoundedIcon sx={{ fontSize: "2.5em" }} />}
+        />
+        <Links
+          link="/contact"
+          name="Contact"
+          icon={<ChatIcon sx={{ fontSize: "2.5em" }} />}
+        />
+      </Grid>
     </nav>
   );
 };
