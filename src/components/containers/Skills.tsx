@@ -14,8 +14,8 @@ export const Skills: FC = () => {
   return (
     <div>
       <Grid container>
-        <Skill data={skills.design} title="Design Frameworks" />
-        <Skill data={skills.soft} title="Soft Skills" />
+        <Skill data={skills.design} title="Design" color="#51ABB2" />
+        <Skill data={skills.soft} title="Soft Skills" color="" />
       </Grid>
     </div>
   );

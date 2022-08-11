@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import { Link } from "react-router-dom";
 // MUI
 import {
   Button,
@@ -49,7 +48,7 @@ export const Projects: FC<ProjectsProps> = ({
         </CardContent>
       </Grid>
       <Grid item>
-        <a href={link} target="_blank" style={{ textDecoration: "none" }}>
+        <a href={link} style={{ textDecoration: "none" }}>
           <Button size="small" variant="contained" color="primary">
             Check it out
           </Button>
