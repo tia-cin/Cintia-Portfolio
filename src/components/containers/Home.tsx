@@ -2,15 +2,34 @@ import React, { FC } from "react";
 import profile from "../../assets/others/cintia-arce-profile.png";
 // MUI
 import { Avatar, Grid, Typography } from "@mui/material";
+import { styled } from "@mui/system";
 // svgs
-import blob1 from "../../assets/svgs/blob (1).svg";
-import blob2 from "../../assets/svgs/blob (2).svg";
-import blob3 from "../../assets/svgs/blob (3).svg";
-import blob4 from "../../assets/svgs/blob (4).svg";
-import blob5 from "../../assets/svgs/blob (5).svg";
-import blob6 from "../../assets/svgs/blob (6).svg";
-import blob7 from "../../assets/svgs/blob (7).svg";
-import blob8 from "../../assets/svgs/blob (8).svg";
+import blob1 from "../../assets/svgs/output-onlinepngtools (1).png";
+import blob2 from "../../assets/svgs/output-onlinepngtools (2).png";
+import blob3 from "../../assets/svgs/output-onlinepngtools (3).png";
+import blob4 from "../../assets/svgs/output-onlinepngtools (4).png";
+import blob5 from "../../assets/svgs/output-onlinepngtools (5).png";
+import blob6 from "../../assets/svgs/output-onlinepngtools (6).png";
+import blob7 from "../../assets/svgs/output-onlinepngtools (7).png";
+import blob8 from "../../assets/svgs/output-onlinepngtools (8).png";
+
+const StyledGrid = styled(Grid)`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+  }
+`;
 
 export const Home: FC = () => {
   const animation = (e: any) => {
@@ -25,8 +44,8 @@ export const Home: FC = () => {
   document.addEventListener("mousemove", animation);
 
   return (
-    <main>
-      <Grid container justifyContent="center">
+    <main style={{ height: "90vh" }}>
+      <StyledGrid container justifyContent="center">
         <Grid item>
           <Typography variant="h1" className="animated" id="8">
             Hi, I'm Cintia a
@@ -40,7 +59,7 @@ export const Home: FC = () => {
             src={profile}
             className="animated"
             id="-5"
-            sx={{ width: 100, height: 100 }}
+            sx={{ width: 200, height: 200 }}
           />
         </Grid>
         <img
@@ -49,7 +68,7 @@ export const Home: FC = () => {
           width="100"
           height="100"
           className="animated"
-          id="-5"
+          id="45"
         />
         <img
           src={blob2}
@@ -57,7 +76,7 @@ export const Home: FC = () => {
           width="100"
           height="100"
           className="animated"
-          id="-8"
+          id="-98"
         />
         <img
           src={blob3}
@@ -65,7 +84,7 @@ export const Home: FC = () => {
           width="100"
           height="100"
           className="animated"
-          id="7"
+          id="47"
         />
         <img
           src={blob4}
@@ -73,7 +92,7 @@ export const Home: FC = () => {
           width="100"
           height="100"
           className="animated"
-          id="5"
+          id="-25"
         />
         <img
           src={blob5}
@@ -81,7 +100,7 @@ export const Home: FC = () => {
           width="100"
           height="100"
           className="animated"
-          id="-9"
+          id="-79"
         />
         <img
           src={blob5}
@@ -89,7 +108,7 @@ export const Home: FC = () => {
           width="100"
           height="100"
           className="animated"
-          id="6"
+          id="76"
         />
         <img
           src={blob6}
@@ -97,7 +116,7 @@ export const Home: FC = () => {
           width="100"
           height="100"
           className="animated"
-          id="-8"
+          id="-48"
         />
         <img
           src={blob7}
@@ -105,7 +124,7 @@ export const Home: FC = () => {
           width="100"
           height="100"
           className="animated"
-          id="7"
+          id="77"
         />
         <img
           src={blob8}
@@ -113,9 +132,9 @@ export const Home: FC = () => {
           width="100"
           height="100"
           className="animated"
-          id="-11"
+          id="-71"
         />
-      </Grid>
+      </StyledGrid>
     </main>
   );
 };
