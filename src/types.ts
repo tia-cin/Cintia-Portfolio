@@ -32,6 +32,10 @@ import materialui from "./assets/frameworks/material-ui-logo (1).png";
 import sass from "./assets/frameworks/sass-lang-icon.svg";
 import tailwind from "./assets/frameworks/tailwindcss-icon.svg";
 
+// techstack & skill[design] --> one component
+// link & social & skill[soft] --> one component
+// fix Hove pngs
+
 export const technologies = [
   {
     link: "https://www.w3.org/html/",
