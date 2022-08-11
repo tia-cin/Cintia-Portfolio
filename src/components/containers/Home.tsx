@@ -11,7 +11,9 @@ export const Home: FC = () => {
           Hi, I'm Cintia a <span>Frontend</span>
           <span> Developer</span>
         </h1>
-        <Avatar src={profile} />
+        <div>
+          <Avatar src={profile} />
+        </div>
       </div>
     </main>
   );
