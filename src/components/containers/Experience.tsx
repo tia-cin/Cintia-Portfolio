@@ -5,9 +5,10 @@ import { Grid } from "@mui/material";
 import { projects } from "../../types";
 
 export const Experience: FC = () => {
+  const colors = ["#ffce6d", "#51ABB2", "#F7B9A1", "#51ABB2"];
   return (
     <div>
-      <Grid container direction="row">
+      <Grid container direction="row" justifyContent="space-evenly">
         {projects.map((p, i) => {
           return (
             <Projects
@@ -17,6 +18,7 @@ export const Experience: FC = () => {
               alt={p.alt}
               title={p.title}
               description={p.description}
+              color={colors[i]}
             />
           );
         })}
