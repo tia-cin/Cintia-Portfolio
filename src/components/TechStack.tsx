@@ -1,25 +1,65 @@
 import React, { FC } from "react";
-import { technologies } from "../types";
+import { Link } from "react-router-dom";
 // MUI
 import { Grid } from "@mui/material";
+import { styled } from "@mui/system";
 
 interface TechStackProps {
   data: Array<any>;
-  title: string;
+  color: string;
 }
 
-export const TechStack: FC<TechStackProps> = ({ data, title }) => {
+export const TechStack: FC<TechStackProps> = ({ data, color }) => {
+  const GridItem = styled(Grid)`
+    a {
+      text-decoration: none;
+    }
+    .circle > div {
+      background: ${color};
+      border-radius: 50%;
+      padding: 1em;
+      width: 50px;
+      height: 50px;
+    }
+    p {
+      margin: 0.5em;
+      font-family: sans-serif;
+      text-align: center;
+      color: #fff;
+    }
+    .circle:hover p {
+      transition: 1s;
+      color: #191919;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: contain;
+    }
+  `;
+
   return (
-    <Grid item container justifyContent="center">
-      <Grid>{title}</Grid>
-      {data.map((d, i) => {
-        return (
-          <Grid item key={i}>
-            <img width="50" height="50" src={d.logo} alt={d.alt} />
-            <small>{d.alt}</small>
-          </Grid>
-        );
-      })}
-    </Grid>
+    <GridItem item container justifyContent="center" direction="column">
+      <Grid item container direction="row" justifyContent="space-evenly">
+        {data.map((d, i) => {
+          return (
+            <Link to={d.link} key={i}>
+              <Grid
+                item
+                className="circle animated"
+                id={(Math.random() * 5 + 2).toString()}
+              >
+                <div>
+                  <img src={d.logo} alt={d.alt} />
+                </div>
+                <p>{d.alt}</p>
+              </Grid>
+            </Link>
+          );
+        })}
+      </Grid>
+    </GridItem>
   );
 };

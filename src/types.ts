@@ -32,125 +32,114 @@ import materialui from "./assets/frameworks/material-ui-logo (1).png";
 import sass from "./assets/frameworks/sass-lang-icon.svg";
 import tailwind from "./assets/frameworks/tailwindcss-icon.svg";
 
-export const technologies = {
-  frontend: [
-    {
-      link: "https://www.w3.org/html/",
-      logo: html,
-      alt: "HTML5",
-    },
-    {
-      link: "https://www.w3schools.com/css/",
-      logo: css,
-      alt: "CSS3",
-    },
-    {
-      link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-      logo: javascript,
-      alt: "Javascript",
-    },
-    {
-      link: "https://reactjs.org/",
-      logo: reactjs,
-      alt: "React JS",
-    },
-    {
-      link: "https://redux.js.org/",
-      logo: redux,
-      alt: "Redux",
-    },
-    {
-      link: "https://www.typescriptlang.org/",
-      logo: typescript,
-      alt: "Typescript",
-    },
-  ],
-  backend: [
-    {
-      link: "https://nodejs.org",
-      logo: nodejs,
-      alt: "Nodejs",
-    },
-    {
-      link: "https://expressjs.com",
-      logo: express,
-      alt: "Express",
-    },
-  ],
-  testing: [
-    {
-      link: "https://jestjs.io",
-      logo: jest,
-      alt: "Jest",
-    },
-    {
-      link: "https://mochajs.org",
-      logo: mocha,
-      alt: "Mocha",
-    },
-  ],
-  database: [
-    {
-      link: "https://www.postgresql.org",
-      logo: postgresql,
-      alt: "PostgreSQL",
-    },
-    {
-      link: "https://www.sqlite.org/index.html",
-      logo: sqlite,
-      alt: "SQLite",
-    },
-  ],
-  ui: [
-    {
-      link: "https://lesscss.org/",
-      logo: less,
-      alt: "LessCSS",
-    },
-    {
-      link: "https://sass-lang.com",
-      logo: sass,
-      alt: "Sass",
-    },
-    {
-      link: "https:/mui.com",
-      logo: materialui,
-      alt: "Material-UI",
-    },
-    {
-      link: "https://getbootstrap.com",
-      logo: bootstrap,
-      alt: "Bootstrap",
-    },
-    {
-      link: "https://tailwind.com",
-      logo: tailwind,
-      alt: "Tailwind",
-    },
-  ],
-  others: [
-    {
-      link: "https://git-scm.com/",
-      logo: git,
-      alt: "Git",
-    },
-    {
-      link: "https://www.gnu.org/software/bash/",
-      logo: bash,
-      alt: "Bash",
-    },
-    {
-      link: "https://webpack.js.org/",
-      logo: webpack,
-      alt: "Webpack",
-    },
-    {
-      link: "https://babel.dev/",
-      logo: babel,
-      alt: "Babel",
-    },
-  ],
-};
+export const technologies = [
+  {
+    link: "https://www.w3.org/html/",
+    logo: html,
+    alt: "HTML5",
+  },
+  {
+    link: "https://www.w3schools.com/css/",
+    logo: css,
+    alt: "CSS3",
+  },
+
+  {
+    link: "https://lesscss.org/",
+    logo: less,
+    alt: "LessCSS",
+  },
+  {
+    link: "https:/mui.com",
+    logo: materialui,
+    alt: "Material-UI",
+  },
+  {
+    link: "https://sass-lang.com",
+    logo: sass,
+    alt: "Sass",
+  },
+  {
+    link: "https://getbootstrap.com",
+    logo: bootstrap,
+    alt: "Bootstrap",
+  },
+  {
+    link: "https://tailwind.com",
+    logo: tailwind,
+    alt: "Tailwind",
+  },
+  {
+    link: "https://reactjs.org/",
+    logo: reactjs,
+    alt: "React JS",
+  },
+  {
+    link: "https://redux.js.org/",
+    logo: redux,
+    alt: "Redux",
+  },
+  {
+    link: "https://www.typescriptlang.org/",
+    logo: typescript,
+    alt: "Typescript",
+  },
+  {
+    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    logo: javascript,
+    alt: "Javascript",
+  },
+  {
+    link: "https://expressjs.com",
+    logo: express,
+    alt: "Express",
+  },
+  {
+    link: "https://jestjs.io",
+    logo: jest,
+    alt: "Jest",
+  },
+  {
+    link: "https://mochajs.org",
+    logo: mocha,
+    alt: "Mocha",
+  },
+  {
+    link: "https://nodejs.org",
+    logo: nodejs,
+    alt: "Nodejs",
+  },
+  {
+    link: "https://www.postgresql.org",
+    logo: postgresql,
+    alt: "PostgreSQL",
+  },
+  {
+    link: "https://www.sqlite.org/index.html",
+    logo: sqlite,
+    alt: "SQLite",
+  },
+  {
+    link: "https://git-scm.com/",
+    logo: git,
+    alt: "Git",
+  },
+  {
+    link: "https://www.gnu.org/software/bash/",
+    logo: bash,
+    alt: "Bash",
+  },
+  {
+    link: "https://webpack.js.org/",
+    logo: webpack,
+    alt: "Webpack",
+  },
+  {
+    link: "https://babel.dev/",
+    logo: babel,
+    alt: "Babel",
+  },
+];
 
 export const social = [
   {
