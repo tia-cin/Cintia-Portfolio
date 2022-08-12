@@ -1,5 +1,7 @@
 import React, { FC } from "react";
 import { skills } from "../../types";
+import { Links } from "../Links";
+import { CircleItem } from "../CircleItem";
 // MUI
 import { Grid } from "@mui/material";
 // icons
@@ -8,40 +10,45 @@ import LightbulbIcon from "@mui/icons-material/Lightbulb";
 import ElectricBoltIcon from "@mui/icons-material/ElectricBolt";
 import PaletteIcon from "@mui/icons-material/Palette";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
-import { Links } from "../Links";
-import { CircleGridItem } from "../CircleGridItem";
+import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
 
-export const Skills: FC = () => {
+interface SkillsProps {
+  colors: Array<string>;
+}
+
+export const Skills: FC<SkillsProps> = ({ colors }) => {
+  const icons = [
+    <GroupsIcon sx={{ fontSize: "2.5em" }} />,
+    <LightbulbIcon sx={{ fontSize: "2.5em" }} />,
+    <ElectricBoltIcon sx={{ fontSize: "2.5em" }} />,
+    <PaletteIcon sx={{ fontSize: "2.5em" }} />,
+    <QuestionMarkIcon sx={{ fontSize: "2.5em" }} />,
+    <ConnectWithoutContactIcon sx={{ fontSize: "2.5em" }} />,
+  ];
   return (
     <div>
       <Grid container>
-        <CircleGridItem data={skills.design} color="#51ABB2" />
-        <Grid item container justifyContent="center">
-          <Links link="" href="" icon={<GroupsIcon />} name="Team Player" />
-          <Links
-            link=""
-            href=""
-            icon={<LightbulbIcon sx={{ fontSize: "2.5em" }} />}
-            name="Problem solver"
-          />
-          <Links
-            link=""
-            href=""
-            icon={<ElectricBoltIcon sx={{ fontSize: "2.5em" }} />}
-            name="Fast Learner"
-          />
-          <Links
-            link=""
-            href=""
-            icon={<PaletteIcon sx={{ fontSize: "2.5em" }} />}
-            name="Creative"
-          />
-          <Links
-            link=""
-            href=""
-            icon={<QuestionMarkIcon sx={{ fontSize: "2.5em" }} />}
-            name="Curious"
-          />
+        <Grid item container direction="row" justifyContent="space-evenly">
+          {skills.design.map((s, i) => (
+            <CircleItem
+              key={i}
+              alt={s.alt}
+              logo={s.logo}
+              link={s.link}
+              color={colors[i]}
+            />
+          ))}
+        </Grid>
+        <Grid
+          item
+          container
+          justifyContent="center"
+          alignItems="center"
+          direction="column"
+        >
+          {skills.soft.map((s, i) => (
+            <Links key={i} link="" href="" icon={icons[i]} name={s.name} />
+          ))}
         </Grid>
       </Grid>
     </div>

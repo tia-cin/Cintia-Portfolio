@@ -222,5 +222,8 @@ export const skills = {
     {
       name: "Problem-solver",
     },
+    {
+      name: "Communication Skills",
+    },
   ],
 };

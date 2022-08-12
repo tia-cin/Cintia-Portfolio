@@ -1,22 +1,64 @@
 import React, { FC } from "react";
-import { CircleGridItem } from "../CircleGridItem";
+import { CircleItem } from "../CircleItem";
 import { technologies } from "../../types";
 // MUI
 import { Grid } from "@mui/material";
 
-export const Tech: FC = () => {
+interface TechProps {
+  colors: Array<string>;
+}
+
+export const Tech: FC<TechProps> = ({ colors }) => {
   const first = technologies.slice(0, 5);
   const second = technologies.slice(5, 10);
   const third = technologies.slice(10, 15);
   const fourth = technologies.slice(15, 21);
   return (
-    <div>
-      <Grid container>
-        <CircleGridItem data={first} color="#ffce6d" />
-        <CircleGridItem data={second} color="#ED5B2D" />
-        <CircleGridItem data={third} color="#F7B9A1" />
-        <CircleGridItem data={fourth} color="#51ABB2" />
+    <Grid container>
+      <Grid item container justifyContent="space-evenly">
+        {first.map((e, i) => (
+          <CircleItem
+            key={i}
+            alt={e.alt}
+            logo={e.logo}
+            link={e.link}
+            color={colors[i]}
+          />
+        ))}
       </Grid>
-    </div>
+      <Grid item container justifyContent="space-evenly">
+        {second.map((e, i) => (
+          <CircleItem
+            key={i}
+            alt={e.alt}
+            logo={e.logo}
+            link={e.link}
+            color={colors[i]}
+          />
+        ))}
+      </Grid>
+      <Grid item container justifyContent="space-evenly">
+        {third.map((e, i) => (
+          <CircleItem
+            key={i}
+            alt={e.alt}
+            logo={e.logo}
+            link={e.link}
+            color={colors[i]}
+          />
+        ))}
+      </Grid>
+      <Grid item container justifyContent="space-evenly">
+        {fourth.map((e, i) => (
+          <CircleItem
+            key={i}
+            alt={e.alt}
+            logo={e.logo}
+            link={e.link}
+            color={colors[i]}
+          />
+        ))}
+      </Grid>
+    </Grid>
   );
 };

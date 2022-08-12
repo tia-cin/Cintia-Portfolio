@@ -4,8 +4,11 @@ import { Cards } from "../Cards";
 import { Grid } from "@mui/material";
 import { projects } from "../../types";
 
-export const Experience: FC = () => {
-  const colors = ["#ffce6d", "#51ABB2", "#F7B9A1", "#51ABB2"];
+interface ExperienceProps {
+  colors: Array<string>;
+}
+
+export const Experience: FC<ExperienceProps> = ({ colors }) => {
   return (
     <div>
       <Grid container direction="row" justifyContent="space-evenly">
