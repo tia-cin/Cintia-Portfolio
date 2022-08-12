@@ -9,14 +9,7 @@ import { Experience } from "./components/containers/Experience";
 import { Skills } from "./components/containers/Skills";
 
 export const App: FC = () => {
-  const colors = [
-    "#ffce6d",
-    "#ED5B2D",
-    "#F7B9A1",
-    "#51ABB2",
-    "#ffce6d",
-    "#51ABB2",
-  ];
+  const colors = ["#ffce6d", "#ED5B2D", "#F7B9A1", "#51ABB2"];
   return (
     <BrowserRouter>
       <div className="App">

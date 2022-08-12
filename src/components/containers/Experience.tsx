@@ -21,7 +21,7 @@ export const Experience: FC<ExperienceProps> = ({ colors }) => {
               alt={p.alt}
               title={p.title}
               description={p.description}
-              color={colors[i]}
+              color={colors[Math.floor(Math.random() * 4)]}
             />
           );
         })}

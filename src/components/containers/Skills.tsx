@@ -35,7 +35,7 @@ export const Skills: FC<SkillsProps> = ({ colors }) => {
               alt={s.alt}
               logo={s.logo}
               link={s.link}
-              color={colors[i]}
+              color={colors[Math.floor(Math.random() * 4)]}
             />
           ))}
         </Grid>
