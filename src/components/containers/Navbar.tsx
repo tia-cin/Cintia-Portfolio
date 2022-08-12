@@ -22,26 +22,31 @@ export const Navbar: FC = () => {
       >
         <Links
           link="/"
+          href=""
           name="Home"
           icon={<HomeIcon sx={{ fontSize: "2.5em" }} />}
         />
         <Links
           link="/tech"
+          href=""
           name="Tech"
           icon={<HubRoundedIcon sx={{ fontSize: "2.5em" }} />}
         />
         <Links
           link="/projects"
+          href=""
           name="Projects"
           icon={<WorkspacePremiumRoundedIcon sx={{ fontSize: "2.5em" }} />}
         />
         <Links
           link="/skills"
+          href=""
           name="Skills"
           icon={<WorkRoundedIcon sx={{ fontSize: "2.5em" }} />}
         />
         <Links
           link="/contact"
+          href=""
           name="Contact"
           icon={<ChatIcon sx={{ fontSize: "2.5em" }} />}
         />

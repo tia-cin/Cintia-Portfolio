@@ -32,10 +32,6 @@ import materialui from "./assets/frameworks/material-ui-logo (1).png";
 import sass from "./assets/frameworks/sass-lang-icon.svg";
 import tailwind from "./assets/frameworks/tailwindcss-icon.svg";
 
-// techstack & skill[design] --> one component
-// link & social & skill[soft] --> one component
-// fix Hove pngs
-
 export const technologies = [
   {
     link: "https://www.w3.org/html/",
@@ -190,23 +186,23 @@ export const projects = [
 export const skills = {
   design: [
     {
-      name: "Photoshop",
-      image: photoshop,
+      alt: "Photoshop",
+      logo: photoshop,
       link: "https://www.photoshop.com/",
     },
     {
-      name: "Illustrator",
-      image: illustrator,
+      alt: "Illustrator",
+      logo: illustrator,
       link: "https://www.adobe.com/products/illustrator/free-trial-download.html",
     },
     {
-      name: "Premiere",
-      image: premiere,
+      alt: "Premiere",
+      logo: premiere,
       link: "https://www.adobe.com/products/premiere.html",
     },
     {
-      name: "Figma",
-      image: figma,
+      alt: "Figma",
+      logo: figma,
       link: "https://www.figma.com/",
     },
   ],

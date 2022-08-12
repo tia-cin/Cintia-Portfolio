@@ -11,7 +11,7 @@ const StyledGridItems = styled(Grid)`
     text-align: center;
     color: #fff;
   }
-  a:hover p {
+  .contain:hover p {
     transition: 1s;
     color: #191919;
   }
@@ -19,19 +19,40 @@ const StyledGridItems = styled(Grid)`
 
 interface LinksProps {
   link: string;
+  href: string;
   name: string;
   icon: any;
 }
 
-export const Links: FC<LinksProps> = ({ link, name, icon }) => {
+export const Links: FC<LinksProps> = ({ link, href, name, icon }) => {
   return (
     <StyledGridItems item>
-      <Link to={link} style={{ textDecoration: "none" }}>
-        <Button variant="text" sx={{ color: "#191919" }}>
-          {icon}
-        </Button>
-        <p>{name}</p>
-      </Link>
+      {link ? (
+        <Link
+          className="contain"
+          to={link && link}
+          style={{ textDecoration: "none" }}
+        >
+          <Button variant="text" sx={{ color: "#191919" }}>
+            {icon}
+          </Button>
+          <p>{name}</p>
+        </Link>
+      ) : href ? (
+        <a className="contain" href={href} style={{ textDecoration: "none" }}>
+          <Button variant="text" sx={{ color: "#191919" }}>
+            {icon}
+          </Button>
+          <p>{name}</p>
+        </a>
+      ) : (
+        <div className="contain">
+          <Button variant="text" sx={{ color: "#191919" }}>
+            {icon}
+          </Button>
+          <p>{name}</p>
+        </div>
+      )}
     </StyledGridItems>
   );
 };

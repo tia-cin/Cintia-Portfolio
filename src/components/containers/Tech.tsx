@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { TechStack } from "../TechStack";
+import { CircleGridItem } from "../CircleGridItem";
 import { technologies } from "../../types";
 // MUI
 import { Grid } from "@mui/material";
@@ -12,10 +12,10 @@ export const Tech: FC = () => {
   return (
     <div>
       <Grid container>
-        <TechStack data={first} color="#ffce6d" />
-        <TechStack data={second} color="#ED5B2D" />
-        <TechStack data={third} color="#F7B9A1" />
-        <TechStack data={fourth} color="#51ABB2" />
+        <CircleGridItem data={first} color="#ffce6d" />
+        <CircleGridItem data={second} color="#ED5B2D" />
+        <CircleGridItem data={third} color="#F7B9A1" />
+        <CircleGridItem data={fourth} color="#51ABB2" />
       </Grid>
     </div>
   );

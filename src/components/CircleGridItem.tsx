@@ -1,15 +1,15 @@
 import React, { FC } from "react";
+import { Link } from "react-router-dom";
 // MUI
 import { Grid } from "@mui/material";
 import { styled } from "@mui/system";
 
-interface SkillProps {
+interface CircleGridItemProps {
   data: Array<any>;
-  title: string;
   color: string;
 }
 
-export const Skill: FC<SkillProps> = ({ data, title, color }) => {
+export const CircleGridItem: FC<CircleGridItemProps> = ({ data, color }) => {
   const GridItem = styled(Grid)`
     a {
       text-decoration: none;
@@ -39,24 +39,24 @@ export const Skill: FC<SkillProps> = ({ data, title, color }) => {
       object-fit: contain;
     }
   `;
+
   return (
-    <GridItem container item justifyContent="center" direction="column">
-      <Grid>{title}</Grid>
+    <GridItem item container justifyContent="center" direction="column">
       <Grid item container direction="row" justifyContent="space-evenly">
         {data.map((d, i) => {
           return (
-            <a href={d.link} key={i}>
+            <Link to={d.link} key={i}>
               <Grid
                 item
                 className="circle animated"
                 id={(Math.random() * 5 + 2).toString()}
               >
                 <div>
-                  <img src={d.image} alt={d.name} />
+                  <img src={d.logo} alt={d.alt} />
                 </div>
-                <p>{d.name}</p>
+                <p>{d.alt}</p>
               </Grid>
-            </a>
+            </Link>
           );
         })}
       </Grid>

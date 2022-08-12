@@ -1,10 +1,14 @@
 import React, { FC, useState } from "react";
-import { Social } from "../Social";
+import { Links } from "../Links";
 import { Email } from "../Email";
+import { social } from "../../types";
 // emailjs
 import emailjs from "@emailjs/browser";
 // MUI
 import { Grid, Alert } from "@mui/material";
+// icons
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 export const Contact: FC = () => {
   const [done, setDone] = useState(false);
@@ -36,7 +40,20 @@ export const Contact: FC = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Social />
+      <Grid item container direction="row" justifyContent="center">
+        <Links
+          link=""
+          href={social[0].link}
+          name={social[0].alt}
+          icon={<LinkedInIcon />}
+        />
+        <Links
+          link=""
+          href={social[1].link}
+          name={social[1].alt}
+          icon={<GitHubIcon />}
+        />
+      </Grid>
     </div>
   );
 };
