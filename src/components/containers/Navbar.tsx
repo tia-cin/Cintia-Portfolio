@@ -14,7 +14,7 @@ export const Navbar: FC = () => {
     <nav>
       <Grid
         container
-        sx={{ mt: "1em" }}
+        sx={{ top: 10, position: "fixed" }}
         direction="row"
         justifyContent="space-evenly"
         alignItems="center"

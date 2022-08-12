@@ -14,13 +14,15 @@ export const App: FC = () => {
     <BrowserRouter>
       <div className="App">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/tech" element={<Tech colors={colors} />} />
-          <Route path="/projects" element={<Experience colors={colors} />} />
-          <Route path="/skills" element={<Skills colors={colors} />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <div style={{ marginTop: "5em" }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/tech" element={<Tech colors={colors} />} />
+            <Route path="/projects" element={<Experience colors={colors} />} />
+            <Route path="/skills" element={<Skills colors={colors} />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
       </div>
     </BrowserRouter>
   );
