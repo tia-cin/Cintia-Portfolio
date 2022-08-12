@@ -4,14 +4,14 @@ import profile from "../../assets/others/cintia-arce-profile.png";
 import { Avatar, Grid, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 // svgs
-import blob1 from "../../assets/svgs/output-onlinepngtools (9).png";
-import blob2 from "../../assets/svgs/output-onlinepngtools (10).png";
-import blob3 from "../../assets/svgs/output-onlinepngtools (11).png";
-import blob4 from "../../assets/svgs/output-onlinepngtools (12).png";
-import blob5 from "../../assets/svgs/output-onlinepngtools (13).png";
-import blob6 from "../../assets/svgs/output-onlinepngtools (14).png";
-import blob7 from "../../assets/svgs/output-onlinepngtools (15).png";
-import blob8 from "../../assets/svgs/output-onlinepngtools (16).png";
+import blob1 from "../../assets/svgs/output-onlinepngtools (1).png";
+import blob2 from "../../assets/svgs/output-onlinepngtools (2).png";
+import blob3 from "../../assets/svgs/output-onlinepngtools (3).png";
+import blob4 from "../../assets/svgs/output-onlinepngtools (4).png";
+import blob5 from "../../assets/svgs/output-onlinepngtools (5).png";
+import blob6 from "../../assets/svgs/output-onlinepngtools (6).png";
+import blob7 from "../../assets/svgs/output-onlinepngtools (7).png";
+import blob8 from "../../assets/svgs/output-onlinepngtools (8).png";
 
 const StyledGrid = styled(Grid)`
   position: relative;
