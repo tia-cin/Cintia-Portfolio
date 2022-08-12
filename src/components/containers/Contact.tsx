@@ -26,8 +26,8 @@ export const Contact: FC = () => {
   };
 
   return (
-    <div>
-      <Grid id="contact" container>
+    <Grid container justifyContent="center">
+      <Grid item container justifyContent="center">
         <Grid item container direction="column" alignItems="center" xs={11}>
           <Grid item>
             <Typography variant="h3">Let's get in touch!</Typography>
@@ -54,6 +54,6 @@ export const Contact: FC = () => {
           icon={<GitHubIcon />}
         />
       </Grid>
-    </div>
+    </Grid>
   );
 };
