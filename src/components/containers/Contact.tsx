@@ -40,7 +40,13 @@ export const Contact: FC = () => {
           )}
         </Grid>
       </Grid>
-      <Grid item container direction="row" justifyContent="center">
+      <Grid
+        item
+        container
+        direction="row"
+        justifyContent="center"
+        sx={{ margin: "2em 0" }}
+      >
         <Links
           link=""
           href={social[0].link}

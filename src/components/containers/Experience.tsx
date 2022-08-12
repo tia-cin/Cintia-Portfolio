@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Projects } from "../Projects";
+import { Cards } from "../Cards";
 // MUI
 import { Grid } from "@mui/material";
 import { projects } from "../../types";
@@ -11,7 +11,7 @@ export const Experience: FC = () => {
       <Grid container direction="row" justifyContent="space-evenly">
         {projects.map((p, i) => {
           return (
-            <Projects
+            <Cards
               key={i}
               link={p.link}
               logo={p.logo}

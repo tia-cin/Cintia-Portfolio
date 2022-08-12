@@ -45,7 +45,7 @@ export const CircleGridItem: FC<CircleGridItemProps> = ({ data, color }) => {
       <Grid item container direction="row" justifyContent="space-evenly">
         {data.map((d, i) => {
           return (
-            <Link to={d.link} key={i}>
+            <a href={d.link} key={i}>
               <Grid
                 item
                 className="circle animated"
@@ -56,7 +56,7 @@ export const CircleGridItem: FC<CircleGridItemProps> = ({ data, color }) => {
                 </div>
                 <p>{d.alt}</p>
               </Grid>
-            </Link>
+            </a>
           );
         })}
       </Grid>
