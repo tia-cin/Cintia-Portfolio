@@ -5,7 +5,7 @@ import { social } from "../../types";
 // emailjs
 import emailjs from "@emailjs/browser";
 // MUI
-import { Grid, Alert } from "@mui/material";
+import { Typography, Grid, Alert } from "@mui/material";
 // icons
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -28,16 +28,16 @@ export const Contact: FC = () => {
   return (
     <div>
       <Grid id="contact" container>
-        <Grid container justifyContent="center">
-          <Grid item xs={11}>
-            <Grid>Let's get in touch!</Grid>
-            <Email sendMail={sendMail} />
-            {done && (
-              <Grid>
-                <Alert severity="success">Your mail has been delivered!</Alert>
-              </Grid>
-            )}
+        <Grid item container direction="column" alignItems="center" xs={11}>
+          <Grid item>
+            <Typography variant="h3">Let's get in touch!</Typography>
           </Grid>
+          <Email sendMail={sendMail} />
+          {done && (
+            <Grid>
+              <Alert severity="success">Your mail has been delivered!</Alert>
+            </Grid>
+          )}
         </Grid>
       </Grid>
       <Grid item container direction="row" justifyContent="center">
