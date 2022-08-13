@@ -14,6 +14,7 @@ export const Navbar: FC = () => {
         direction="row"
         justifyContent="space-between"
         alignItems="center"
+        sx={{ position: "fixed" }}
       >
         <Links
           link="/"

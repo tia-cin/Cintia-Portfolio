@@ -31,7 +31,7 @@ export const Links: FC<LinksProps> = ({ link, href, name, icon }) => {
         <Link
           className="contain"
           to={link && link}
-          style={{ textDecoration: "none" }}
+          style={{ textDecoration: "none", width: 0 }}
         >
           <Button variant="text" sx={{ color: "#191919" }}>
             {icon}
@@ -39,7 +39,11 @@ export const Links: FC<LinksProps> = ({ link, href, name, icon }) => {
           <p>{name}</p>
         </Link>
       ) : href ? (
-        <a className="contain" href={href} style={{ textDecoration: "none" }}>
+        <a
+          className="contain"
+          href={href}
+          style={{ textDecoration: "none", width: 0 }}
+        >
           <Button variant="text" sx={{ color: "#191919" }}>
             {icon}
           </Button>
@@ -47,7 +51,7 @@ export const Links: FC<LinksProps> = ({ link, href, name, icon }) => {
         </a>
       ) : (
         <div className="contain">
-          <Button variant="text" sx={{ color: "#191919" }}>
+          <Button variant="text" sx={{ color: "#191919", width: 0 }}>
             {icon}
           </Button>
           <p>{name}</p>

@@ -11,7 +11,7 @@ export const App: FC = () => {
     <BrowserRouter>
       <div className="App" style={{ overflowX: "hidden" }}>
         <Navbar />
-        <div>
+        <div style={{ marginTop: "5em" }}>
           <Routes>
             <Route path="/" element={<Home colors={colors} />} />
             <Route path="/contact" element={<Email />} />

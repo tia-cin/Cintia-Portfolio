@@ -7,7 +7,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 export const Introduction: FC = () => {
   return (
     <Grid
-      sx={{ height: "100vh", mx: "3em", my: "2em" }}
+      sx={{ height: "100vh", mx: "3em", my: "6em" }}
       container
       alignItems="center"
       direction="column"

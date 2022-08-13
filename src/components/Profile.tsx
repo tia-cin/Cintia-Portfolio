@@ -44,7 +44,7 @@ export const Profile: FC = () => {
   document.addEventListener("mousemove", animation);
 
   return (
-    <main style={{ height: "100vh" }}>
+    <main style={{ height: "70vh" }}>
       <StyledGrid container justifyContent="center">
         <Grid item sx={{ margin: "2em" }}>
           <Typography variant="h1" className="animated" id="2">
