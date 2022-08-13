@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { CircleItem } from "./CircleItem";
-import { technologies } from "../types";
+import { technologies } from "../info";
 // MUI
 import { Grid, Typography } from "@mui/material";
 
@@ -15,15 +15,39 @@ export const Tech: FC<TechProps> = ({ colors }) => {
         <Grid item container justifyContent="center">
           <Typography variant="h3">The Tech-Stack I use</Typography>
         </Grid>
-        {technologies.map((e, i) => (
-          <CircleItem
-            key={i}
-            alt={e.alt}
-            logo={e.logo}
-            link={e.link}
-            color={colors[Math.floor(Math.random() * 4)]}
-          />
-        ))}
+        <Grid item container justifyContent="center">
+          {technologies.frontend.map((e, i) => (
+            <CircleItem
+              key={i}
+              alt={e.alt}
+              logo={e.logo}
+              link={e.link}
+              color={colors[Math.floor(Math.random() * 4)]}
+            />
+          ))}
+        </Grid>
+        <Grid item container justifyContent="center">
+          {technologies.style.map((e, i) => (
+            <CircleItem
+              key={i}
+              alt={e.alt}
+              logo={e.logo}
+              link={e.link}
+              color={colors[Math.floor(Math.random() * 4)]}
+            />
+          ))}
+        </Grid>
+        <Grid item container justifyContent="center">
+          {technologies.others.map((e, i) => (
+            <CircleItem
+              key={i}
+              alt={e.alt}
+              logo={e.logo}
+              link={e.link}
+              color={colors[Math.floor(Math.random() * 4)]}
+            />
+          ))}
+        </Grid>
       </Grid>
     </Grid>
   );
