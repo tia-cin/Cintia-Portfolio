@@ -11,11 +11,9 @@ export const Navbar: FC = () => {
     <nav>
       <Grid
         container
-        sx={{ top: 10, position: "fixed" }}
         direction="row"
         justifyContent="space-between"
         alignItems="center"
-        spacing={2}
       >
         <Links
           link="/"

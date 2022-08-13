@@ -16,9 +16,9 @@ export const Introduction: FC = () => {
       <Grid item sx={{ width: "30em" }}>
         <Typography variant="h3">It's nice to meet you!</Typography>
         <Typography variant="subtitle1">
-          Independent IT student with strong passion for development. Looking to
-          participate in projects where I can share my skills, improve them, and
-          even learn new ones.
+          I'm an independent IT student with strong passion for development.
+          Looking to participate in projects where I can share my skills,
+          improve them, and even learn new ones.
         </Typography>
       </Grid>
       <Grid item sx={{ width: "30em" }}>
