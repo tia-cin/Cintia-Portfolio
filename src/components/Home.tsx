@@ -4,6 +4,7 @@ import { Profile } from "./Profile";
 import { Tech } from "./Tech";
 import { Skills } from "./Skills";
 import { Footer } from "./Footer";
+import { Introduction } from "./Introduction";
 
 interface HomeProps {
   colors: Array<string>;
@@ -13,10 +14,11 @@ export const Home: FC<HomeProps> = ({ colors }) => {
   return (
     <div>
       <Profile />
+      <Introduction />
       <Tech colors={colors} />
-      <Experience colors={colors} />
       <Skills colors={colors} />
-      <Footer/>
+      <Experience colors={colors} />
+      <Footer />
     </div>
   );
 };

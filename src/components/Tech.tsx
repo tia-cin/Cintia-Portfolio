@@ -10,7 +10,7 @@ interface TechProps {
 
 export const Tech: FC<TechProps> = ({ colors }) => {
   return (
-    <Grid container sx={{ height: "90vh", overflow: "hidden" }}>
+    <Grid container sx={{ height: "100vh", overflow: "hidden" }}>
       <Grid item container spacing={8} justifyContent="center">
         {technologies.map((e, i) => (
           <CircleItem

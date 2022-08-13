@@ -11,7 +11,7 @@ interface ExperienceProps {
 export const Experience: FC<ExperienceProps> = ({ colors }) => {
   return (
     <Grid
-      sx={{ height: "90vh" }}
+      sx={{ height: "100vh" }}
       container
       direction="row"
       justifyContent="space-evenly"

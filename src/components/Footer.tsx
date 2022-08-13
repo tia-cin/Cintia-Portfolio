@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { social } from "../types";
 import { Links } from "./Links";
 // mui
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 // icons
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";

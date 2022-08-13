@@ -26,25 +26,23 @@ export const Skills: FC<SkillsProps> = ({ colors }) => {
     <ConnectWithoutContactIcon sx={{ fontSize: "2.5em" }} />,
   ];
   return (
-    <div>
-      <Grid container>
-        <Grid item container direction="row" justifyContent="space-evenly">
-          {skills.design.map((s, i) => (
-            <CircleItem
-              key={i}
-              alt={s.alt}
-              logo={s.logo}
-              link={s.link}
-              color={colors[Math.floor(Math.random() * 4)]}
-            />
-          ))}
-        </Grid>
-        <Grid item container justifyContent="center" alignItems="center">
-          {skills.soft.map((s, i) => (
-            <Links key={i} link="" href="" icon={icons[i]} name={s.name} />
-          ))}
-        </Grid>
+    <Grid container sx={{ height: "100vh" }}>
+      <Grid item container direction="row" justifyContent="space-evenly">
+        {skills.design.map((s, i) => (
+          <CircleItem
+            key={i}
+            alt={s.alt}
+            logo={s.logo}
+            link={s.link}
+            color={colors[Math.floor(Math.random() * 4)]}
+          />
+        ))}
       </Grid>
-    </div>
+      <Grid item container justifyContent="center" alignItems="center">
+        {skills.soft.map((s, i) => (
+          <Links key={i} link="" href="" icon={icons[i]} name={s.name} />
+        ))}
+      </Grid>
+    </Grid>
   );
 };
