@@ -1,7 +1,6 @@
 import React, { FC } from "react";
-import { Link } from "react-router-dom";
 // MUI
-import { Grid, Box } from "@mui/material";
+import { Grid } from "@mui/material";
 import { styled } from "@mui/system";
 
 interface CircleItemProps {
@@ -12,7 +11,7 @@ interface CircleItemProps {
 }
 
 export const CircleItem: FC<CircleItemProps> = ({ link, logo, alt, color }) => {
-  const BoxItem = styled(Box)`
+  const GridItem = styled(Grid)`
     a {
       text-decoration: none;
     }
@@ -43,7 +42,7 @@ export const CircleItem: FC<CircleItemProps> = ({ link, logo, alt, color }) => {
   `;
 
   return (
-    <BoxItem>
+    <GridItem item>
       <a href={link}>
         <Grid
           item
@@ -56,6 +55,6 @@ export const CircleItem: FC<CircleItemProps> = ({ link, logo, alt, color }) => {
           <p>{alt}</p>
         </Grid>
       </a>
-    </BoxItem>
+    </GridItem>
   );
 };

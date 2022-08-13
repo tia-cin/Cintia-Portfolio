@@ -1,7 +1,7 @@
 import React, { FC } from "react";
-import { skills } from "../../types";
-import { Links } from "../Links";
-import { CircleItem } from "../CircleItem";
+import { skills } from "../types";
+import { Links } from "./Links";
+import { CircleItem } from "./CircleItem";
 // MUI
 import { Grid } from "@mui/material";
 // icons
@@ -39,13 +39,7 @@ export const Skills: FC<SkillsProps> = ({ colors }) => {
             />
           ))}
         </Grid>
-        <Grid
-          item
-          container
-          justifyContent="center"
-          alignItems="center"
-          direction="column"
-        >
+        <Grid item container justifyContent="center" alignItems="center">
           {skills.soft.map((s, i) => (
             <Links key={i} link="" href="" icon={icons[i]} name={s.name} />
           ))}

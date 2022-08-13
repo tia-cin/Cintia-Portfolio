@@ -1,15 +1,25 @@
 import React, { FC, useState } from "react";
 import { Inputs } from "./Inputs";
 // MUI
-import { Grid, Button } from "@mui/material";
+import { Grid, Button, Alert } from "@mui/material";
 // icons
 import SendIcon from "@mui/icons-material/Send";
+// emailjs
+import emailjs from "@emailjs/browser";
 
-interface EmailProps {
-  sendMail: (e: any) => void;
-}
-
-export const Email: FC<EmailProps> = ({ sendMail }) => {
+export const Email: FC = () => {
+  const [done, setDone] = useState(false);
+  const sendMail = (e: any) => {
+    e.preventDefault();
+    emailjs.sendForm(
+      "service_o0smcjb",
+      "template_3pqqcx5",
+      e.target,
+      "Q2GNQFDrDl6zPbgn9"
+    );
+    setDone(true);
+    e.target.reset();
+  };
   return (
     <form onSubmit={sendMail}>
       <Grid
@@ -29,6 +39,11 @@ export const Email: FC<EmailProps> = ({ sendMail }) => {
           </Button>
         </Grid>
       </Grid>
+      {done && (
+        <Grid>
+          <Alert severity="success">Your mail has been delivered!</Alert>
+        </Grid>
+      )}
     </form>
   );
 };

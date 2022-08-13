@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Links } from "../Links";
+import { Links } from "./Links";
 // MUI
 import { Grid } from "@mui/material";
 // icons
@@ -26,24 +26,7 @@ export const Navbar: FC = () => {
           name="Home"
           icon={<HomeIcon sx={{ fontSize: "2.5em" }} />}
         />
-        <Links
-          link="/tech"
-          href=""
-          name="Tech"
-          icon={<HubRoundedIcon sx={{ fontSize: "2.5em" }} />}
-        />
-        <Links
-          link="/projects"
-          href=""
-          name="Projects"
-          icon={<WorkspacePremiumRoundedIcon sx={{ fontSize: "2.5em" }} />}
-        />
-        <Links
-          link="/skills"
-          href=""
-          name="Skills"
-          icon={<WorkRoundedIcon sx={{ fontSize: "2.5em" }} />}
-        />
+
         <Links
           link="/contact"
           href=""

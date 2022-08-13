@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import { CircleItem } from "../CircleItem";
-import { technologies } from "../../types";
+import { CircleItem } from "./CircleItem";
+import { technologies } from "../types";
 // MUI
 import { Grid } from "@mui/material";
 
@@ -10,8 +10,8 @@ interface TechProps {
 
 export const Tech: FC<TechProps> = ({ colors }) => {
   return (
-    <Grid container>
-      <Grid item container justifyContent="space-evenly">
+    <Grid container sx={{ height: "90vh", overflow: "hidden" }}>
+      <Grid item container spacing={8} justifyContent="center">
         {technologies.map((e, i) => (
           <CircleItem
             key={i}
