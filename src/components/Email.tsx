@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react";
 import { Inputs } from "./Inputs";
 // MUI
-import { Grid, Button, Alert } from "@mui/material";
+import { Grid, Button, Alert, Typography } from "@mui/material";
 // icons
 import SendIcon from "@mui/icons-material/Send";
 // emailjs
@@ -21,29 +21,43 @@ export const Email: FC = () => {
     e.target.reset();
   };
   return (
-    <form onSubmit={sendMail}>
-      <Grid
-        container
-        direction="column"
-        justifyContent="center"
-        sx={{ margin: "1em" }}
-      >
-        <Inputs title="Full Name" name="name" label="Joe Doe" />
-        <Inputs title="Email" name="email" label="joedoe@mail.com" />
-        <Inputs title="Subject" name="subject" label="New Project" />
-        <Inputs title="Message" name="messge" label="Add your message here" />
-        <Grid container item xs={6} justifyContent="center">
-          <Button variant="text" color="primary" type="submit">
-            Send
-            <SendIcon sx={{ fontSize: "1em", margin: "0 .5em" }} />
-          </Button>
+    <Grid container justifyContent="center">
+      <form onSubmit={sendMail}>
+        <Grid
+          container
+          direction="column"
+          justifyContent="center"
+          sx={{ margin: "1em" }}
+        >
+          <Grid sx={{ my: ".5em" }}>
+            <Typography variant="h2" sx={{ textAlign: "center" }}>
+              Well Hi There!
+              <br />
+              How can I help you?
+            </Typography>
+          </Grid>
+          <Inputs title="Full Name" name="name" />
+          <Inputs title="Email" name="email" />
+          <Inputs title="Subject" name="subject" />
+          <Inputs title="Message" name="messge" />
+          <Grid container item xs={6} justifyContent="center">
+            <Button
+              size="large"
+              variant="outlined"
+              color="secondary"
+              type="submit"
+            >
+              Send
+              <SendIcon sx={{ fontSize: "1em", margin: "0 .5em" }} />
+            </Button>
+          </Grid>
         </Grid>
-      </Grid>
-      {done && (
-        <Grid>
-          <Alert severity="success">Your mail has been delivered!</Alert>
-        </Grid>
-      )}
-    </form>
+        {done && (
+          <Grid>
+            <Alert severity="success">Your mail has been delivered!</Alert>
+          </Grid>
+        )}
+      </form>
+    </Grid>
   );
 };

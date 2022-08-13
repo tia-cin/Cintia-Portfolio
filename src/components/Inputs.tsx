@@ -16,10 +16,9 @@ const StyledTextField = styled(TextField)`
 interface InputsProps {
   title: string;
   name: string;
-  label: string;
 }
 
-export const Inputs: FC<InputsProps> = ({ title, name, label }) => {
+export const Inputs: FC<InputsProps> = ({ title, name }) => {
   return (
     <Grid
       container
@@ -34,12 +33,13 @@ export const Inputs: FC<InputsProps> = ({ title, name, label }) => {
       </Grid>
       <Grid item>
         <StyledTextField
-          rows={title === "Message" ? 4 : 0}
+          rows={title === "Message" ? 8 : 0}
+          fullWidth
           multiline
-          sx={{ margin: "0" }}
+          sx={{ margin: "0", width: "25em" }}
           name={name}
           id="input-with-sx"
-          label={label}
+          color="success"
         />
       </Grid>
     </Grid>

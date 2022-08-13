@@ -4,9 +4,6 @@ import { Links } from "./Links";
 import { Grid } from "@mui/material";
 // icons
 import HomeIcon from "@mui/icons-material/HomeRounded";
-import HubRoundedIcon from "@mui/icons-material/HubRounded";
-import WorkRoundedIcon from "@mui/icons-material/WorkRounded";
-import WorkspacePremiumRoundedIcon from "@mui/icons-material/WorkspacePremiumRounded";
 import ChatIcon from "@mui/icons-material/Chat";
 
 export const Navbar: FC = () => {
@@ -16,7 +13,7 @@ export const Navbar: FC = () => {
         container
         sx={{ top: 10, position: "fixed" }}
         direction="row"
-        justifyContent="space-evenly"
+        justifyContent="space-between"
         alignItems="center"
         spacing={2}
       >
