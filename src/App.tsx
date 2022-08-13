@@ -9,7 +9,7 @@ export const App: FC = () => {
   const colors = ["#ffce6d", "#ED5B2D", "#F7B9A1", "#51ABB2"];
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="App" style={{ overflowX: "hidden" }}>
         <Navbar />
         <div style={{ marginTop: "5em" }}>
           <Routes>

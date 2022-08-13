@@ -3,7 +3,7 @@ import { skills } from "../types";
 import { Links } from "./Links";
 import { CircleItem } from "./CircleItem";
 // MUI
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 // icons
 import GroupsIcon from "@mui/icons-material/Groups";
 import LightbulbIcon from "@mui/icons-material/Lightbulb";
@@ -28,6 +28,9 @@ export const Skills: FC<SkillsProps> = ({ colors }) => {
   return (
     <Grid container sx={{ height: "100vh" }}>
       <Grid item container direction="row" justifyContent="space-evenly">
+        <Grid item container justifyContent="center">
+          <Typography variant="h3">Some Design Tools</Typography>
+        </Grid>
         {skills.design.map((s, i) => (
           <CircleItem
             key={i}
@@ -36,11 +39,6 @@ export const Skills: FC<SkillsProps> = ({ colors }) => {
             link={s.link}
             color={colors[Math.floor(Math.random() * 4)]}
           />
-        ))}
-      </Grid>
-      <Grid item container justifyContent="center" alignItems="center">
-        {skills.soft.map((s, i) => (
-          <Links key={i} link="" href="" icon={icons[i]} name={s.name} />
         ))}
       </Grid>
     </Grid>

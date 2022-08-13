@@ -51,7 +51,12 @@ export const Cards: FC<CardsProps> = ({
       </Grid>
       <Grid item>
         <a href={link} style={{ textDecoration: "none" }}>
-          <Button size="small" variant="contained" color="primary">
+          <Button
+            sx={{ margin: "2em 1em" }}
+            size="small"
+            variant="contained"
+            color="primary"
+          >
             Check it out
           </Button>
         </a>

@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Cards } from "./Cards";
 // MUI
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { projects } from "../types";
 
 interface ExperienceProps {
@@ -16,6 +16,9 @@ export const Experience: FC<ExperienceProps> = ({ colors }) => {
       direction="row"
       justifyContent="space-evenly"
     >
+      <Grid item container justifyContent="center">
+        <Typography variant="h3">Check out my Projects</Typography>
+      </Grid>
       {projects.map((p, i) => {
         return (
           <Cards
