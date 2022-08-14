@@ -63,8 +63,10 @@ export const Email: FC = () => {
           </Grid>
         </Grid>
         {done && (
-          <Grid>
-            <Alert severity="success">Your mail has been delivered!</Alert>
+          <Grid container justifyContent="center">
+            <Alert severity="success" sx={{ position: "fixed", top: 20 }}>
+              Your mail has been delivered!
+            </Alert>
           </Grid>
         )}
       </form>
