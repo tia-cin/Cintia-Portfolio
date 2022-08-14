@@ -25,6 +25,9 @@ export const Email: FC = () => {
     );
     setDone(true);
     e.target.reset();
+    setTimeout(() => {
+      setDone(false);
+    }, 5000);
   };
   return (
     <StyledGrid container justifyContent="center">
