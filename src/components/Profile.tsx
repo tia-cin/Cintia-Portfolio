@@ -13,7 +13,7 @@ import blob6 from "../assets/svgs/output-onlinepngtools (6).png";
 import blob7 from "../assets/svgs/output-onlinepngtools (7).png";
 import blob8 from "../assets/svgs/output-onlinepngtools (8).png";
 
-const StyledGrid = styled(Grid)`
+export const StyledGrid = styled(Grid)`
   position: relative;
   width: 100%;
   height: 100%;

@@ -5,6 +5,7 @@ import { Grid, Button } from "@mui/material";
 import { styled } from "@mui/system";
 
 const StyledGridItems = styled(Grid)`
+  margin: 1em;
   p {
     margin: 0.5em;
     font-family: sans-serif;

@@ -2,10 +2,16 @@ import React, { FC, useState } from "react";
 import { Inputs } from "./Inputs";
 // MUI
 import { Grid, Button, Alert, Typography } from "@mui/material";
+import { StyledGrid } from "./Profile";
 // icons
 import SendIcon from "@mui/icons-material/Send";
 // emailjs
 import emailjs from "@emailjs/browser";
+// svgs
+import blob1 from "../assets/svgs/output-onlinepngtools (17).png";
+import blob2 from "../assets/svgs/output-onlinepngtools (18).png";
+import blob3 from "../assets/svgs/output-onlinepngtools (19).png";
+import blob4 from "../assets/svgs/output-onlinepngtools (20).png";
 
 export const Email: FC = () => {
   const [done, setDone] = useState(false);
@@ -21,7 +27,7 @@ export const Email: FC = () => {
     e.target.reset();
   };
   return (
-    <Grid container justifyContent="center">
+    <StyledGrid container justifyContent="center">
       <form onSubmit={sendMail}>
         <Grid
           container
@@ -58,6 +64,10 @@ export const Email: FC = () => {
           </Grid>
         )}
       </form>
-    </Grid>
+      <img src={blob1} alt="blob" className="animated" id="-5" />
+      <img src={blob2} alt="blob" className="animated" id="3" />
+      <img src={blob3} alt="blob" className="animated" id="1" />
+      <img src={blob4} alt="blob" className="animated" id="-2" />
+    </StyledGrid>
   );
 };
