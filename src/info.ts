@@ -8,12 +8,10 @@ import typescript from "./assets/tech stack/Typescript.svg";
 import nodejs from "./assets/tech stack/Nodejs.svg";
 import express from "./assets/tech stack/Express.svg";
 import babel from "./assets/tech stack/Babel.svg";
-import bash from "./assets/tech stack/Bash.svg";
 import git from "./assets/tech stack/Git.svg";
 import jest from "./assets/tech stack/Jest.svg";
 import mocha from "./assets/tech stack/Mocha.svg";
 import postgresql from "./assets/tech stack/Postgresql.svg";
-import sqlite from "./assets/tech stack/SQLite.svg";
 import webpack from "./assets/tech stack/Webpack.svg";
 // projects
 import weatherapp from "./assets/projects/cloudy.png";

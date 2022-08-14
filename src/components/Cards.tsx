@@ -26,7 +26,14 @@ export const Cards: FC<CardsProps> = ({
   color,
 }) => {
   return (
-    <Card sx={{ width: 345, backgroundColor: `${color}`, margin: "1em 0" }}>
+    <Card
+      sx={{
+        width: 300,
+        height: 300,
+        backgroundColor: `${color}`,
+        margin: "1em 0",
+      }}
+    >
       <Grid item>
         {logo && (
           <CardMedia

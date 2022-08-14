@@ -9,11 +9,12 @@ const StyledGridItems = styled(Grid)`
     margin: 0.5em;
     font-family: sans-serif;
     text-align: center;
-    color: #fff;
+    opacity: 0;
   }
   .contain:hover p {
     transition: 1s;
     color: #191919;
+    opacity: 1;
   }
 `;
 

@@ -26,7 +26,7 @@ export const Inputs: FC<InputsProps> = ({ title, name }) => {
       xs={6}
       alignItems="center"
       justifyContent="space-between"
-      sx={{ margin: "1em 0" }}
+      sx={{ my: "1em" }}
     >
       <Grid item>
         <Typography variant="h5">{title}</Typography>
