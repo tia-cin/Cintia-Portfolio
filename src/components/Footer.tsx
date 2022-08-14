@@ -6,6 +6,8 @@ import { Grid, Typography } from "@mui/material";
 // icons
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+// svg
+import wave from "../assets/svgs/wave.png";
 
 export const Footer: FC = () => {
   return (
@@ -15,7 +17,12 @@ export const Footer: FC = () => {
         container
         direction="row"
         justifyContent="space-evenly"
-        sx={{ py: "5em" }}
+        sx={{
+          py: "5em",
+          backgroundImage: `url(${wave})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
       >
         <Links
           link=""
