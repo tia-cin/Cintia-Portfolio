@@ -3,6 +3,8 @@ import { CircleItem } from "./CircleItem";
 import { technologies, skills } from "../info";
 // MUI
 import { Grid, Typography } from "@mui/material";
+// icons
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 interface TechProps {
   colors: Array<string>;
@@ -70,6 +72,9 @@ export const Tech: FC<TechProps> = ({ colors }) => {
               color={colors[Math.floor(Math.random() * 4)]}
             />
           ))}
+        </Grid>
+        <Grid item>
+          <KeyboardArrowDownIcon sx={{ fontSize: "5em" }} />
         </Grid>
       </Grid>
     </Grid>
