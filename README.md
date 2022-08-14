@@ -1,9 +1,10 @@
 <div align="center" id="top"> 
-  <!-- <img src="./.github/app.gif" alt="My Portofolio" /> -->
+  <img src="./public/logo.png" alt="My Portofolio" width=50/>
 
 &#xa0;
 
-  <!-- <a href="https://myportofolio.netlify.app">Demo</a> -->
+<a href="https://cintia-arce-portofolio.netlify.app">Demo</a>
+
 </div>
 
 <h1 align="center">My Portofolio</h1>
