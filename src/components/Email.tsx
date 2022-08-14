@@ -57,7 +57,7 @@ export const Email: FC = () => {
             <Button
               size="large"
               variant="outlined"
-              color="secondary"
+              color="primary"
               type="submit"
             >
               Send
