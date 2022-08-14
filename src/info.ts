@@ -179,47 +179,25 @@ export const projects = [
   },
 ];
 
-export const skills = {
-  design: [
-    {
-      alt: "Photoshop",
-      logo: photoshop,
-      link: "https://www.photoshop.com/",
-    },
-    {
-      alt: "Illustrator",
-      logo: illustrator,
-      link: "https://www.adobe.com/products/illustrator/free-trial-download.html",
-    },
-    {
-      alt: "Premiere",
-      logo: premiere,
-      link: "https://www.adobe.com/products/premiere.html",
-    },
-    {
-      alt: "Figma",
-      logo: figma,
-      link: "https://www.figma.com/",
-    },
-  ],
-  soft: [
-    {
-      name: "Team-player",
-    },
-    {
-      name: "Fast-learner",
-    },
-    {
-      name: "Creativity",
-    },
-    {
-      name: "Curious",
-    },
-    {
-      name: "Problem-solver",
-    },
-    {
-      name: "Communication Skills",
-    },
-  ],
-};
+export const skills = [
+  {
+    alt: "Photoshop",
+    logo: photoshop,
+    link: "https://www.photoshop.com/",
+  },
+  {
+    alt: "Illustrator",
+    logo: illustrator,
+    link: "https://www.adobe.com/products/illustrator/free-trial-download.html",
+  },
+  {
+    alt: "Premiere",
+    logo: premiere,
+    link: "https://www.adobe.com/products/premiere.html",
+  },
+  {
+    alt: "Figma",
+    logo: figma,
+    link: "https://www.figma.com/",
+  },
+];
