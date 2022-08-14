@@ -36,7 +36,7 @@ export const Inputs: FC<InputsProps> = ({ title, name }) => {
           rows={title === "Message" ? 8 : 0}
           fullWidth
           multiline
-          sx={{ margin: "0", width: "25em", zIndex: 1 }}
+          sx={{ margin: "0", width: "25em" }}
           name={name}
           id="input-with-sx"
           color="success"

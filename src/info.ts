@@ -58,6 +58,28 @@ export const technologies = {
       alt: "Tailwind",
     },
   ],
+  design: [
+    {
+      alt: "Photoshop",
+      logo: photoshop,
+      link: "https://www.photoshop.com/",
+    },
+    {
+      alt: "Illustrator",
+      logo: illustrator,
+      link: "https://www.adobe.com/products/illustrator/free-trial-download.html",
+    },
+    {
+      alt: "Premiere",
+      logo: premiere,
+      link: "https://www.adobe.com/products/premiere.html",
+    },
+    {
+      alt: "Figma",
+      logo: figma,
+      link: "https://www.figma.com/",
+    },
+  ],
   frontend: [
     {
       link: "https://www.w3.org/html/",
@@ -174,28 +196,5 @@ export const projects = [
     alt: "dictionary-app-icon",
     description: "Search any word and find about their definition",
     title: "Dictionary App",
-  },
-];
-
-export const skills = [
-  {
-    alt: "Photoshop",
-    logo: photoshop,
-    link: "https://www.photoshop.com/",
-  },
-  {
-    alt: "Illustrator",
-    logo: illustrator,
-    link: "https://www.adobe.com/products/illustrator/free-trial-download.html",
-  },
-  {
-    alt: "Premiere",
-    logo: premiere,
-    link: "https://www.adobe.com/products/premiere.html",
-  },
-  {
-    alt: "Figma",
-    logo: figma,
-    link: "https://www.figma.com/",
   },
 ];

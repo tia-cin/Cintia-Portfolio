@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { CircleItem } from "./CircleItem";
-import { technologies, skills } from "../info";
+import { technologies } from "../info";
 // MUI
 import { Grid, Typography } from "@mui/material";
 // icons
@@ -49,7 +49,7 @@ export const Tech: FC<TechProps> = ({ colors }) => {
           <Grid item container justifyContent="center">
             <Typography variant="h3">Desing Tools</Typography>
           </Grid>
-          {skills.map((e, i) => (
+          {technologies.design.map((e, i) => (
             <CircleItem
               key={i}
               alt={e.alt}

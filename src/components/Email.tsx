@@ -8,10 +8,10 @@ import SendIcon from "@mui/icons-material/Send";
 // emailjs
 import emailjs from "@emailjs/browser";
 // svgs
-import blob1 from "../assets/svgs/output-onlinepngtools (17).png";
-import blob2 from "../assets/svgs/output-onlinepngtools (18).png";
-import blob3 from "../assets/svgs/output-onlinepngtools (19).png";
-import blob4 from "../assets/svgs/output-onlinepngtools (20).png";
+import blob1 from "../assets/svgs/output-onlinepngtools (9).png";
+import blob2 from "../assets/svgs/output-onlinepngtools (10).png";
+import blob3 from "../assets/svgs/output-onlinepngtools (11).png";
+import blob4 from "../assets/svgs/output-onlinepngtools (12).png";
 
 export const Email: FC = () => {
   const [done, setDone] = useState(false);
