@@ -15,7 +15,7 @@ export const Tech: FC<TechProps> = ({ colors }) => {
     <Grid container sx={{ height: "180vh", overflow: "hidden" }}>
       <Grid item container spacing={8} justifyContent="center">
         <Grid item container justifyContent="center">
-          <Typography variant="h3">The Tech-Stack I use</Typography>
+          <Typography variant="h2">My Tech-Stack </Typography>
         </Grid>
         <Grid item container justifyContent="center">
           <Grid item container justifyContent="center">

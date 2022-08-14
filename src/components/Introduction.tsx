@@ -17,7 +17,10 @@ export const Introduction: FC = () => {
         <Typography variant="h3">It's nice to meet you!</Typography>
         <Typography variant="subtitle1">
           I'm an independent IT student with strong passion for development.
-          Looking to participate in projects where I can share my skills,
+          Started with Web Development two years ago and look forward to keep
+          expanding my knowledge. <br />
+          <br />
+          Interested in participate in projects where I can share my skills,
           improve them, and even learn new ones.
         </Typography>
       </Grid>

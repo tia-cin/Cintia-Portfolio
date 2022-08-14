@@ -17,7 +17,7 @@ export const Experience: FC<ExperienceProps> = ({ colors }) => {
       justifyContent="space-evenly"
     >
       <Grid item container justifyContent="center">
-        <Typography variant="h3">Check out my Projects</Typography>
+        <Typography variant="h2">Check out some of my Projects</Typography>
       </Grid>
       {projects.map((p, i) => {
         return (
