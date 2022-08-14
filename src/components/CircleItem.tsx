@@ -12,6 +12,7 @@ interface CircleItemProps {
 
 export const CircleItem: FC<CircleItemProps> = ({ link, logo, alt, color }) => {
   const GridItem = styled(Grid)`
+    margin: 2em;
     a {
       text-decoration: none;
     }

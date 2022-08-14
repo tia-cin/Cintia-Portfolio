@@ -12,7 +12,7 @@ interface TechProps {
 
 export const Tech: FC<TechProps> = ({ colors }) => {
   return (
-    <Grid container sx={{ height: "150vh", overflow: "hidden" }}>
+    <Grid container sx={{ height: "180vh", overflow: "hidden" }}>
       <Grid item container spacing={8} justifyContent="center">
         <Grid item container justifyContent="center">
           <Typography variant="h3">The Tech-Stack I use</Typography>
