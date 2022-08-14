@@ -28,12 +28,16 @@ export const Email: FC = () => {
   };
   return (
     <StyledGrid container justifyContent="center">
-      <form onSubmit={sendMail}>
+      <Grid sx={{ zIndex: -1 }}>
+        <img src={blob1} alt="blob" className="animated" id="-5" />
+        <img src={blob2} alt="blob" className="animated" id="3" />
+      </Grid>
+      <form onSubmit={sendMail} style={{ zIndex: 1 }}>
         <Grid
           container
           direction="column"
           justifyContent="center"
-          sx={{ margin: "1em" }}
+          sx={{ margin: "1em", zIndex: 1 }}
         >
           <Grid sx={{ my: ".5em" }}>
             <Typography variant="h2" sx={{ textAlign: "center" }}>
@@ -64,10 +68,10 @@ export const Email: FC = () => {
           </Grid>
         )}
       </form>
-      <img src={blob1} alt="blob" className="animated" id="-5" />
-      <img src={blob2} alt="blob" className="animated" id="3" />
-      <img src={blob3} alt="blob" className="animated" id="1" />
-      <img src={blob4} alt="blob" className="animated" id="-2" />
+      <Grid sx={{ zIndex: -1 }}>
+        <img src={blob3} alt="blob" className="animated" id="4" />
+        <img src={blob4} alt="blob" className="animated" id="-2" />
+      </Grid>
     </StyledGrid>
   );
 };
