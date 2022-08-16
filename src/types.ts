@@ -42,6 +42,8 @@ export interface Data {
   data: Item[];
 }
 
+export const colors = ["#ffce6d", "#ED5B2D", "#F7B9A1", "#51ABB2"];
+
 export const technologies = {
   style: [
     {

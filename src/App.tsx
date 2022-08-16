@@ -1,12 +1,12 @@
 import React, { FC } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { colors } from "./types";
 // components
 import { Home } from "./components/Home";
 import { Navbar } from "./components/Navbar";
 import { Email } from "./components/Email";
 
 export const App: FC = () => {
-  const colors = ["#ffce6d", "#ED5B2D", "#F7B9A1", "#51ABB2"];
   return (
     <BrowserRouter>
       <div className="App" style={{ overflowX: "hidden" }}>
