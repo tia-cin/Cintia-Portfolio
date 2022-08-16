@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { social } from "../info";
+import { social } from "../types";
 import { Links } from "./Links";
 // mui
 import { Grid, Typography } from "@mui/material";
