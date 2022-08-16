@@ -1,7 +1,3 @@
 import React from "react";
-
-describe("Test Example", () => {
-  it("test", () => {
-    expect(true).toBe(true);
-  });
-});
+import Test from "../Test";
+import { render, RenderResult } from "@testing-library/react";
