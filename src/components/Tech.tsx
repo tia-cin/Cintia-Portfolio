@@ -1,6 +1,7 @@
 import React, { FC } from "react";
-import { CircleItem } from "./CircleItem";
 import { technologies } from "../types";
+// components
+import { CircleItem } from "./CircleItem";
 // MUI
 import { Grid, Typography } from "@mui/material";
 // icons

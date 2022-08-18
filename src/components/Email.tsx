@@ -1,8 +1,9 @@
 import React, { FC, useState } from "react";
+// components
 import { Inputs } from "./Inputs";
+import { StyledGrid } from "./Profile";
 // MUI
 import { Grid, Button, Alert, Typography } from "@mui/material";
-import { StyledGrid } from "./Profile";
 // icons
 import SendIcon from "@mui/icons-material/Send";
 // emailjs

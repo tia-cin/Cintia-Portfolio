@@ -1,8 +1,9 @@
 import React, { FC } from "react";
+import { projects } from "../types";
+// components
 import { Cards } from "./Cards";
 // MUI
 import { Grid, Typography } from "@mui/material";
-import { projects } from "../types";
 
 interface ExperienceProps {
   colors: Array<string>;

@@ -1,9 +1,9 @@
 import React, { FC } from "react";
-import profile from "../assets/others/cintia-arce-profile.png";
 // MUI
 import { Avatar, Grid, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 // svgs
+import profile from "../assets/others/cintia-arce-profile.png";
 import blob1 from "../assets/svgs/output-onlinepngtools (1).png";
 import blob2 from "../assets/svgs/output-onlinepngtools (2).png";
 import blob3 from "../assets/svgs/output-onlinepngtools (3).png";

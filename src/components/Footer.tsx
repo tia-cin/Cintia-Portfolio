@@ -1,7 +1,8 @@
 import React, { FC } from "react";
 import { social } from "../types";
+// components
 import { Links } from "./Links";
-// mui
+// MUI
 import { Grid, Typography } from "@mui/material";
 // icons
 import LinkedInIcon from "@mui/icons-material/LinkedIn";

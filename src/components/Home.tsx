@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+// components
 import { Experience } from "./Experience";
 import { Profile } from "./Profile";
 import { Tech } from "./Tech";
