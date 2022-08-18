@@ -30,18 +30,6 @@ import materialui from "./assets/frameworks/material-ui-logo (1).png";
 import sass from "./assets/frameworks/sass-lang-icon.svg";
 import tailwind from "./assets/frameworks/tailwindcss-icon.svg";
 
-export interface Item {
-  link: string | null;
-  logo: string | null;
-  title: string;
-  description: string | null;
-  icon: any | null;
-}
-
-export interface Data {
-  data: Item[];
-}
-
 export const colors = ["#ffce6d", "#ED5B2D", "#F7B9A1", "#51ABB2"];
 
 export const technologies = {
