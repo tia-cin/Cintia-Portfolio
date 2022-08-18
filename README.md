@@ -19,11 +19,11 @@
 
 <!-- Status -->
 
-<h4 align="center">
+<!-- <h4 align="center">
 	🚧  My Portfolio 🚀 Under construction...  🚧
 </h4>
 
-<hr>
+<hr> -->
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
