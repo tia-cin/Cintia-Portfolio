@@ -2,6 +2,7 @@ import React, { FC, useState } from "react";
 // components
 import { Inputs } from "./Inputs";
 import { StyledGrid } from "./Profile";
+import { styled } from "@mui/system";
 // MUI
 import { Grid, Button, Alert, Typography } from "@mui/material";
 // icons
@@ -13,6 +14,18 @@ import blob1 from "../assets/svgs/output-onlinepngtools (9).png";
 import blob2 from "../assets/svgs/output-onlinepngtools (10).png";
 import blob3 from "../assets/svgs/output-onlinepngtools (11).png";
 import blob4 from "../assets/svgs/output-onlinepngtools (12).png";
+
+const Grided = styled(Grid)`
+  margin-bottom: 1em;
+  @media only screen and (max-width: 600px) {
+    h2 {
+      font-size: 3em;
+    }
+    .svgs-continer {
+      opacity: 0;
+    }
+  }
+`;
 
 export const Email: FC = () => {
   const [done, setDone] = useState(false);
@@ -31,18 +44,13 @@ export const Email: FC = () => {
     }, 5000);
   };
   return (
-    <StyledGrid container justifyContent="center">
-      <Grid sx={{ zIndex: -1 }}>
+    <StyledGrid container justifyContent="center" sx={{ height: "100%" }}>
+      <Grid sx={{ zIndex: -1 }} className="svgs-continer">
         <img src={blob1} alt="blob" className="animated" id="-5" />
         <img src={blob2} alt="blob" className="animated" id="3" />
       </Grid>
       <form onSubmit={sendMail} style={{ zIndex: 1 }}>
-        <Grid
-          container
-          direction="column"
-          justifyContent="center"
-          sx={{ margin: "1em", zIndex: 1 }}
-        >
+        <Grided container direction="column" justifyContent="center">
           <Grid sx={{ my: ".5em" }}>
             <Typography variant="h2" sx={{ textAlign: "center" }}>
               Well Hi There!
@@ -65,7 +73,7 @@ export const Email: FC = () => {
               <SendIcon sx={{ fontSize: "1em", margin: "0 .5em" }} />
             </Button>
           </Grid>
-        </Grid>
+        </Grided>
         {done && (
           <Grid container justifyContent="center">
             <Alert severity="success" sx={{ position: "fixed", top: 20 }}>
@@ -74,7 +82,7 @@ export const Email: FC = () => {
           </Grid>
         )}
       </form>
-      <Grid sx={{ zIndex: -1 }}>
+      <Grid sx={{ zIndex: -1 }} className="svgs-continer">
         <img src={blob3} alt="blob" className="animated" id="4" />
         <img src={blob4} alt="blob" className="animated" id="-2" />
       </Grid>

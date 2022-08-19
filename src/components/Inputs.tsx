@@ -3,6 +3,19 @@ import React, { FC } from "react";
 import { Typography, Grid, TextField } from "@mui/material";
 import { styled } from "@mui/system";
 
+const StyledGrid = styled(Grid)`
+  margin: 1em 0;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    h5 {
+      text-align: right;
+    }
+    .animated {
+      opacity: 0;
+    }
+  }
+`;
+
 const StyledTextField = styled(TextField)`
   label {
     transform: translateY(1em);
@@ -20,13 +33,12 @@ interface InputsProps {
 
 export const Inputs: FC<InputsProps> = ({ title, name }) => {
   return (
-    <Grid
+    <StyledGrid
       container
       item
       xs={6}
       alignItems="center"
       justifyContent="space-between"
-      sx={{ my: "1em" }}
     >
       <Grid item>
         <Typography variant="h5">{title}</Typography>
@@ -42,6 +54,6 @@ export const Inputs: FC<InputsProps> = ({ title, name }) => {
           color="success"
         />
       </Grid>
-    </Grid>
+    </StyledGrid>
   );
 };
