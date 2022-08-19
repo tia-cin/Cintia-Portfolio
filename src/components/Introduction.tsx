@@ -1,13 +1,29 @@
 import React, { FC } from "react";
 // MUI
 import { Grid, Typography } from "@mui/material";
+import { styled } from "@mui/system";
 // icons
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
+const StyledGrid = styled(Grid)`
+  height: 100vh;
+  padding: 0 3em;
+  margin: 10em 0;
+  background: #ffce6d;
+  @media only screen and (max-width: 600px) {
+    h3 {
+      font-size: 1.8em;
+      width: 10em;
+    }
+    h6 {
+      width: 20em;
+    }
+  }
+`;
+
 export const Introduction: FC = () => {
   return (
-    <Grid
-      sx={{ height: "100vh", px: "3em", my: "10em", background: "#ffce6d" }}
+    <StyledGrid
       container
       alignItems="center"
       direction="column"
@@ -27,9 +43,6 @@ export const Introduction: FC = () => {
       <Grid item sx={{ width: "30em" }}>
         <Typography variant="h3">Here is a little more about me...</Typography>
       </Grid>
-      <Grid item>
-        <KeyboardArrowDownIcon sx={{ fontSize: "5em" }} />
-      </Grid>
-    </Grid>
+    </StyledGrid>
   );
 };
