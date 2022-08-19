@@ -2,8 +2,6 @@ import React, { FC } from "react";
 // MUI
 import { Grid, Typography } from "@mui/material";
 import { styled } from "@mui/system";
-// icons
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const StyledGrid = styled(Grid)`
   height: 100vh;

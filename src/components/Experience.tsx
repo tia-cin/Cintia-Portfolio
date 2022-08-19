@@ -4,19 +4,24 @@ import { projects } from "../types";
 import { Cards } from "./Cards";
 // MUI
 import { Grid, Typography } from "@mui/material";
+import { styled } from "@mui/system";
 
 interface ExperienceProps {
   colors: Array<string>;
 }
 
+const StyledGrid = styled(Grid)`
+  height: 100vh;
+  margin: 6em 0;
+  overflow: hidden;
+  @media only screen and (max-width: 600px) {
+    height: 300vh;
+  }
+`;
+
 export const Experience: FC<ExperienceProps> = ({ colors }) => {
   return (
-    <Grid
-      sx={{ height: "100vh", my: "6em" }}
-      container
-      direction="row"
-      justifyContent="space-evenly"
-    >
+    <StyledGrid container justifyContent="space-evenly">
       <Grid item container justifyContent="center">
         <Typography variant="h2">Check out some of my Projects</Typography>
       </Grid>
@@ -33,6 +38,6 @@ export const Experience: FC<ExperienceProps> = ({ colors }) => {
           />
         );
       })}
-    </Grid>
+    </StyledGrid>
   );
 };
