@@ -4,6 +4,7 @@ import { technologies } from "../types";
 import { CircleItem } from "./CircleItem";
 // MUI
 import { Grid, Typography } from "@mui/material";
+import { styled } from "@mui/system";
 // icons
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
@@ -11,9 +12,17 @@ interface TechProps {
   colors: Array<string>;
 }
 
+const StyledGrid = styled(Grid)`
+  height: 180vh;
+  overflow: hidden;
+  @media only screen and (max-width: 600px) {
+    height: 300vh;
+  }
+`;
+
 export const Tech: FC<TechProps> = ({ colors }) => {
   return (
-    <Grid container sx={{ height: "180vh", overflow: "hidden" }}>
+    <StyledGrid container>
       <Grid item container spacing={8} justifyContent="center">
         <Grid item container justifyContent="center">
           <Typography variant="h2">My Tech-Stack </Typography>
@@ -78,6 +87,6 @@ export const Tech: FC<TechProps> = ({ colors }) => {
           <KeyboardArrowDownIcon sx={{ fontSize: "5em" }} />
         </Grid>
       </Grid>
-    </Grid>
+    </StyledGrid>
   );
 };
