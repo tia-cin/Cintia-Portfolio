@@ -25,19 +25,21 @@ export const Experience: FC<ExperienceProps> = ({ colors }) => {
       <Grid item container justifyContent="center">
         <Typography variant="h2">Check out some of my Projects</Typography>
       </Grid>
-      {projects.map((p, i) => {
-        return (
-          <Cards
-            key={i}
-            link={p.link}
-            logo={p.logo}
-            alt={p.alt}
-            title={p.title}
-            description={p.description}
-            color={colors[Math.floor(Math.random() * 4)]}
-          />
-        );
-      })}
+      <Grid container spacing={{ xs: 1, md: 3 }} columns={{ xs: 1, md: 3 }}>
+        {projects.map((p, i) => {
+          return (
+            <Cards
+              key={i}
+              link={p.link}
+              logo={p.logo}
+              alt={p.alt}
+              title={p.title}
+              description={p.description}
+              color={colors[Math.floor(Math.random() * 4)]}
+            />
+          );
+        })}
+      </Grid>
     </StyledGrid>
   );
 };
