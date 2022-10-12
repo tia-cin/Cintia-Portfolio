@@ -18,6 +18,7 @@ import weatherapp from "./assets/projects/cloudy.png";
 import mangaka from "./assets/projects/mangaca-icon.png";
 import dictionary from "./assets/projects/dictionary.png";
 import musicapp from "./assets/projects/music-app.png";
+import ecommerce from "./assets/projects/ecommerce-store.png";
 // skills
 import figma from "./assets/design/figma-icon.svg";
 import illustrator from "./assets/design/illustrator.png";
@@ -198,5 +199,12 @@ export const projects = [
     alt: "dictionary-app-icon",
     description: "Search any word and find about their definition and more",
     title: "Dictionary App",
+  },
+  {
+    link: "https://ecommerce-store-tia-cin.vercel.app/",
+    logo: ecommerce,
+    alt: "ecommerce-store-icon",
+    description: "Buy tech products in this ecommerce website",
+    title: "Ecommerce Store",
   },
 ];
