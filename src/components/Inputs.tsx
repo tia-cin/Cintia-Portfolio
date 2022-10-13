@@ -31,7 +31,7 @@ interface InputsProps {
   name: string;
 }
 
-export const Inputs: FC<InputsProps> = ({ title, name }) => {
+const Inputs: FC<InputsProps> = ({ title, name }) => {
   return (
     <StyledGrid
       container
@@ -57,3 +57,5 @@ export const Inputs: FC<InputsProps> = ({ title, name }) => {
     </StyledGrid>
   );
 };
+
+export default Inputs;

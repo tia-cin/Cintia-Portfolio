@@ -1,6 +1,6 @@
 import React, { FC, useState } from "react";
 // components
-import { Inputs } from "../components/Inputs";
+import { Inputs } from "../components";
 import { StyledGrid } from "../components/Profile";
 import { styled } from "@mui/system";
 // MUI
@@ -27,7 +27,7 @@ const Grided = styled(Grid)`
   }
 `;
 
-export const Email: FC = () => {
+const Email: FC = () => {
   const [done, setDone] = useState(false);
   const sendMail = (e: any) => {
     e.preventDefault();
@@ -89,3 +89,5 @@ export const Email: FC = () => {
     </StyledGrid>
   );
 };
+
+export default Email;

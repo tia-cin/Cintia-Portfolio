@@ -3,14 +3,14 @@ import React, { FC } from "react";
 import { Grid } from "@mui/material";
 import { styled } from "@mui/system";
 
-interface CircleItemProps {
+interface BubbleProps {
   link: string;
   logo: string;
   alt: string;
   color: string;
 }
 
-export const CircleItem: FC<CircleItemProps> = ({ link, logo, alt, color }) => {
+const Bubble: FC<BubbleProps> = ({ link, logo, alt, color }) => {
   const GridItem = styled(Grid)`
     margin: 2em;
     a {
@@ -59,3 +59,5 @@ export const CircleItem: FC<CircleItemProps> = ({ link, logo, alt, color }) => {
     </GridItem>
   );
 };
+
+export default Bubble;

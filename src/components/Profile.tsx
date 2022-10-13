@@ -47,7 +47,7 @@ export const StyledGrid = styled(Grid)`
   }
 `;
 
-export const Profile: FC = () => {
+const Profile: FC = () => {
   const blobs = [blob1, blob2, blob3, blob4, blob5, blob6, blob7, blob8];
 
   const animation = (e: any) => {
@@ -95,3 +95,5 @@ export const Profile: FC = () => {
     </StyledGrid>
   );
 };
+
+export default Profile;

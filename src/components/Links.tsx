@@ -26,7 +26,7 @@ interface LinksProps {
   icon: any;
 }
 
-export const Links: FC<LinksProps> = ({ link, href, name, icon }) => {
+const Links: FC<LinksProps> = ({ link, href, name, icon }) => {
   return (
     <StyledGridItems item>
       {link ? (
@@ -62,3 +62,5 @@ export const Links: FC<LinksProps> = ({ link, href, name, icon }) => {
     </StyledGridItems>
   );
 };
+
+export default Links;

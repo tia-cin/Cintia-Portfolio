@@ -1,13 +1,13 @@
 import React, { FC } from "react";
 // components
-import { Links } from "./Links";
+import { Links } from "./";
 // MUI
 import { Grid } from "@mui/material";
 // icons
 import HomeIcon from "@mui/icons-material/HomeRounded";
 import ChatIcon from "@mui/icons-material/Chat";
 
-export const Navbar: FC = () => {
+const Navbar: FC = () => {
   return (
     <nav>
       <Grid
@@ -34,3 +34,5 @@ export const Navbar: FC = () => {
     </nav>
   );
 };
+
+export default Navbar;

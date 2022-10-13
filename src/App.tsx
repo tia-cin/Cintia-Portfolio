@@ -1,9 +1,7 @@
 import React, { FC } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// components
-import { Home } from "./pages/Home";
-import { Navbar } from "./components/Navbar";
-import { Email } from "./pages/Email";
+import { Home, Email } from "./pages";
+import { Navbar } from "./components";
 import { colors } from "./assets";
 
 export const App: FC = () => {

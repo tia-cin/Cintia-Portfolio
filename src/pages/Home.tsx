@@ -1,17 +1,18 @@
 import React, { FC } from "react";
-// components
-import { Profile } from "../components/Profile";
-import { Footer } from "../components/Footer";
+import { Profile, Footer, Section } from "../components";
 
 interface HomeProps {
   colors: Array<string>;
 }
 
-export const Home: FC<HomeProps> = ({ colors }) => {
+const Home: FC<HomeProps> = ({ colors }) => {
   return (
     <div>
+      <Section />
       <Profile />
       <Footer />
     </div>
   );
 };
+
+export default Home;

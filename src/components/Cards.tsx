@@ -17,7 +17,7 @@ interface CardsProps {
   description: string;
   color: string;
 }
-export const Cards: FC<CardsProps> = ({
+const Cards: FC<CardsProps> = ({
   link,
   logo,
   alt,
@@ -71,3 +71,5 @@ export const Cards: FC<CardsProps> = ({
     </Card>
   );
 };
+
+export default Cards;

@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { social } from "../assets";
 // components
-import { Links } from "./Links";
+import { Links } from "./";
 // MUI
 import { Grid, Typography } from "@mui/material";
 // icons
@@ -10,7 +10,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 // svg
 import wave from "../assets/svgs/wave.png";
 
-export const Footer: FC = () => {
+const Footer: FC = () => {
   return (
     <footer>
       <Grid
@@ -44,3 +44,5 @@ export const Footer: FC = () => {
     </footer>
   );
 };
+
+export default Footer;
