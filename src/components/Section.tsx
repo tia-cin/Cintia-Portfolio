@@ -43,7 +43,7 @@ const Section: FC<{
           style={{
             display: "grid",
             gridTemplateColumns: "1fr 1fr",
-            marginLeft: "5em",
+            margin: "0 5em",
             gap: "2em",
           }}
         >
@@ -55,7 +55,6 @@ const Section: FC<{
               alt={item.alt}
               title={item.title}
               description={item.description}
-              color={color}
             />
           ))}
         </div>

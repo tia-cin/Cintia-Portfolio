@@ -1,32 +1,9 @@
 import React, { FC, useState } from "react";
-// components
 import { Inputs } from "../components";
 import { StyledGrid } from "../components/Landing";
-import { styled } from "@mui/system";
-// MUI
-import { Grid, Button, Alert, Typography } from "@mui/material";
-// icons
-import SendIcon from "@mui/icons-material/Send";
-// emailjs
+import { Grid, Alert } from "@mui/material";
 import emailjs from "@emailjs/browser";
-// svgs
-import blob1 from "../assets/svgs/output-onlinepngtools (9).png";
-import blob2 from "../assets/svgs/output-onlinepngtools (10).png";
-import blob3 from "../assets/svgs/output-onlinepngtools (11).png";
-import blob4 from "../assets/svgs/output-onlinepngtools (12).png";
 import { blobs } from "../assets";
-
-const Grided = styled(Grid)`
-  margin-bottom: 1em;
-  @media only screen and (max-width: 600px) {
-    h2 {
-      font-size: 3em;
-    }
-    .svgs-continer {
-      opacity: 0;
-    }
-  }
-`;
 
 const Email: FC = () => {
   const [done, setDone] = useState(false);
@@ -54,6 +31,7 @@ const Email: FC = () => {
         width: "100%",
         height: "100vh",
         overflow: "hidden",
+        marginTop: "5em",
       }}
     >
       <div className=":md-d-none">

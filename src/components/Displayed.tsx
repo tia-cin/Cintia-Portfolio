@@ -1,15 +1,6 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
-import {
-  Button,
-  Grid,
-  Card,
-  CardContent,
-  CardMedia,
-  TextField,
-  Typography,
-  Avatar,
-} from "@mui/material";
+import { Button, Grid, TextField, Avatar } from "@mui/material";
 import { styled } from "@mui/system";
 
 export const Cards: FC<{
@@ -18,13 +9,9 @@ export const Cards: FC<{
   alt: string;
   title: string;
   description: string;
-  color: string;
-}> = ({ link, logo, alt, title, description, color }) => {
+}> = ({ link, logo, alt, title, description }) => {
   return (
-    <section
-      style={{ backgroundColor: color }}
-      className="rounded p-2 d-flex justify-content-between align-items-center"
-    >
+    <section className="rounded shadow p-2 d-flex justify-content-between align-items-center">
       <div className="mx-2">
         <img
           src={logo}
@@ -78,27 +65,23 @@ export const Bubble: FC<{
   );
 };
 
-const StyledGridItems = styled(Grid)`
-  margin: 1em;
-  p {
-    margin: 0.5em;
-    font-family: sans-serif;
-    text-align: center;
-    opacity: 0;
-  }
-  .contain:hover p {
-    transition: 1s;
-    color: #191919;
-    opacity: 1;
-  }
-`;
-
 export const Links: FC<{
-  link: string;
-  href: string;
+  link?: string;
+  href?: string;
   name: string;
   icon: any;
 }> = ({ link, href, name, icon }) => {
+  const StyledGridItems = styled(Grid)`
+    margin: 1em;
+    p {
+      opacity: 0;
+    }
+    .contain:hover p {
+      transition: 1s;
+      color: #191919;
+      opacity: 1;
+    }
+  `;
   return (
     <StyledGridItems item>
       {link ? (
@@ -110,7 +93,7 @@ export const Links: FC<{
           <Button variant="text" sx={{ color: "#191919" }}>
             {icon}
           </Button>
-          <p>{name}</p>
+          <p className="m-1 text-center d-none">{name}</p>
         </Link>
       ) : href ? (
         <a
@@ -121,32 +104,19 @@ export const Links: FC<{
           <Button variant="text" sx={{ color: "#191919" }}>
             {icon}
           </Button>
-          <p>{name}</p>
+          <p className="m-1 text-center d-none">{name}</p>
         </a>
       ) : (
         <div className="contain">
           <Button variant="text" sx={{ color: "#191919", width: 0 }}>
             {icon}
           </Button>
-          <p>{name}</p>
+          <p className="m-1 text-center d-none">{name}</p>
         </div>
       )}
     </StyledGridItems>
   );
 };
-
-const StyledGrid = styled(Grid)`
-  margin: 1em 0;
-  @media only screen and (max-width: 600px) {
-    flex-direction: column;
-    h5 {
-      text-align: right;
-    }
-    .animated {
-      opacity: 0;
-    }
-  }
-`;
 
 export const Inputs: FC<{
   title: string;

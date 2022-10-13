@@ -1,9 +1,6 @@
 import React, { FC } from "react";
-// components
 import { Links } from "./";
-// MUI
 import { Grid } from "@mui/material";
-// icons
 import HomeIcon from "@mui/icons-material/HomeRounded";
 import ChatIcon from "@mui/icons-material/Chat";
 
