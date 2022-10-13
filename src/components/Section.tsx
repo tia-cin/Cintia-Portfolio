@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { Bubble, Cards } from "./";
+import { colors } from "../assets";
 
 const Section: FC<{
   reverse?: boolean;
@@ -16,7 +17,7 @@ const Section: FC<{
       className={`d-flex justify-content-around vh-100 align-items-center ${
         reverse ? "flex-row-reverse" : ""
       }`}
-      style={{ backgroundColor: color }}
+      style={{ backgroundColor: card ? "#f9f9f9" : color }}
     >
       {image && <img src={image} alt="image" />}
       {!doble && bubble ? (
@@ -49,6 +50,7 @@ const Section: FC<{
         >
           {card?.map((item: any, i: number) => (
             <Cards
+              color={colors[Math.floor(Math.random() * 4)]}
               key={i}
               link={item.link}
               logo={item.logo}

@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import { Landing, Footer, Section } from "../components";
-import { profile, technologies, projects } from "../assets";
-import { color } from "@mui/system";
+import { profile, technologies, projects, colors } from "../assets";
 
 const Home: FC<{
   colors: Array<string>;

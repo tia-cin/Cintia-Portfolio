@@ -12,7 +12,7 @@ const Navbar: FC = () => {
         direction="row"
         justifyContent="space-between"
         alignItems="center"
-        sx={{ position: "fixed" }}
+        sx={{ position: "fixed", zIndex: 1 }}
       >
         <Links
           link="/"

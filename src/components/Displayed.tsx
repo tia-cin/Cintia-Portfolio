@@ -9,9 +9,13 @@ export const Cards: FC<{
   alt: string;
   title: string;
   description: string;
-}> = ({ link, logo, alt, title, description }) => {
+  color: string;
+}> = ({ link, logo, alt, title, description, color }) => {
   return (
-    <section className="rounded shadow p-2 d-flex justify-content-between align-items-center">
+    <section
+      style={{ backgroundColor: color }}
+      className="rounded shadow p-2 d-flex justify-content-between align-items-center"
+    >
       <div className="mx-2">
         <img
           src={logo}
