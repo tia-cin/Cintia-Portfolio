@@ -34,8 +34,19 @@ import music from "./music-app.png";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
+import blob1 from "./svgs/output-onlinepngtools (1).png";
+import blob2 from "./svgs/output-onlinepngtools (2).png";
+import blob3 from "./svgs/output-onlinepngtools (3).png";
+import blob4 from "./svgs/output-onlinepngtools (4).png";
+import blob5 from "./svgs/output-onlinepngtools (5).png";
+import blob6 from "./svgs/output-onlinepngtools (6).png";
+import blob7 from "./svgs/output-onlinepngtools (7).png";
+import blob8 from "./svgs/output-onlinepngtools (8).png";
+
+export const blobs = [blob1, blob2, blob3, blob4, blob5, blob6, blob7, blob8];
+
 export const profile = {
-  greeting: "Hi, I'm Cintia 👋",
+  greeting: "Hi, I'm Cintia",
   title: "Building virtual tools, products and experiences",
   subtitle:
     "Skilled in full-stack development and design to create beautiful and powerful digital solutions",
@@ -126,6 +137,11 @@ export const technologies = {
       link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       logo: javascript,
       alt: "Javascript",
+    },
+    {
+      link: "https://nextjs.org/",
+      logo: nextJs,
+      alt: "NextJS",
     },
     {
       link: "https://expressjs.com",

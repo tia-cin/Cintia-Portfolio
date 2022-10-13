@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Profile, Footer, Section } from "../components";
+import { Landing, Footer, Section } from "../components";
 
 interface HomeProps {
   colors: Array<string>;
@@ -8,8 +8,8 @@ interface HomeProps {
 const Home: FC<HomeProps> = ({ colors }) => {
   return (
     <div>
+      <Landing />
       <Section />
-      <Profile />
       <Footer />
     </div>
   );

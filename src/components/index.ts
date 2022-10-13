@@ -1,7 +1,7 @@
 import { Bubble, Cards, Links, Inputs } from "./Displayed";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import Profile from "./Profile";
+import Landing from "./Landing";
 import Section from "./Section";
 
-export { Bubble, Cards, Footer, Inputs, Links, Navbar, Profile, Section };
+export { Bubble, Cards, Footer, Inputs, Links, Navbar, Landing, Section };
