@@ -3,7 +3,7 @@ import React, { FC } from "react";
 import { Avatar, Grid, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 // svgs
-import profile from "../assets/others/cintia-arce-profile.png";
+import { profile } from "../assets";
 import blob1 from "../assets/svgs/output-onlinepngtools (1).png";
 import blob2 from "../assets/svgs/output-onlinepngtools (2).png";
 import blob3 from "../assets/svgs/output-onlinepngtools (3).png";
@@ -73,7 +73,7 @@ export const Profile: FC = () => {
       </Grid>
       <Grid item sx={{ margin: "2em" }}>
         <Avatar
-          src={profile}
+          src={profile.photo}
           className="animated"
           id="-5"
           sx={{ width: 200, height: 200, backgroundColor: "#51ABB2" }}

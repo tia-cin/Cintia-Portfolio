@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react";
 // components
-import { Inputs } from "./Inputs";
-import { StyledGrid } from "./Profile";
+import { Inputs } from "../components/Inputs";
+import { StyledGrid } from "../components/Profile";
 import { styled } from "@mui/system";
 // MUI
 import { Grid, Button, Alert, Typography } from "@mui/material";

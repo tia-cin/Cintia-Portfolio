@@ -1,17 +1,17 @@
-import babel from "./babel-icon.pg";
+import babel from "./babel-icon.png";
 import bootstrap from "./bootstrap.png";
 import css from "./css-icon.png";
 import expressJs from "./expressJs-icon.png";
 import git from "./git-icon.png";
 import html from "./html-icon.png";
-import javascript from "./javascripti-icon.png";
+import javascript from "./javascript-icon.png";
 import jest from "./jest-icon.png";
 import materialUi from "./materialUi-icon.png";
 import mocha from "./mocha-icon.png";
 import nextJs from "./nextJs-icon.png";
 import nodeJs from "./nodeJs-icon.png";
 import postgreSQL from "./postgreSQL-icon.png";
-import react from "./rect-icon.png";
+import react from "./react-icon.png";
 import redux from "./redux-icon.png";
 import sass from "./sass-icon.png";
 import tailwind from "./tailwind-icon.png";
@@ -21,7 +21,7 @@ import webpack from "./webpack-icon.png";
 import photoshop from "./photoshop.png";
 import illustrator from "./illustrator.png";
 import premiere from "./premiere.png";
-import figma from "./figma.png";
+import figma from "./figma-icon.png";
 
 import cintia from "./cintia-arce-profile.png";
 
@@ -30,6 +30,19 @@ import dictionary from "./dictionary.png";
 import ecommerce from "./ecommerce-store.png";
 import mangaka from "./mangaca-icon.png";
 import music from "./music-app.png";
+
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+
+export const profile = {
+  greeting: "Hi, I'm Cintia 👋",
+  title: "Building virtual tools, products and experiences",
+  subtitle:
+    "Skilled in full-stack development and design to create beautiful and powerful digital solutions",
+  introduction:
+    "I'm an independent IT student with strong passion for development, with proven ability to learn and adapt to new technology and frameworks quickly. Able to identify and correct errors in existing code. Proficient in photography, illustrations, as well as video editing.",
+  photo: cintia,
+};
 
 export const colors = ["#ffce6d", "#ED5B2D", "#F7B9A1", "#51ABB2"];
 
@@ -161,10 +174,12 @@ export const social = [
   {
     link: "https://linkedin.com/in/cintia-arce-profile",
     alt: "LinkedIn",
+    icon: LinkedInIcon,
   },
   {
     link: "https://github.com/tia-cin",
     alt: "Github",
+    icon: GitHubIcon,
   },
 ];
 

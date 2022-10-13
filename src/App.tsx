@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { colors } from "./types";
 // components
-import { Home } from "./components/Home";
+import { Home } from "./pages/Home";
 import { Navbar } from "./components/Navbar";
-import { Email } from "./components/Email";
+import { Email } from "./pages/Email";
+import { colors } from "./assets";
 
 export const App: FC = () => {
   return (
