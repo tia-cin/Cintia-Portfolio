@@ -235,4 +235,11 @@ export const projects = [
     description: "Buy tech products in this ecommerce website",
     title: "Ecommerce Store",
   },
+  {
+    link: "https://nft-langing.vercel.app/",
+    logo: react,
+    alt: "nft-market-landing",
+    description: "Landing Page for NFT Market React Native App",
+    title: "ProNef",
+  },
 ];

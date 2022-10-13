@@ -21,49 +21,29 @@ export const Cards: FC<{
   color: string;
 }> = ({ link, logo, alt, title, description, color }) => {
   return (
-    <Card
-      sx={{
-        width: 300,
-        height: 300,
-        backgroundColor: `${color}`,
-        margin: "1em 0",
-      }}
+    <section
+      style={{ backgroundColor: color }}
+      className="rounded p-2 d-flex justify-content-between align-items-center"
     >
-      <Grid item>
-        {logo && (
-          <CardMedia
-            component="img"
-            image={logo}
-            alt={alt}
-            sx={{
-              width: 100,
-              height: 100,
-              padding: "1em 7em 0",
-            }}
-          />
-        )}
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {title}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {description}
-          </Typography>
-        </CardContent>
-      </Grid>
-      <Grid item>
-        <a href={link} style={{ textDecoration: "none" }}>
-          <Button
-            sx={{ margin: "2em 1em" }}
-            size="small"
-            variant="contained"
-            color="primary"
-          >
-            Check it out
-          </Button>
-        </a>
-      </Grid>
-    </Card>
+      <div className="mx-2">
+        <img
+          src={logo}
+          alt={alt}
+          style={{ objectFit: "cover", width: "4em", height: "4em" }}
+        />
+      </div>
+      <div className="w-75">
+        <p className="fs-4 fw-bold m-0">{title}</p>
+        <p>{description}</p>
+        <button
+          className="btn w-100"
+          style={{ backgroundColor: "#f9f9f9" }}
+          onClick={() => window.open(link, "_blank")}
+        >
+          Explore
+        </button>
+      </div>
+    </section>
   );
 };
 
@@ -73,30 +53,6 @@ export const Bubble: FC<{
   alt: string;
   color: string;
 }> = ({ link, logo, alt, color }) => {
-  const GridItem = styled(Grid)`
-    margin: 2em;
-    a {
-      text-decoration: none;
-    }
-    .circle > div {
-      background: ${color};
-      border-radius: 50%;
-      padding: 1em;
-      width: 50px;
-      height: 50px;
-    }
-    p {
-      margin: 0.5em;
-      font-family: sans-serif;
-      text-align: center;
-      color: #fff;
-    }
-    .circle:hover p {
-      transition: 1s;
-      color: #191919;
-    }
-  `;
-
   return (
     <div className="m-2 g-col-2">
       <a href={link} style={{ textDecoration: "none" }}>
@@ -107,6 +63,7 @@ export const Bubble: FC<{
           <div>
             <Avatar
               src={logo}
+              alt={alt}
               sx={{
                 width: "5em",
                 height: "5em",
