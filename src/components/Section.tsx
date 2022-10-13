@@ -19,7 +19,7 @@ const Section: FC<{
       }`}
       style={{ backgroundColor: card ? "#f9f9f9" : color }}
     >
-      {image && <img src={image} alt="image" />}
+      {image && <img src={image} alt="cintia-photo" />}
       {!doble && bubble ? (
         <div
           style={{
