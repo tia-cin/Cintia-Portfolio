@@ -8,6 +8,7 @@ import {
   CardMedia,
   TextField,
   Typography,
+  Avatar,
 } from "@mui/material";
 import { styled } from "@mui/system";
 
@@ -94,30 +95,30 @@ export const Bubble: FC<{
       transition: 1s;
       color: #191919;
     }
-    img {
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      object-fit: contain;
-    }
   `;
 
   return (
-    <GridItem item>
-      <a href={link}>
-        <Grid
-          item
-          className="circle animated"
+    <div className="m-2 g-col-2">
+      <a href={link} style={{ textDecoration: "none" }}>
+        <div
+          className="circle animated d-flex flex-column justify-content-center align-items-center"
           id={(Math.random() * 5 + 2).toString()}
         >
           <div>
-            <img src={logo} alt={alt} />
+            <Avatar
+              src={logo}
+              sx={{
+                width: "5em",
+                height: "5em",
+                objectFit: "contain",
+                p: "1em",
+                backgroundColor: "#f9f9f9",
+              }}
+            />
           </div>
-          <p>{alt}</p>
-        </Grid>
+        </div>
       </a>
-    </GridItem>
+    </div>
   );
 };
 

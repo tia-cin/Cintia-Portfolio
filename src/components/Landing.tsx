@@ -60,8 +60,6 @@ const Landing: FC = () => {
             alt="blob"
             src={b}
             key={i}
-            width="100"
-            height="100"
             style={{
               top: 0,
               left: 0,
