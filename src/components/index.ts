@@ -1,8 +1,5 @@
-import Bubble from "./Bubble";
-import Cards from "./Cards";
+import { Bubble, Cards, Links, Inputs } from "./Displayed";
 import Footer from "./Footer";
-import Inputs from "./Inputs";
-import Links from "./Links";
 import Navbar from "./Navbar";
 import Profile from "./Profile";
 import Section from "./Section";
