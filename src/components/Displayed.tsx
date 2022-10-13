@@ -57,22 +57,21 @@ export const Bubble: FC<{
     <div className="m-2 g-col-2">
       <a href={link} style={{ textDecoration: "none" }}>
         <div
+          style={{ backgroundColor: color }}
           className="circle animated d-flex flex-column justify-content-center align-items-center"
           id={(Math.random() * 5 + 2).toString()}
         >
-          <div>
-            <Avatar
-              src={logo}
-              alt={alt}
-              sx={{
-                width: "5em",
-                height: "5em",
-                objectFit: "contain",
-                p: "1em",
-                backgroundColor: "#f9f9f9",
-              }}
-            />
-          </div>
+          <Avatar
+            src={logo}
+            alt={alt}
+            sx={{
+              width: "5em",
+              height: "5em",
+              objectFit: "contain",
+              p: "1em",
+              backgroundColor: "#f9f9f9",
+            }}
+          />
         </div>
       </a>
     </div>
@@ -149,42 +148,20 @@ const StyledGrid = styled(Grid)`
   }
 `;
 
-const StyledTextField = styled(TextField)`
-  label {
-    transform: translateY(1em);
-    margin: 0 0.5em;
-  }
-  div {
-    margin: 0;
-  }
-`;
-
 export const Inputs: FC<{
   title: string;
   name: string;
 }> = ({ title, name }) => {
   return (
-    <StyledGrid
-      container
-      item
-      xs={6}
-      alignItems="center"
-      justifyContent="space-between"
-    >
-      <Grid item>
-        <Typography variant="h5">{title}</Typography>
-      </Grid>
-      <Grid item>
-        <StyledTextField
-          rows={title === "Message" ? 8 : 0}
-          fullWidth
-          multiline
-          sx={{ margin: "0", width: "25em" }}
-          name={name}
-          id="input-with-sx"
-          color="success"
-        />
-      </Grid>
-    </StyledGrid>
+    <TextField
+      rows={title === "Message" ? 8 : 0}
+      fullWidth
+      multiline
+      label={title}
+      sx={{ width: "25em", my: "1em" }}
+      name={name}
+      id="input-with-sx"
+      color="success"
+    />
   );
 };

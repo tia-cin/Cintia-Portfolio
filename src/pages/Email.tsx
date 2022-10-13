@@ -14,6 +14,7 @@ import blob1 from "../assets/svgs/output-onlinepngtools (9).png";
 import blob2 from "../assets/svgs/output-onlinepngtools (10).png";
 import blob3 from "../assets/svgs/output-onlinepngtools (11).png";
 import blob4 from "../assets/svgs/output-onlinepngtools (12).png";
+import { blobs } from "../assets";
 
 const Grided = styled(Grid)`
   margin-bottom: 1em;
@@ -44,36 +45,46 @@ const Email: FC = () => {
     }, 5000);
   };
   return (
-    <StyledGrid container justifyContent="center" sx={{ height: "100%" }}>
-      <Grid sx={{ zIndex: -1 }} className="svgs-continer">
-        <img src={blob1} alt="blob" className="animated" id="-5" />
-        <img src={blob2} alt="blob" className="animated" id="3" />
-      </Grid>
-      <form onSubmit={sendMail} style={{ zIndex: 1 }}>
-        <Grided container direction="column" justifyContent="center">
-          <Grid sx={{ my: ".5em" }}>
-            <Typography variant="h2" sx={{ textAlign: "center" }}>
-              Well Hi There!
-              <br />
-              How can I help you?
-            </Typography>
-          </Grid>
-          <Inputs title="Full Name" name="name" />
-          <Inputs title="Email" name="email" />
-          <Inputs title="Subject" name="subject" />
-          <Inputs title="Message" name="messge" />
-          <Grid container item xs={6} justifyContent="center">
-            <Button
-              size="large"
-              variant="outlined"
-              color="primary"
-              type="submit"
-            >
-              Send
-              <SendIcon sx={{ fontSize: "1em", margin: "0 .5em" }} />
-            </Button>
-          </Grid>
-        </Grided>
+    <StyledGrid
+      container
+      justifyContent="center"
+      alignItems="center"
+      style={{
+        position: "relative",
+        width: "100%",
+        height: "100vh",
+        overflow: "hidden",
+      }}
+    >
+      <div className=":md-d-none">
+        {blobs.slice(0, 2).map((b, i) => (
+          <img
+            alt="blob"
+            src={b}
+            key={i}
+            style={{
+              top: 0,
+              left: 0,
+              objectFit: "contain",
+            }}
+            className="animated position-absolute w-100 h-100"
+            id={(Math.floor(Math.random() * 4) + 1).toString()}
+          />
+        ))}
+      </div>
+      <form
+        onSubmit={sendMail}
+        style={{ zIndex: 1 }}
+        className="d-flex flex-column align-items-center"
+      >
+        <h1>Hi There! How can I help you?</h1>
+        <Inputs title="Full Name" name="name" />
+        <Inputs title="Email" name="email" />
+        <Inputs title="Subject" name="subject" />
+        <Inputs title="Message" name="messge" />
+        <button type="submit" className="btn w-75 btn-large btn-primary my-2">
+          Send
+        </button>
         {done && (
           <Grid container justifyContent="center">
             <Alert severity="success" sx={{ position: "fixed", top: 20 }}>
@@ -82,10 +93,22 @@ const Email: FC = () => {
           </Grid>
         )}
       </form>
-      <Grid sx={{ zIndex: -1 }} className="svgs-continer">
-        <img src={blob3} alt="blob" className="animated" id="4" />
-        <img src={blob4} alt="blob" className="animated" id="-2" />
-      </Grid>
+      <div className=":md-d-none">
+        {blobs.slice(2, 4).map((b, i) => (
+          <img
+            alt="blob"
+            src={b}
+            key={i}
+            style={{
+              top: 0,
+              left: 0,
+              objectFit: "contain",
+            }}
+            className="animated position-absolute w-100 h-100"
+            id={(Math.floor(Math.random() * 4) + 1).toString()}
+          />
+        ))}
+      </div>
     </StyledGrid>
   );
 };
