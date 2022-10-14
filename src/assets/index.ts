@@ -201,11 +201,11 @@ export const social = [
 
 export const projects = [
   {
-    link: "https://weather-app-tia-cin.vercel.app",
-    logo: cloudy,
-    alt: "cloud-icon",
-    title: "Weather Now",
-    description: "Real time weather information about any city in the world",
+    link: "https://dashboard-shoppy.vercel.app/",
+    logo: react,
+    alt: "react-icon",
+    title: "Dashboard",
+    description: "Organize your team and projects",
   },
   {
     link: "https://deploy-client-kappa.vercel.app/",
