@@ -1,25 +1,5 @@
 import React, { FC } from "react";
 import { profile, blobs } from "../assets";
-import { Link } from "react-router-dom";
-
-// export const StyledGrid = styled(Grid)`
-//   img @media only screen and (max-width: 600px) {
-//     flex-direction: column-reverse;
-//     h1 {
-//       font-size: 3em;
-//     }
-//     h2 {
-//       font-size: 1.75em;
-//     }
-//     img {
-//       width: 100;
-//       height: 100;
-//     }
-//     .svgs-continer {
-//       opacity: 0;
-//     }
-//   }
-// `;
 
 const Landing: FC = () => {
   const animation = (e: any) => {
@@ -34,26 +14,15 @@ const Landing: FC = () => {
   document.addEventListener("mousemove", animation);
 
   return (
-    // <StyledGrid
-    //   container
-    //   justifyContent="center"
-    //   alignItems="center"
-    //   style={{
-    //     position: "relative",
-    //     width: "100%",
-    //     height: "100vh",
-    //     overflow: "hidden",
-    //   }}
-    // >
-    <div>
-      <div className="m-2 bg-hero-pattern">
-        <p className="text-3xl font-bold underline">{profile.greeting}👋</p>
-        <h1 className="text-center fs-1 fw-bolder text-capitalize display-1">
-          {profile.title}
-        </h1>
-        <p className="text-center fs-5 text-muted">{profile.subtitle}</p>
+    <div className="flex justify-center items-center relative w-full h-screen overflow-hidden">
+      <div className="flex flex-col w-1/2 " style={{ zIndex: 1 }}>
+        <p className="text-center font-semibold text-xl">
+          {profile.greeting}👋
+        </p>
+        <h1 className="text-center text-7xl font-bold">{profile.title}</h1>
+        <p className="text-center mt-5 text-lg">{profile.subtitle}</p>
       </div>
-      <div className=":md-d-none">
+      <div className="z-0">
         {blobs.map((b, i) => (
           <img
             alt="blob"
@@ -63,14 +32,14 @@ const Landing: FC = () => {
               top: 0,
               left: 0,
               objectFit: "contain",
+              zIndex: 0,
             }}
-            className="animated position-absolute w-100 h-100"
+            className="animated absolute w-full h-full"
             id={(Math.floor(Math.random() * 4) + 1).toString()}
           />
         ))}
       </div>
     </div>
-    // </StyledGrid>
   );
 };
 
