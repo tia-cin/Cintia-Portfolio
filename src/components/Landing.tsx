@@ -1,27 +1,25 @@
 import React, { FC } from "react";
-import { Avatar, Grid, Typography } from "@mui/material";
-import { styled } from "@mui/system";
 import { profile, blobs } from "../assets";
 import { Link } from "react-router-dom";
 
-export const StyledGrid = styled(Grid)`
-  img @media only screen and (max-width: 600px) {
-    flex-direction: column-reverse;
-    h1 {
-      font-size: 3em;
-    }
-    h2 {
-      font-size: 1.75em;
-    }
-    img {
-      width: 100;
-      height: 100;
-    }
-    .svgs-continer {
-      opacity: 0;
-    }
-  }
-`;
+// export const StyledGrid = styled(Grid)`
+//   img @media only screen and (max-width: 600px) {
+//     flex-direction: column-reverse;
+//     h1 {
+//       font-size: 3em;
+//     }
+//     h2 {
+//       font-size: 1.75em;
+//     }
+//     img {
+//       width: 100;
+//       height: 100;
+//     }
+//     .svgs-continer {
+//       opacity: 0;
+//     }
+//   }
+// `;
 
 const Landing: FC = () => {
   const animation = (e: any) => {
@@ -36,19 +34,20 @@ const Landing: FC = () => {
   document.addEventListener("mousemove", animation);
 
   return (
-    <StyledGrid
-      container
-      justifyContent="center"
-      alignItems="center"
-      style={{
-        position: "relative",
-        width: "100%",
-        height: "100vh",
-        overflow: "hidden",
-      }}
-    >
-      <div className="w-50">
-        <p className="text-center fs-4 fw-bold">{profile.greeting}👋</p>
+    // <StyledGrid
+    //   container
+    //   justifyContent="center"
+    //   alignItems="center"
+    //   style={{
+    //     position: "relative",
+    //     width: "100%",
+    //     height: "100vh",
+    //     overflow: "hidden",
+    //   }}
+    // >
+    <div>
+      <div className="m-2 bg-hero-pattern">
+        <p className="text-3xl font-bold underline">{profile.greeting}👋</p>
         <h1 className="text-center fs-1 fw-bolder text-capitalize display-1">
           {profile.title}
         </h1>
@@ -70,7 +69,8 @@ const Landing: FC = () => {
           />
         ))}
       </div>
-    </StyledGrid>
+    </div>
+    // </StyledGrid>
   );
 };
 

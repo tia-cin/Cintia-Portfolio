@@ -31,9 +31,6 @@ import ecommerce from "./ecommerce-store.png";
 import mangaka from "./mangaca-icon.png";
 import music from "./music-app.png";
 
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-
 import blob1 from "./svgs/output-onlinepngtools (1).png";
 import blob2 from "./svgs/output-onlinepngtools (2).png";
 import blob3 from "./svgs/output-onlinepngtools (3).png";
@@ -190,12 +187,10 @@ export const social = [
   {
     link: "https://linkedin.com/in/cintia-arce-profile",
     alt: "LinkedIn",
-    icon: LinkedInIcon,
   },
   {
     link: "https://github.com/tia-cin",
     alt: "Github",
-    icon: GitHubIcon,
   },
 ];
 

@@ -1,13 +1,10 @@
 import React, { FC } from "react";
 import { Links } from "./";
-import { Grid } from "@mui/material";
-import HomeIcon from "@mui/icons-material/HomeRounded";
-import ChatIcon from "@mui/icons-material/Chat";
 
 const Navbar: FC = () => {
   return (
     <nav>
-      <Grid
+      {/* <Grid
         container
         direction="row"
         justifyContent="space-between"
@@ -27,7 +24,7 @@ const Navbar: FC = () => {
           name="Contact"
           icon={<ChatIcon sx={{ fontSize: "2.5em" }} />}
         />
-      </Grid>
+      </Grid> */}
     </nav>
   );
 };

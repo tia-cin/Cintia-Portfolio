@@ -1,7 +1,5 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
-import { Button, Grid, TextField, Avatar } from "@mui/material";
-import { styled } from "@mui/system";
 
 export const Cards: FC<{
   link: string;
@@ -52,7 +50,7 @@ export const Bubble: FC<{
           className="circle animated d-flex flex-column justify-content-center align-items-center"
           id={(Math.random() * 5 + 2).toString()}
         >
-          <Avatar
+          {/* <Avatar
             src={logo}
             alt={alt}
             sx={{
@@ -62,7 +60,7 @@ export const Bubble: FC<{
               p: "1em",
               backgroundColor: "#f9f9f9",
             }}
-          />
+          /> */}
         </div>
       </a>
     </div>
@@ -75,50 +73,51 @@ export const Links: FC<{
   name: string;
   icon: any;
 }> = ({ link, href, name, icon }) => {
-  const StyledGridItems = styled(Grid)`
-    margin: 1em;
-    p {
-      opacity: 0;
-    }
-    .contain:hover p {
-      transition: 1s;
-      color: #191919;
-      opacity: 1;
-    }
-  `;
+  // const StyledGridItems = styled(Grid)`
+  //   margin: 1em;
+  //   p {
+  //     opacity: 0;
+  //   }
+  //   .contain:hover p {
+  //     transition: 1s;
+  //     color: #191919;
+  //     opacity: 1;
+  //   }
+  // `;
   return (
-    <StyledGridItems item>
-      {link ? (
-        <Link
-          className="contain"
-          to={link && link}
-          style={{ textDecoration: "none", width: 0 }}
-        >
-          <Button variant="text" sx={{ color: "#191919" }}>
-            {icon}
-          </Button>
-          <p className="m-1 text-center d-none">{name}</p>
-        </Link>
-      ) : href ? (
-        <a
-          className="contain"
-          href={href}
-          style={{ textDecoration: "none", width: 0 }}
-        >
-          <Button variant="text" sx={{ color: "#191919" }}>
-            {icon}
-          </Button>
-          <p className="m-1 text-center d-none">{name}</p>
-        </a>
-      ) : (
-        <div className="contain">
-          <Button variant="text" sx={{ color: "#191919", width: 0 }}>
-            {icon}
-          </Button>
-          <p className="m-1 text-center d-none">{name}</p>
-        </div>
-      )}
-    </StyledGridItems>
+    <div></div>
+    // <StyledGridItems item>
+    //   {link ? (
+    //     <Link
+    //       className="contain"
+    //       to={link && link}
+    //       style={{ textDecoration: "none", width: 0 }}
+    //     >
+    //       <Button variant="text" sx={{ color: "#191919" }}>
+    //         {icon}
+    //       </Button>
+    //       <p className="m-1 text-center d-none">{name}</p>
+    //     </Link>
+    //   ) : href ? (
+    //     <a
+    //       className="contain"
+    //       href={href}
+    //       style={{ textDecoration: "none", width: 0 }}
+    //     >
+    //       <Button variant="text" sx={{ color: "#191919" }}>
+    //         {icon}
+    //       </Button>
+    //       <p className="m-1 text-center d-none">{name}</p>
+    //     </a>
+    //   ) : (
+    //     <div className="contain">
+    //       <Button variant="text" sx={{ color: "#191919", width: 0 }}>
+    //         {icon}
+    //       </Button>
+    //       <p className="m-1 text-center d-none">{name}</p>
+    //     </div>
+    //   )}
+    // </StyledGridItems>
   );
 };
 
@@ -127,15 +126,16 @@ export const Inputs: FC<{
   name: string;
 }> = ({ title, name }) => {
   return (
-    <TextField
-      rows={title === "Message" ? 8 : 0}
-      fullWidth
-      multiline
-      label={title}
-      sx={{ width: "25em", my: "1em" }}
-      name={name}
-      id="input-with-sx"
-      color="success"
-    />
+    <div></div>
+    // <TextField
+    //   rows={title === "Message" ? 8 : 0}
+    //   fullWidth
+    //   multiline
+    //   label={title}
+    //   sx={{ width: "25em", my: "1em" }}
+    //   name={name}
+    //   id="input-with-sx"
+    //   color="success"
+    // />
   );
 };

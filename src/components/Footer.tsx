@@ -1,16 +1,12 @@
 import React, { FC } from "react";
 import { social } from "../assets";
 import { Links } from "./";
-import { Grid, Typography } from "@mui/material";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import EmailIcon from "@mui/icons-material/Email";
 import wave from "../assets/svgs/wave.png";
 
 const Footer: FC = () => {
   return (
     <footer>
-      <Grid
+      {/* <Grid
         item
         container
         direction="row"
@@ -40,7 +36,7 @@ const Footer: FC = () => {
         <Grid item container justifyContent="center">
           <Typography variant="subtitle1">Made with 💛 by Cintia</Typography>
         </Grid>
-      </Grid>
+      </Grid> */}
     </footer>
   );
 };
