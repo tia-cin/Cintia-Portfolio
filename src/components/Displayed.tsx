@@ -64,64 +64,17 @@ export const Links: FC<{
   name: string;
   icon: any;
 }> = ({ link, href, name, icon }) => {
-  // const StyledGridItems = styled(Grid)`
-  //   margin: 1em;
-  //   p {
-  //     opacity: 0;
-  //   }
-  //   .contain:hover p {
-  //     transition: 1s;
-  //     color: #191919;
-  //     opacity: 1;
-  //   }
-  // `;
   return (
-    <div>
+    <div className={`${link ? "mx-80" : "mx-5"} my-4`}>
       {link && (
         <Link to={link}>
           <button>{icon}</button>
-          <p>{name}</p>
         </Link>
       )}
       {href && (
-        <div>
-          <button onClick={() => window.open(href, "_self")}>{icon}</button>
-          <p>{name}</p>
-        </div>
+        <button onClick={() => window.open(href, "_self")}>{icon}</button>
       )}
     </div>
-    // <StyledGridItems item>
-    //   {link ? (
-    //     <Link
-    //       className="contain"
-    //       to={link && link}
-    //       style={{ textDecoration: "none", width: 0 }}
-    //     >
-    //       <Button variant="text" sx={{ color: "#191919" }}>
-    //         {icon}
-    //       </Button>
-    //       <p className="m-1 text-center d-none">{name}</p>
-    //     </Link>
-    //   ) : href ? (
-    //     <a
-    //       className="contain"
-    //       href={href}
-    //       style={{ textDecoration: "none", width: 0 }}
-    //     >
-    //       <Button variant="text" sx={{ color: "#191919" }}>
-    //         {icon}
-    //       </Button>
-    //       <p className="m-1 text-center d-none">{name}</p>
-    //     </a>
-    //   ) : (
-    //     <div className="contain">
-    //       <Button variant="text" sx={{ color: "#191919", width: 0 }}>
-    //         {icon}
-    //       </Button>
-    //       <p className="m-1 text-center d-none">{name}</p>
-    //     </div>
-    //   )}
-    // </StyledGridItems>
   );
 };
 
@@ -136,11 +89,13 @@ export const Inputs: FC<{
           className="rounded border-color border my-3 p-2 w-80"
           rows={5}
           placeholder={title}
+          name={name}
         ></textarea>
       ) : (
         <input
           type="text"
           placeholder={title}
+          name={name}
           className="rounded border-color border my-3 p-2 w-80 placeholder-black"
         />
       )}

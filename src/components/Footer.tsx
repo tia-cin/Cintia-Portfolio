@@ -2,6 +2,8 @@ import React, { FC } from "react";
 import { social } from "../assets";
 import { Links } from "./";
 import wave from "../assets/svgs/wave.png";
+import { BsLinkedin } from "react-icons/bs";
+import { AiFillGithub } from "react-icons/ai";
 
 const Footer: FC = () => {
   return (
@@ -14,9 +16,16 @@ const Footer: FC = () => {
       }}
     >
       <div className="flex justify-evenly">
-        <Links href={social[0].link} name={social[0].alt} icon={""} />
-        <Links href={social[1].link} name={social[1].alt} icon={""} />
-        <Links link="/contact" name="Contact" icon={""} />
+        <Links
+          href={social[0].link}
+          name={social[0].alt}
+          icon={<BsLinkedin style={{ fontSize: "2em" }} />}
+        />
+        <Links
+          href={social[1].link}
+          name={social[1].alt}
+          icon={<AiFillGithub style={{ fontSize: "2em" }} />}
+        />
       </div>
       <div>
         <p>Made with 💛 by Cintia</p>
