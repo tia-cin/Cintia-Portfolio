@@ -12,21 +12,16 @@ export const Cards: FC<{
   return (
     <section
       style={{ backgroundColor: color }}
-      className="rounded shadow p-2 d-flex justify-content-between align-items-center"
+      className="rounded shadow-xl p-2 flex justify-between items-center w-400"
     >
-      <div className="mx-2">
-        <img
-          src={logo}
-          alt={alt}
-          style={{ objectFit: "cover", width: "4em", height: "4em" }}
-        />
+      <div className="my-2 mx-5 bg-slate-50 rounded w-20 h-20">
+        <img src={logo} alt={alt} className="object-cover w-full h-full p-2" />
       </div>
-      <div className="w-75">
-        <p className="fs-4 fw-bold m-0">{title}</p>
-        <p>{description}</p>
+      <div className="w-3/4">
+        <p className="text-lg font-semibold m-0">{title}</p>
+        <p className="h-15 mb-3">{description}</p>
         <button
-          className="btn w-100"
-          style={{ backgroundColor: "#f9f9f9" }}
+          className="rounded w-full bg-slate-50 my-2 py-2 uppercase font-semibold"
           onClick={() => window.open(link, "_blank")}
         >
           Explore
@@ -50,17 +45,13 @@ export const Bubble: FC<{
           className="circle animated d-flex flex-column justify-content-center align-items-center"
           id={(Math.random() * 5 + 2).toString()}
         >
-          {/* <Avatar
-            src={logo}
-            alt={alt}
-            sx={{
-              width: "5em",
-              height: "5em",
-              objectFit: "contain",
-              p: "1em",
-              backgroundColor: "#f9f9f9",
-            }}
-          /> */}
+          <div className="w-20 h-20">
+            <img
+              src={logo}
+              alt={alt}
+              className="w-full h-full bg-slate-100 rounded-full object-contain"
+            />
+          </div>
         </div>
       </a>
     </div>
@@ -85,7 +76,20 @@ export const Links: FC<{
   //   }
   // `;
   return (
-    <div></div>
+    <div>
+      {link && (
+        <Link to={link}>
+          <button>{icon}</button>
+          <p>{name}</p>
+        </Link>
+      )}
+      {href && (
+        <div>
+          <button onClick={() => window.open(href, "_self")}>{icon}</button>
+          <p>{name}</p>
+        </div>
+      )}
+    </div>
     // <StyledGridItems item>
     //   {link ? (
     //     <Link

@@ -5,38 +5,22 @@ import wave from "../assets/svgs/wave.png";
 
 const Footer: FC = () => {
   return (
-    <footer>
-      {/* <Grid
-        item
-        container
-        direction="row"
-        justifyContent="space-evenly"
-        sx={{
-          py: "5em",
-          backgroundImage: `url(${wave})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}
-      >
-        <Links
-          href={social[0].link}
-          name={social[0].alt}
-          icon={<LinkedInIcon sx={{ fontSize: "5em" }} />}
-        />
-        <Links
-          href={social[1].link}
-          name={social[1].alt}
-          icon={<GitHubIcon sx={{ fontSize: "5em" }} />}
-        />
-        <Links
-          link="/contact"
-          name="Contact"
-          icon={<EmailIcon sx={{ fontSize: "5em" }} />}
-        />
-        <Grid item container justifyContent="center">
-          <Typography variant="subtitle1">Made with 💛 by Cintia</Typography>
-        </Grid>
-      </Grid> */}
+    <footer
+      className="flex flex-col items-center py-20"
+      style={{
+        backgroundImage: `url(${wave})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
+      <div className="flex justify-evenly">
+        <Links href={social[0].link} name={social[0].alt} icon={""} />
+        <Links href={social[1].link} name={social[1].alt} icon={""} />
+        <Links link="/contact" name="Contact" icon={""} />
+      </div>
+      <div>
+        <p>Made with 💛 by Cintia</p>
+      </div>
     </footer>
   );
 };

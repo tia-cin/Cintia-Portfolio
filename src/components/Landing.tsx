@@ -20,13 +20,17 @@ const Landing: FC<{
   document.addEventListener("mousemove", animation);
 
   return (
-    <div className="flex justify-center items-center relative w-full h-screen overflow-hidden">
+    <div className="flex flex-col justify-center items-center relative w-full h-screen overflow-hidden">
       <div className="flex flex-col w-1/2 " style={{ zIndex: 1 }}>
         <p className="text-center font-semibold text-xl">{smallText}</p>
         <h1 className="text-center text-7xl font-bold">{bigText}</h1>
         <p className="text-center mt-5 text-lg">{mediumText}</p>
       </div>
-      <div className="z-0">
+      <div
+        className={`z-0 ${
+          typeof data[0] !== "string" && "grid grid-cols-3 gap-8 my-5"
+        }`}
+      >
         {data.map((item, i) =>
           typeof item === "string" ? (
             <img

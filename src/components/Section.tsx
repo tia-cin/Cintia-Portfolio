@@ -20,7 +20,7 @@ const Section: FC<{
       style={{ backgroundColor: card ? "#f9f9f9" : color }}
     >
       {image && <img src={image} alt="cintia-photo" />}
-      {!doble && bubble ? (
+      {bubble && !doble && (
         <div
           className="grid grid-cols-4 gap-5"
           style={{
@@ -40,32 +40,11 @@ const Section: FC<{
             />
           ))}
         </div>
-      ) : (
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            margin: "0 5em",
-            gap: "2em",
-          }}
-        >
-          {card?.map((item: any, i: number) => (
-            <Cards
-              color={colors[Math.floor(Math.random() * 4)]}
-              key={i}
-              link={item.link}
-              logo={item.logo}
-              alt={item.alt}
-              title={item.title}
-              description={item.description}
-            />
-          ))}
-        </div>
       )}
       {doble && (
-        <div className="d-flex flex-column">
-          <h1 className="text-center my-4">Design ideas</h1>
-          <div className="d-flex my-2">
+        <div className="flex flex-col">
+          <h1 className="text-center my-4 font-bold text-3xl">Design ideas</h1>
+          <div className="flex my-2">
             {bubble[1]?.map((item: any, i: number) => (
               <Bubble
                 key={i}
@@ -76,8 +55,8 @@ const Section: FC<{
               />
             ))}
           </div>
-          <h1 className="text-center my-4">Customize UI</h1>
-          <div className="d-flex my-2">
+          <h1 className="text-center my-4 font-bold text-3xl">Customize UI</h1>
+          <div className="flex my-2">
             {bubble[0]?.map((item: any, i: number) => (
               <Bubble
                 key={i}
@@ -90,9 +69,11 @@ const Section: FC<{
           </div>
         </div>
       )}
-      <div className={`w-50 ${bubble?.length ? "ml-10" : ""}`}>
-        <h1 className="text-center">{title}</h1>
-        <p className="text-center fs-3 text-muted">{subtitle}</p>
+      <div className={`w-1/2 ${bubble?.length ? "ml-10" : ""}`}>
+        <h1 className="text-center text-4xl font-bold">{title}</h1>
+        <p className="text-center font-semibold text-xl text-gray-800">
+          {subtitle}
+        </p>
       </div>
     </div>
   );

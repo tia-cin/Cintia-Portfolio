@@ -33,16 +33,9 @@ const Home: FC<{
         bubble={[technologies.style, technologies.design]}
         doble
       />
-      {/* <Section
-        reverse
-        title="Here are some of my Projects"
-        subtitle="Explore and view the code source"
-        color={colors[Math.floor(Math.random() * 4)]}
-        card={projects}
-      /> */}
       <Landing
         bigText="Here are some of my projects"
-        mediumText="Explore the code source"
+        mediumText="Explore the source code"
         data={projects}
       />
       <Footer />
