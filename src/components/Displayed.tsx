@@ -130,16 +130,20 @@ export const Inputs: FC<{
   name: string;
 }> = ({ title, name }) => {
   return (
-    <div></div>
-    // <TextField
-    //   rows={title === "Message" ? 8 : 0}
-    //   fullWidth
-    //   multiline
-    //   label={title}
-    //   sx={{ width: "25em", my: "1em" }}
-    //   name={name}
-    //   id="input-with-sx"
-    //   color="success"
-    // />
+    <div>
+      {title === "Message" ? (
+        <textarea
+          className="rounded border-color border my-3 p-2 w-80"
+          rows={5}
+          placeholder={title}
+        ></textarea>
+      ) : (
+        <input
+          type="text"
+          placeholder={title}
+          className="rounded border-color border my-3 p-2 w-80 placeholder-black"
+        />
+      )}
+    </div>
   );
 };
