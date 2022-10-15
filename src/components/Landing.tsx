@@ -1,7 +1,13 @@
 import React, { FC } from "react";
-import { profile, blobs } from "../assets";
+import { colors } from "../assets";
+import { Cards } from "./";
 
-const Landing: FC = () => {
+const Landing: FC<{
+  smallText?: string;
+  bigText: string;
+  mediumText: string;
+  data: Array<any>;
+}> = ({ smallText, bigText, mediumText, data }) => {
   const animation = (e: any) => {
     document.querySelectorAll(".animated").forEach((move: any) => {
       let value = move.getAttribute("id");
@@ -16,28 +22,38 @@ const Landing: FC = () => {
   return (
     <div className="flex justify-center items-center relative w-full h-screen overflow-hidden">
       <div className="flex flex-col w-1/2 " style={{ zIndex: 1 }}>
-        <p className="text-center font-semibold text-xl">
-          {profile.greeting}👋
-        </p>
-        <h1 className="text-center text-7xl font-bold">{profile.title}</h1>
-        <p className="text-center mt-5 text-lg">{profile.subtitle}</p>
+        <p className="text-center font-semibold text-xl">{smallText}</p>
+        <h1 className="text-center text-7xl font-bold">{bigText}</h1>
+        <p className="text-center mt-5 text-lg">{mediumText}</p>
       </div>
       <div className="z-0">
-        {blobs.map((b, i) => (
-          <img
-            alt="blob"
-            src={b}
-            key={i}
-            style={{
-              top: 0,
-              left: 0,
-              objectFit: "contain",
-              zIndex: 0,
-            }}
-            className="animated absolute w-full h-full"
-            id={(Math.floor(Math.random() * 4) + 1).toString()}
-          />
-        ))}
+        {data.map((item, i) =>
+          typeof item === "string" ? (
+            <img
+              alt="blob"
+              src={item}
+              key={i}
+              style={{
+                top: 0,
+                left: 0,
+                objectFit: "contain",
+                zIndex: 0,
+              }}
+              className="animated absolute w-full h-full"
+              id={(Math.floor(Math.random() * 4) + 1).toString()}
+            />
+          ) : (
+            <Cards
+              color={colors[Math.floor(Math.random() * 4)]}
+              key={i}
+              link={item.link}
+              logo={item.logo}
+              alt={item.alt}
+              title={item.title}
+              description={item.description}
+            />
+          )
+        )}
       </div>
     </div>
   );

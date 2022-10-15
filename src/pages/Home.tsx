@@ -1,13 +1,18 @@
 import React, { FC } from "react";
 import { Landing, Footer, Section } from "../components";
-import { profile, technologies, projects, colors } from "../assets";
+import { profile, technologies, projects, colors, blobs } from "../assets";
 
 const Home: FC<{
   colors: Array<string>;
 }> = ({ colors }) => {
   return (
     <div>
-      <Landing />
+      <Landing
+        smallText={`${profile.greeting} 👋`}
+        bigText={profile.title}
+        mediumText={profile.subtitle}
+        data={blobs}
+      />
       <Section
         color={colors[Math.floor(Math.random() * 4)]}
         title={"About Me"}
@@ -28,12 +33,17 @@ const Home: FC<{
         bubble={[technologies.style, technologies.design]}
         doble
       />
-      <Section
+      {/* <Section
         reverse
         title="Here are some of my Projects"
         subtitle="Explore and view the code source"
         color={colors[Math.floor(Math.random() * 4)]}
         card={projects}
+      /> */}
+      <Landing
+        bigText="Here are some of my projects"
+        mediumText="Explore the code source"
+        data={projects}
       />
       <Footer />
     </div>

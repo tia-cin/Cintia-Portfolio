@@ -14,7 +14,7 @@ const Section: FC<{
 }> = ({ reverse, color, title, subtitle, image, bubble, card, doble }) => {
   return (
     <div
-      className={`d-flex justify-content-around vh-100 align-items-center ${
+      className={`flex justify-around h-screen items-center ${
         reverse ? "flex-row-reverse" : ""
       }`}
       style={{ backgroundColor: card ? "#f9f9f9" : color }}
@@ -22,6 +22,7 @@ const Section: FC<{
       {image && <img src={image} alt="cintia-photo" />}
       {!doble && bubble ? (
         <div
+          className="grid grid-cols-4 gap-5"
           style={{
             display: "grid",
             gridTemplateColumns: "1fr 1fr 1fr 1fr",
