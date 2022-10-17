@@ -65,12 +65,8 @@ export const Links: FC<{
   icon: any;
 }> = ({ link, href, name, icon }) => {
   return (
-    <div className={`${link ? "mx-80" : "mx-5"} my-4`}>
-      {link && (
-        <Link to={link}>
-          <button>{icon}</button>
-        </Link>
-      )}
+    <div className="my-2 mx-5">
+      {link && <Link to={link}>{icon}</Link>}
       {href && (
         <button onClick={() => window.open(href, "_self")}>{icon}</button>
       )}

@@ -6,7 +6,7 @@ import { MdMail } from "react-icons/md";
 const Navbar: FC = () => {
   return (
     <nav
-      className="flex justify-between items-center fixed"
+      className="flex justify-between items-center top-0"
       style={{ zIndex: 1 }}
     >
       <Links

@@ -70,8 +70,18 @@ const Section: FC<{
         </div>
       )}
       <div className={`w-1/2 ${bubble?.length ? "ml-10" : ""}`}>
-        <h1 className="text-center text-4xl font-bold">{title}</h1>
-        <p className="text-center font-semibold text-xl text-gray-800">
+        <h1
+          className={`text-center text-4xl font-bold ${
+            reverse ? "fadeRightMini" : "fadeLeftMini"
+          }`}
+        >
+          {title}
+        </h1>
+        <p
+          className={`text-center font-semibold text-xl text-gray-800 ${
+            reverse ? "fadeRightMini" : "fadeLeftMini"
+          }`}
+        >
           {subtitle}
         </p>
       </div>

@@ -9,3 +9,51 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.fadeLeftMini {
+    animation: fadeLeftMini 1s;
+    animation-fill-mode: both;
+  }
+  
+  .fadeRightMini {
+    animation: fadeRightMini 1s;
+    animation-fill-mode: both;
+  }
+
+  .fadeUpMini {
+    animation: fadeUpMini 1s;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fadeLeftMini {
+    0% {
+      opacity: 0;
+      transform: translate3d(-40%, 0, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateZ(0);
+    }
+  }
+  
+  @keyframes fadeRightMini {
+    0% {
+      opacity: 0;
+      transform: translate3d(40%, 0, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateZ(0);
+    }
+  }
+
+  @keyframes fadeUpMini {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -40%, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0);
+    }
+  }
