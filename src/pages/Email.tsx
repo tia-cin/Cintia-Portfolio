@@ -20,14 +20,14 @@ const Email: FC = () => {
     }, 5000);
   };
   return (
-    <div className="flex justify-center items-center relative w-full h-screen overflow-hidden mt-20">
+    <div className="flex justify-center items-center relative w-full h-screen overflow-hidden">
       <div style={{ zIndex: 0 }}>
         {blobs.slice(0, 4).map((b, i) => (
           <img
             alt="blob"
             src={b}
             key={i}
-            className="animated absolute w-full h-full top-0 left-0 object-contain"
+            className="animated absolute w-full h-full top-0 left-0 object-contain sm:hidden"
             id={(Math.floor(Math.random() * 4) + 1).toString()}
           />
         ))}
@@ -35,9 +35,9 @@ const Email: FC = () => {
       <form
         onSubmit={sendMail}
         style={{ zIndex: 1 }}
-        className="flex flex-col items-center w-1/2"
+        className="flex flex-col items-center w-1/2 sm:w-full"
       >
-        <h1 className="text-5xl font-bold w-3/4 text-center mb-2">
+        <h1 className="text-5xl font-bold w-3/4 text-center mb-2 sm:w-full">
           Hi There! How can I help you?
         </h1>
         <Inputs title="Full Name" name="name" />

@@ -14,22 +14,14 @@ const Section: FC<{
 }> = ({ reverse, color, title, subtitle, image, bubble, card, doble }) => {
   return (
     <div
-      className={`flex justify-around h-screen items-center ${
+      className={`flex justify-around h-screen items-center sm:flex-col-reverse ${
         reverse ? "flex-row-reverse" : ""
       }`}
       style={{ backgroundColor: card ? "#f9f9f9" : color }}
     >
       {image && <img src={image} alt="cintia-photo" />}
       {bubble && !doble && (
-        <div
-          className="grid grid-cols-4 gap-5"
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr 1fr",
-            gap: "2em",
-            marginRight: "5em",
-          }}
-        >
+        <div className="grid grid-cols-4 gap-5 mr-20">
           {bubble.map((item: any, i: number) => (
             <Bubble
               key={i}
@@ -69,7 +61,7 @@ const Section: FC<{
           </div>
         </div>
       )}
-      <div className={`w-1/2 ${bubble?.length ? "ml-10" : ""}`}>
+      <div className={`w-1/2 sm:w-full ${bubble?.length ? "ml-10" : ""}`}>
         <h1
           className={`text-center text-4xl font-bold ${
             reverse ? "fadeRightMini" : "fadeLeftMini"
@@ -78,7 +70,7 @@ const Section: FC<{
           {title}
         </h1>
         <p
-          className={`text-center font-semibold text-xl text-gray-800 ${
+          className={`text-center font-semibold text-xl text-gray-800 sm:px-4 ${
             reverse ? "fadeRightMini" : "fadeLeftMini"
           }`}
         >

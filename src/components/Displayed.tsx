@@ -12,14 +12,17 @@ export const Cards: FC<{
   return (
     <section
       style={{ backgroundColor: color }}
-      className="rounded shadow-xl p-2 flex justify-between items-center w-400"
+      className="rounded shadow-xl p-2 flex justify-between items-center w-400 sm:w-fit sm:justify-center"
     >
-      <div className="my-2 mx-5 bg-slate-50 rounded w-20 h-20">
+      <div
+        className="my-2 mx-5 bg-slate-50 rounded w-20 h-20 sm:w-50 sm:h-50"
+        onClick={() => window.open(link, "_blank")}
+      >
         <img src={logo} alt={alt} className="object-cover w-full h-full p-2" />
       </div>
-      <div className="w-3/4">
-        <p className="text-lg font-semibold m-0">{title}</p>
-        <p className="h-15 mb-3">{description}</p>
+      <div className="w-3/4 sm:hidden">
+        <p className="text-lg font-semibold m-0 ">{title}</p>
+        <p className="h-15 mb-3 ">{description}</p>
         <button
           className="rounded w-full bg-slate-50 my-2 py-2 uppercase font-semibold"
           onClick={() => window.open(link, "_blank")}

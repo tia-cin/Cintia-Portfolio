@@ -25,12 +25,15 @@ const Landing: FC<{
         <p className="text-center font-semibold text-xl fadeUpMini">
           {smallText}
         </p>
-        <h1 className="text-center text-7xl font-bold fadeUpMini">{bigText}</h1>
+        <h1 className="text-center text-7xl font-bold fadeUpMini sm:text-5xl">
+          {bigText}
+        </h1>
         <p className="text-center mt-5 text-lg fadeUpMini">{mediumText}</p>
       </div>
       <div
-        className={`z-0 ${
-          typeof data[0] !== "string" && "grid grid-cols-3 gap-8 my-5"
+        className={`z-0  ${
+          typeof data[0] !== "string" &&
+          "grid grid-cols-3 gap-8 my-5 sm:grid-cols-2"
         }`}
       >
         {data.map((item, i) =>
@@ -45,7 +48,7 @@ const Landing: FC<{
                 objectFit: "contain",
                 zIndex: 0,
               }}
-              className="animated absolute w-full h-full"
+              className="animated absolute w-full h-full sm:hidden"
               id={(Math.floor(Math.random() * 4) + 1).toString()}
             />
           ) : (
