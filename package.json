@@ -2,6 +2,7 @@
   "name": "my-portofolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cintia-arce-portfolio.com",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@emotion/react": "^11.10.0",
