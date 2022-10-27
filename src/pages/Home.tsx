@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Landing, Footer, Section } from "../components";
-import { profile, technologies, projects, colors, blobs } from "../assets";
+import { profile, technologies, projects, blobs } from "../assets";
 
 const Home: FC<{
   colors: Array<string>;
@@ -14,7 +14,7 @@ const Home: FC<{
         data={blobs}
       />
       <Section
-        color={colors[Math.floor(Math.random() * 4)]}
+        color={colors[2]}
         title={"About Me"}
         subtitle={profile.introduction}
         image={profile.photo}
@@ -23,13 +23,13 @@ const Home: FC<{
         reverse
         title="Tech-Stack"
         subtitle="Frontend (client-side) and Backend (server-side). Both work together to create a working tech stack. This is also referred to as an application stack."
-        color={colors[Math.floor(Math.random() * 4)]}
+        color={colors[0]}
         bubble={technologies.development}
       />
       <Section
         title="Style and Design Tools"
         subtitle="Shape projects personalities into an good looking and user-friendly components"
-        color={colors[Math.floor(Math.random() * 4)]}
+        color={colors[3]}
         bubble={[technologies.style, technologies.design]}
         doble
       />

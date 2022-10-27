@@ -70,7 +70,7 @@ const Section: FC<{
           {title}
         </h1>
         <p
-          className={`text-center font-semibold text-xl text-gray-800 sm:px-4 ${
+          className={`text-center font-semibold text-xl w-700 text-gray-800 sm:px-4 ${
             reverse ? "fadeRightMini" : "fadeLeftMini"
           }`}
         >

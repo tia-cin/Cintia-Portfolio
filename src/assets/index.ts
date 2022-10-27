@@ -197,7 +197,7 @@ export const social = [
 export const projects = [
   {
     link: "https://dashboard-shoppy.vercel.app/",
-    logo: react,
+    logo: "https://dashboard-shoppy.vercel.app/shopware-icon.png",
     alt: "react-icon",
     title: "Dashboard",
     description: "Organize your team and projects",

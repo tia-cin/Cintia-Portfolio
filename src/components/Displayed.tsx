@@ -48,11 +48,11 @@ export const Bubble: FC<{
           className="circle animated d-flex flex-column justify-content-center align-items-center"
           id={(Math.random() * 5 + 2).toString()}
         >
-          <div className="w-20 h-20">
+          <div className="">
             <img
               src={logo}
               alt={alt}
-              className="w-full h-full bg-slate-100 rounded-full object-contain"
+              className="w-20 h-20 p-1 bg-slate-100 rounded-full object-contain"
             />
           </div>
         </div>
