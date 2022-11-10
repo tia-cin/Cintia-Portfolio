@@ -1,35 +1,35 @@
-import babel from "./babel-icon.png";
-import bootstrap from "./bootstrap.png";
-import css from "./css-icon.png";
-import expressJs from "./expressJs-icon.png";
-import git from "./git-icon.png";
-import html from "./html-icon.png";
-import javascript from "./javascript-icon.png";
-import jest from "./jest-icon.png";
-import materialUi from "./materialUi-icon.png";
-import mocha from "./mocha-icon.png";
-import nextJs from "./nextJs-icon.png";
-import nodeJs from "./nodeJs-icon.png";
-import postgreSQL from "./postgreSQL-icon.png";
-import react from "./react-icon.png";
-import redux from "./redux-icon.png";
-import sass from "./sass-icon.png";
-import tailwind from "./tailwind-icon.png";
-import typescript from "./typescript-icon.png";
-import webpack from "./webpack-icon.png";
+import babel from "./images/babel-icon.png";
+import bootstrap from "./images/bootstrap.png";
+import css from "./images/css-icon.png";
+import expressJs from "./images/expressJs-icon.png";
+import git from "./images/git-icon.png";
+import html from "./images/html-icon.png";
+import javascript from "./images/javascript-icon.png";
+import jest from "./images/jest-icon.png";
+import materialUi from "./images/materialUi-icon.png";
+import mocha from "./images/mocha-icon.png";
+import nextJs from "./images/nextJs-icon.png";
+import nodeJs from "./images/nodeJs-icon.png";
+import postgreSQL from "./images/postgreSQL-icon.png";
+import react from "./images/react-icon.png";
+import redux from "./images/redux-icon.png";
+import sass from "./images/sass-icon.png";
+import tailwind from "./images/tailwind-icon.png";
+import typescript from "./images/typescript-icon.png";
+import webpack from "./images/webpack-icon.png";
 
-import photoshop from "./photoshop.png";
-import illustrator from "./illustrator.png";
-import premiere from "./premiere.png";
-import figma from "./figma-icon.png";
+import photoshop from "./images/photoshop.png";
+import illustrator from "./images/illustrator.png";
+import premiere from "./images/premiere.png";
+import figma from "./images/figma-icon.png";
 
-import cintia from "./cintia-arce-profile.png";
+import cintia from "./images/cintia-arce-profile.png";
 
-import cloudy from "./cloudy.png";
-import dictionary from "./dictionary.png";
-import ecommerce from "./ecommerce-store.png";
-import mangaka from "./mangaca-icon.png";
-import music from "./music-app.png";
+import cloudy from "./images/cloudy.png";
+import dictionary from "./images/dictionary.png";
+import ecommerce from "./images/ecommerce-store.png";
+import mangaka from "./images/mangaca-icon.png";
+import music from "./images/music-app.png";
 
 import blob1 from "./svgs/output-onlinepngtools (1).png";
 import blob2 from "./svgs/output-onlinepngtools (2).png";
@@ -50,6 +50,9 @@ export const profile = {
   introduction:
     "I'm an independent IT student with strong passion for development, with proven ability to learn and adapt to new technology and frameworks quickly. Able to identify and correct errors in existing code. Proficient in photography, illustrations, as well as video editing.",
   photo: cintia,
+  techStack: 'Frontend (client-side) and Backend (server-side). Both work together to create a working tech stack. This is also referred to as an application stack.',
+  style: 'Shape projects personalities into an good looking and user-friendly components',
+
 };
 
 export const colors = ["#ffce6d", "#ED5B2D", "#F7B9A1", "#51ABB2"];

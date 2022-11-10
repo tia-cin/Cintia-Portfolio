@@ -22,13 +22,13 @@ const Home: FC<{
       <Section
         reverse
         title="Tech-Stack"
-        subtitle="Frontend (client-side) and Backend (server-side). Both work together to create a working tech stack. This is also referred to as an application stack."
+        subtitle={profile.techStack}
         color={colors[0]}
         bubble={technologies.development}
       />
       <Section
         title="Style and Design Tools"
-        subtitle="Shape projects personalities into an good looking and user-friendly components"
+        subtitle={profile.style}
         color={colors[3]}
         bubble={[technologies.style, technologies.design]}
         doble

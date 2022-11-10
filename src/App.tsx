@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home, Email } from "./pages";
 import { Navbar } from "./components";
 import { colors } from "./assets";
-import "./App.css";
 
 export const App: FC = () => {
   return (
