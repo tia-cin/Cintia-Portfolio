@@ -20,7 +20,7 @@ const Landing: FC<{
   document.addEventListener("mousemove", animation);
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen overflow-hidden">
+    <div className="flex flex-col justify-center items-center relative w-full h-screen overflow-hidden">
       <div className="flex flex-col w-1/2 " style={{ zIndex: 1 }}>
         <p className="text-center font-semibold text-xl fadeUpMini sm:text-sm">
           {smallText}
@@ -31,7 +31,7 @@ const Landing: FC<{
         <p className="text-center mt-5 text-lg fadeUpMini md:text-base">{mediumText}</p>
       </div>
       <div
-        className={`z-0  ${
+        className={`z-0 ${
           typeof data[0] !== "string" &&
           "grid grid-cols-3 gap-8 my-5 sm:grid-cols-2"
         }`}
@@ -48,8 +48,8 @@ const Landing: FC<{
                 objectFit: "contain",
                 zIndex: 0,
               }}
-              className="animated absolute w-full h-full sm:hidden"
-              id={(Math.floor(Math.random() * 4) + 1).toString()}
+              className="animated absolute w-full h-full sm:hidden drop-shadow-lg transition-all"
+              id={(Math.floor(Math.random() * 5) + 1).toString()}
             />
           ) : (
             <Cards

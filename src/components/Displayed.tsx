@@ -12,7 +12,7 @@ export const Cards: FC<{
   return (
     <section
       style={{ backgroundColor: color }}
-      className="rounded shadow-xl p-2 flex justify-between items-center w-400 sm:w-fit sm:justify-center"
+      className="rounded drop-shadow-xl p-2 flex justify-between items-center w-400 sm:w-fit sm:justify-center"
     >
       <div
         className="my-2 mx-5 bg-slate-50 rounded w-20 h-20 sm:w-50 sm:h-50"
@@ -68,7 +68,7 @@ export const Links: FC<{
   icon: any;
 }> = ({ link, href, name, icon }) => {
   return (
-    <div className="my-2 mx-5">
+    <div className="my-2 mx-5 cursor-pointer">
       {link && <Link to={link}>{icon}</Link>}
       {href && (
         <button onClick={() => window.open(href, "_self")}>{icon}</button>

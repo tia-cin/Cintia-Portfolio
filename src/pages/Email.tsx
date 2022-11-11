@@ -27,7 +27,7 @@ const Email: FC = () => {
             alt="blob"
             src={b}
             key={i}
-            className="animated absolute w-full h-full top-0 left-0 object-contain sm:hidden"
+            className="animated absolute drop-shadow-lg w-full h-full top-0 left-0 object-contain sm:hidden"
             id={(Math.floor(Math.random() * 4) + 1).toString()}
           />
         ))}
