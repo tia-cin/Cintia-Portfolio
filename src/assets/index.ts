@@ -8,10 +8,12 @@ import javascript from "./images/javascript-icon.png";
 import jest from "./images/jest-icon.png";
 import materialUi from "./images/materialUi-icon.png";
 import mocha from "./images/mocha-icon.png";
+import mongodb from './images/mongodb-icon.png'
 import nextJs from "./images/nextJs-icon.png";
 import nodeJs from "./images/nodeJs-icon.png";
 import postgreSQL from "./images/postgreSQL-icon.png";
 import react from "./images/react-icon.png";
+import reactNative from './images/react-native.png'
 import redux from "./images/redux-icon.png";
 import sass from "./images/sass-icon.png";
 import tailwind from "./images/tailwind-icon.png";
@@ -25,7 +27,6 @@ import figma from "./images/figma-icon.png";
 
 import cintia from "./images/cintia-arce-profile.png";
 
-import cloudy from "./images/cloudy.png";
 import dictionary from "./images/dictionary.png";
 import ecommerce from "./images/ecommerce-store.png";
 import mangaka from "./images/mangaca-icon.png";
@@ -119,11 +120,6 @@ export const technologies = {
       alt: "React JS",
     },
     {
-      link: "http://reactnative.dev/",
-      logo: react,
-      alt: "React Native",
-    },
-    {
       link: "https://redux.js.org/",
       logo: redux,
       alt: "Redux",
@@ -167,6 +163,11 @@ export const technologies = {
       link: "https://www.postgresql.org",
       logo: postgreSQL,
       alt: "PostgreSQL",
+    },
+    {
+      link: "https://www.mongodb.com/",
+      logo: mongodb,
+      alt:"MongoDB"
     },
     {
       link: "https://git-scm.com/",
@@ -235,7 +236,7 @@ export const projects = [
   },
   {
     link: "https://nft-langing.vercel.app/",
-    logo: react,
+    logo: reactNative,
     alt: "nft-market-landing",
     description: "Landing Page for NFT Market React Native App",
     title: "ProNef",
