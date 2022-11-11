@@ -14,14 +14,14 @@ const Section: FC<{
 }> = ({ reverse, color, title, subtitle, image, bubble, card, doble }) => {
   return (
     <div
-      className={`flex justify-around h-screen items-center sm:flex-col-reverse ${
+      className={`flex justify-around h-screen items-center sm:flex-col-reverse overflow-hidden ${
         reverse ? "flex-row-reverse" : ""
       }`}
       style={{ backgroundColor: card ? "#f9f9f9" : color }}
     >
-      {image && <img src={image} alt="cintia-photo" />}
+      {image && <img src={image} alt="cintia-photo" className="sm:w-200 h-200" />}
       {bubble && !doble && (
-        <div className="grid grid-cols-4 gap-5 mr-20">
+        <div className="grid grid-cols-4 gap-5 mr-20 sm:mr-0 sm:gap-1">
           {bubble.map((item: any, i: number) => (
             <Bubble
               key={i}
@@ -61,16 +61,16 @@ const Section: FC<{
           </div>
         </div>
       )}
-      <div className={`w-1/2 sm:w-full ${bubble?.length ? "ml-10" : ""}`}>
+      <div className={`w-1/2`}>
         <h1
-          className={`text-center text-4xl font-bold ${
+          className={`text-center text-4xl font-bold sm:text-lg ${
             reverse ? "fadeRightMini" : "fadeLeftMini"
           }`}
         >
           {title}
         </h1>
         <p
-          className={`text-center font-semibold text-xl w-700 text-gray-800 sm:px-4 ${
+          className={`text-center font-semibold text-xl w-700 sm:w-400 text-gray-800 sm:text-sm ${
             reverse ? "fadeRightMini" : "fadeLeftMini"
           }`}
         >

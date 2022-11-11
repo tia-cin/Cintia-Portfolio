@@ -20,15 +20,15 @@ const Landing: FC<{
   document.addEventListener("mousemove", animation);
 
   return (
-    <div className="flex flex-col justify-center items-center relative w-full h-screen overflow-hidden">
+    <div className="flex flex-col justify-center items-center h-screen overflow-hidden">
       <div className="flex flex-col w-1/2 " style={{ zIndex: 1 }}>
-        <p className="text-center font-semibold text-xl fadeUpMini">
+        <p className="text-center font-semibold text-xl fadeUpMini sm:text-sm">
           {smallText}
         </p>
-        <h1 className="text-center text-7xl font-bold fadeUpMini sm:text-5xl">
+        <h1 className="text-center text-7xl font-bold fadeUpMini sm:text-3xl">
           {bigText}
         </h1>
-        <p className="text-center mt-5 text-lg fadeUpMini">{mediumText}</p>
+        <p className="text-center mt-5 text-lg fadeUpMini md:text-base">{mediumText}</p>
       </div>
       <div
         className={`z-0  ${

@@ -52,7 +52,7 @@ export const Bubble: FC<{
             <img
               src={logo}
               alt={alt}
-              className="w-20 h-20 p-1 bg-slate-100 rounded-full object-contain"
+              className="w-20 h-20 p-1 sm:w-16 sm:h-16 bg-slate-100 rounded-full object-contain"
             />
           </div>
         </div>
