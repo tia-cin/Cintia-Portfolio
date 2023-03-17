@@ -21,7 +21,7 @@ const Email: FC = () => {
   };
   return (
     <div className="flex justify-center items-center relative w-full h-screen overflow-hidden">
-      <div style={{ zIndex: 0 }}>
+      {/* <div style={{ zIndex: 0 }}>
         {blobs.slice(0, 4).map((b, i) => (
           <img
             alt="blob"
@@ -31,15 +31,16 @@ const Email: FC = () => {
             id={(Math.floor(Math.random() * 4) + 1).toString()}
           />
         ))}
-      </div>
+      </div> */}
       <form
         onSubmit={sendMail}
         style={{ zIndex: 1 }}
         className="flex flex-col items-center w-1/2 sm:w-full"
       >
         <h1 className="text-5xl font-bold w-3/4 text-center mb-2 sm:w-full">
-          Hi There! How can I help you?
+          Hi There! <p className="text-lg font-medium">How can I help you?</p>
         </h1>
+
         <Inputs title="Full Name" name="name" />
         <Inputs title="Email" name="email" />
         <Inputs title="Subject" name="subject" />

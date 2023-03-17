@@ -30,6 +30,9 @@ const Navbar: React.FC = () => {
         <li>
           <a href="#design">design</a>
         </li>
+        <li>
+          <a href="#projects">projects</a>
+        </li>
       </ul>
     </nav>
   );

@@ -29,7 +29,7 @@ const Section: FC<{
           />
         </div>
       )}
-      {bubble && !doble && (
+      {/* {bubble && !doble && (
         <div className="grid grid-cols-4 gap-5 mr-20 sm:mr-0 sm:gap-1">
           {bubble.map((item: any, i: number) => (
             <Bubble
@@ -69,18 +69,18 @@ const Section: FC<{
             ))}
           </div>
         </div>
-      )}
+      )} */}
       <div className={`w-3/4`}>
         <h1
           className={`uppercase text-4xl font-bold sm:text-lg ${
-            reverse ? "fadeRightMini" : "fadeLeftMini"
+            reverse && "text-center"
           }`}
         >
           {title}
         </h1>
         <p
           className={`font-medium text-xl w-700 sm:w-400 text-gray-800 sm:text-sm ${
-            reverse ? "fadeRightMini" : "fadeLeftMini"
+            reverse && "text-right"
           }`}
         >
           {subtitle}
