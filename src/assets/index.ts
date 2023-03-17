@@ -8,12 +8,12 @@ import javascript from "./images/javascript-icon.png";
 import jest from "./images/jest-icon.png";
 import materialUi from "./images/materialUi-icon.png";
 import mocha from "./images/mocha-icon.png";
-import mongodb from './images/mongodb-icon.png'
+import mongodb from "./images/mongodb-icon.png";
 import nextJs from "./images/nextJs-icon.png";
 import nodeJs from "./images/nodeJs-icon.png";
 import postgreSQL from "./images/postgreSQL-icon.png";
 import react from "./images/react-icon.png";
-import reactNative from './images/react-native.png'
+import reactNative from "./images/react-native.png";
 import redux from "./images/redux-icon.png";
 import sass from "./images/sass-icon.png";
 import tailwind from "./images/tailwind-icon.png";
@@ -44,16 +44,16 @@ import blob8 from "./svgs/output-onlinepngtools (8).png";
 export const blobs = [blob1, blob2, blob3, blob4, blob5, blob6, blob7, blob8];
 
 export const profile = {
-  greeting: "Hi, I'm Cintia",
-  title: "Building virtual tools, products and experiences",
-  subtitle:
-    "Skilled in full-stack development and design to create beautiful and powerful digital solutions",
-  introduction:
-    "I'm an independent IT student with strong passion for development, with proven ability to learn and adapt to new technology and frameworks quickly. Able to identify and correct errors in existing code. Proficient in photography, illustrations, as well as video editing.",
+  topText: "Hi, I'm Cintia Arce",
+  middleText: "Full Stack Developer",
+  bottomText: "Showcasing My Passion for Software Engineering and Design",
+  about:
+    "As a Software Engineer, I have been interested in web development since I finished high school. I learned to search for relevant and useful information on my own and practiced until I found a bootcamp specialized in Full Stack Web Development. There, I worked on real projects, including an e-commerce platform for comic book chapters with innovative tools.On the other hand, my passion for design started in my last years of high school. I studied with professionals and practiced using design programs such as Photoshop, Illustrator, and Premiere. When I graduated, I started to develop my skills in programming and found myself drawn to web development.These experiences have led me to apply for a position that combines my interests in software engineering and UI/UX design. I look forward to demonstrating my skills, learning more, and making an impact in the industry.",
   photo: cintia,
-  techStack: 'Frontend (client-side) and Backend (server-side). Both work together to create a working tech stack. This is also referred to as an application stack.',
-  style: 'Shape projects personalities into an good looking and user-friendly components',
-
+  techStack:
+    "Frontend (client-side) and Backend (server-side). Both work together to create a working tech stack. This is also referred to as an application stack.",
+  style:
+    "Shape projects personalities into an good looking and user-friendly components",
 };
 
 export const colors = ["#ffce6d", "#ED5B2D", "#F7B9A1", "#51ABB2"];
@@ -167,7 +167,7 @@ export const technologies = {
     {
       link: "https://www.mongodb.com/",
       logo: mongodb,
-      alt:"MongoDB"
+      alt: "MongoDB",
     },
     {
       link: "https://git-scm.com/",

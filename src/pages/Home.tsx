@@ -7,13 +7,13 @@ const Home: FC<{
 }> = ({ colors }) => {
   return (
     <div>
-      <Landing
+      {/* <Landing
         smallText={`${profile.greeting} 👋`}
         bigText={profile.title}
         mediumText={profile.subtitle}
         data={blobs}
-      />
-      <Section
+      /> */}
+      {/* <Section
         color={colors[2]}
         title={"About Me"}
         subtitle={profile.introduction}
@@ -37,7 +37,7 @@ const Home: FC<{
         bigText="Here are some of my projects"
         mediumText="Explore the source code"
         data={projects}
-      />
+      /> */}
       <Footer />
     </div>
   );

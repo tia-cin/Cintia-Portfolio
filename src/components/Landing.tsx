@@ -1,57 +1,62 @@
 import React, { FC } from "react";
 import { colors } from "../assets";
 import { Cards } from "./";
+import { gsap, Expo } from "gsap";
+import { BsArrowDown } from "react-icons/bs";
 
 const Landing: FC<{
-  smallText?: string;
-  bigText: string;
-  mediumText: string;
-  data: Array<any>;
-}> = ({ smallText, bigText, mediumText, data }) => {
-  const animation = (e: any) => {
-    document.querySelectorAll(".animated").forEach((move: any) => {
-      let value = move.getAttribute("id");
-      let x = (e.clientX * value) / 250;
-      let y = (e.clientY * value) / 250;
-      move.style.transform = `translateX(${x}px) translateY(${y}px)`;
-    });
-  };
+  topText?: string;
+  middleText: string;
+  bottomText: string;
+  data?: Array<any>;
+}> = ({ topText, middleText, bottomText, data }) => {
+  // const animation = (e: any) => {
+  //   document.querySelectorAll(".animated").forEach((move: any) => {
+  //     let value = move.getAttribute("id");
+  //     let x = (e.clientX * value) / 250;
+  //     let y = (e.clientY * value) / 250;
+  //     move.style.transform = `translateX(${x}px) translateY(${y}px)`;
+  //   });
+  // };
 
-  document.addEventListener("mousemove", animation);
+  // document.addEventListener("mousemove", animation);
+
+  React.useEffect(() => {
+    gsap.fromTo(
+      "#titles",
+      { duration: 0.5, opacity: 0, y: -40 },
+      { duration: 0.5, opacity: 1, y: 0 }
+    );
+
+    gsap.fromTo(
+      "#scrolldown",
+      { opacity: 0, y: -40 },
+      { duration: 2.5, opacity: 1, y: 0, ease: Expo.easeInOut }
+    );
+  }, []);
 
   return (
     <div className="flex flex-col justify-center items-center relative w-full h-screen overflow-hidden">
-      <div className="flex flex-col w-1/2 " style={{ zIndex: 1 }}>
+      <div id="titles" className="flex flex-col w-full " style={{ zIndex: 1 }}>
         <p className="text-center font-semibold text-xl fadeUpMini sm:text-sm">
-          {smallText}
+          {topText}
         </p>
         <h1 className="text-center text-7xl font-bold fadeUpMini sm:text-3xl">
-          {bigText}
+          {middleText}
         </h1>
-        <p className="text-center mt-5 text-lg fadeUpMini md:text-base">{mediumText}</p>
+        <p className="text-center mt-5 text-lg fadeUpMini md:text-base">
+          {bottomText}
+        </p>
       </div>
       <div
         className={`z-0 ${
+          data &&
           typeof data[0] !== "string" &&
           "grid grid-cols-3 gap-8 my-5 sm:grid-cols-2"
         }`}
       >
-        {data.map((item, i) =>
-          typeof item === "string" ? (
-            <img
-              alt="blob"
-              src={item}
-              key={i}
-              style={{
-                top: 0,
-                left: 0,
-                objectFit: "contain",
-                zIndex: 0,
-              }}
-              className="animated absolute w-full h-full sm:hidden drop-shadow-lg transition-all"
-              id={(Math.floor(Math.random() * 5) + 1).toString()}
-            />
-          ) : (
+        {data ? (
+          data.map((item, i) => (
             <Cards
               color={colors[Math.floor(Math.random() * 4)]}
               key={i}
@@ -61,7 +66,14 @@ const Landing: FC<{
               title={item.title}
               description={item.description}
             />
-          )
+          ))
+        ) : (
+          <div id="scrolldown">
+            <button className="relative -bottom-40 flex flex-col items-center ">
+              Scroll down
+              <BsArrowDown />
+            </button>
+          </div>
         )}
       </div>
     </div>
