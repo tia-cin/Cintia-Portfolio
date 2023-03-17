@@ -1,7 +1,6 @@
 import React from "react";
-import { Footer, Landing, Navbar, Section } from "./components";
+import { Footer, Landing, Navbar, Section, Email } from "./components";
 import { colors, profile, technologies, projects } from "./assets";
-import { Email } from "./pages";
 
 export const App: React.FC = () => {
   return (
