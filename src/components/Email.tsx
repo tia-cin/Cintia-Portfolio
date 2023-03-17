@@ -1,5 +1,5 @@
 import React, { FC, useState } from "react";
-import { Inputs } from "../components";
+import { Inputs } from ".";
 import emailjs from "@emailjs/browser";
 import { blobs } from "../assets";
 
