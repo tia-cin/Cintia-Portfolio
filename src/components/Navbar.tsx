@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
       <div className="m-5 ">
         <p className="text-xl font-semibold">Portfolio</p>
       </div>
-      <ul className="m-5 flex justify-around w-1/3">
+      <ul className="m-5 flex justify-around w-1/2">
         <li>
           <a href="#home">home</a>
         </li>
@@ -32,6 +32,9 @@ const Navbar: React.FC = () => {
         </li>
         <li>
           <a href="#projects">projects</a>
+        </li>
+        <li>
+          <a href="#contact">contact</a>
         </li>
       </ul>
     </nav>
