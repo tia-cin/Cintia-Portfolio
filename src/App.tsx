@@ -1,5 +1,12 @@
 import React from "react";
-import { Footer, Landing, Navbar, Section, Email } from "./components";
+import {
+  Footer,
+  Landing,
+  Navbar,
+  Section,
+  Email,
+  Projects,
+} from "./components";
 import { colors, profile, technologies, projects } from "./assets";
 
 export const App: React.FC = () => {
@@ -36,12 +43,11 @@ export const App: React.FC = () => {
         doble
       />
       <Landing
-        id="projects"
         middleText="Here are some of my projects"
-        topText=""
         bottomText="Explore the source code"
-        data={projects}
+        id="projects"
       />
+      <Projects projects={projects} />
       <Email />
       <Footer />
     </div>

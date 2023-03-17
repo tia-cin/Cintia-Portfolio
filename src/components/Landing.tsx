@@ -1,6 +1,4 @@
 import React, { FC } from "react";
-import { colors } from "../assets";
-import { Cards } from "./";
 import { gsap, Expo } from "gsap";
 import { BsArrowDown } from "react-icons/bs";
 
@@ -8,20 +6,8 @@ const Landing: FC<{
   topText?: string;
   middleText: string;
   bottomText: string;
-  data?: Array<any>;
   id: string;
-}> = ({ topText, middleText, bottomText, data, id }) => {
-  // const animation = (e: any) => {
-  //   document.querySelectorAll(".animated").forEach((move: any) => {
-  //     let value = move.getAttribute("id");
-  //     let x = (e.clientX * value) / 250;
-  //     let y = (e.clientY * value) / 250;
-  //     move.style.transform = `translateX(${x}px) translateY(${y}px)`;
-  //   });
-  // };
-
-  // document.addEventListener("mousemove", animation);
-
+}> = ({ topText, middleText, bottomText, id }) => {
   React.useEffect(() => {
     gsap.fromTo(
       "#titles",
@@ -52,33 +38,11 @@ const Landing: FC<{
           {bottomText}
         </p>
       </div>
-      <div
-        className={`z-0 ${
-          data &&
-          typeof data[0] !== "string" &&
-          "grid grid-cols-3 gap-8 my-5 sm:grid-cols-2"
-        }`}
-      >
-        {data ? (
-          data.map((item, i) => (
-            <Cards
-              color={colors[Math.floor(Math.random() * 4)]}
-              key={i}
-              link={item.link}
-              logo={item.logo}
-              alt={item.alt}
-              title={item.title}
-              description={item.description}
-            />
-          ))
-        ) : (
-          <div id="scrolldown">
-            <button className="relative -bottom-40 flex flex-col items-center ">
-              Scroll down
-              <BsArrowDown />
-            </button>
-          </div>
-        )}
+      <div id="scrolldown">
+        <button className="relative -bottom-40 flex flex-col items-center ">
+          Scroll down
+          <BsArrowDown />
+        </button>
       </div>
     </div>
   );

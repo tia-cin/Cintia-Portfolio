@@ -12,7 +12,7 @@ export const Cards: FC<{
   return (
     <section
       style={{ backgroundColor: color }}
-      className="rounded drop-shadow-xl p-2 flex justify-between items-center w-400 sm:w-fit sm:justify-center"
+      className="rounded drop-shadow-xl p-2 flex justify-between items-center w-full h-screen sm:w-fit sm:justify-center"
     >
       <div
         className="my-2 mx-5 bg-slate-50 rounded w-20 h-20 sm:w-50 sm:h-50"

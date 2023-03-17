@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Landing from "./Landing";
 import Section from "./Section";
 import Email from "./Email";
+import Projects from "./Projects";
 
 export {
   Bubble,
@@ -15,4 +16,5 @@ export {
   Landing,
   Section,
   Email,
+  Projects,
 };
