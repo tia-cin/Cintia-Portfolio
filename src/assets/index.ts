@@ -48,7 +48,7 @@ export const profile = {
   middleText: "Full Stack Developer",
   bottomText: "Showcasing My Passion for Software Engineering and Design",
   about:
-    "As a Software Engineer, I have been interested in web development since I finished high school. I learned to search for relevant and useful information on my own and practiced until I found a bootcamp specialized in Full Stack Web Development. There, I worked on real projects, including an e-commerce platform for comic book chapters with innovative tools.On the other hand, my passion for design started in my last years of high school. I studied with professionals and practiced using design programs such as Photoshop, Illustrator, and Premiere. When I graduated, I started to develop my skills in programming and found myself drawn to web development.These experiences have led me to apply for a position that combines my interests in software engineering and UI/UX design. I look forward to demonstrating my skills, learning more, and making an impact in the industry.",
+    "This software engineer is an independent student with a strong background in full-stack web development and design. They have experience in developing real projects, including an e-commerce platform for comic book chapters with innovative tools. They also have a passion for design and have honed their skills in design programs such as Photoshop, Illustrator, and Premiere. They are looking to make an impact in the industry and are eager to learn and demonstrate their skills.",
   photo: cintia,
   techStack:
     "Frontend (client-side) and Backend (server-side). Both work together to create a working tech stack. This is also referred to as an application stack.",

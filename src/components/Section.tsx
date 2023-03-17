@@ -10,20 +10,24 @@ const Section: FC<{
   bubble?: any;
   card?: Array<any>;
   doble?: boolean;
-}> = ({ reverse, color, title, subtitle, image, bubble, card, doble }) => {
+  id: string;
+}> = ({ reverse, color, title, subtitle, image, bubble, card, doble, id }) => {
   return (
     <div
-      className={`flex justify-around h-screen items-center sm:flex-col-reverse overflow-hidden ${
+      id={id}
+      className={`flex justify-evenly h-screen items-center sm:flex-col-reverse overflow-hidden ${
         reverse ? "flex-row-reverse" : ""
       }`}
       style={{ backgroundColor: card ? "#f9f9f9" : color }}
     >
       {image && (
-        <img
-          src={image}
-          alt="cintia-profile"
-          className="sm:w-200 h-200 drop-shadow-lg"
-        />
+        <div className="scale-75 drop-shadow-lg">
+          <img
+            src={image}
+            alt="cintia-profile"
+            className="w-full rounded-3xl bg-white"
+          />
+        </div>
       )}
       {bubble && !doble && (
         <div className="grid grid-cols-4 gap-5 mr-20 sm:mr-0 sm:gap-1">
@@ -66,16 +70,16 @@ const Section: FC<{
           </div>
         </div>
       )}
-      <div className={`w-1/2`}>
+      <div className={`w-3/4`}>
         <h1
-          className={`text-center text-4xl font-bold sm:text-lg ${
+          className={`uppercase text-4xl font-bold sm:text-lg ${
             reverse ? "fadeRightMini" : "fadeLeftMini"
           }`}
         >
           {title}
         </h1>
         <p
-          className={`text-center font-semibold text-xl w-700 sm:w-400 text-gray-800 sm:text-sm ${
+          className={`font-medium text-xl w-700 sm:w-400 text-gray-800 sm:text-sm ${
             reverse ? "fadeRightMini" : "fadeLeftMini"
           }`}
         >

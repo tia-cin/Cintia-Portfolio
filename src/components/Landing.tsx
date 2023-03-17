@@ -9,7 +9,8 @@ const Landing: FC<{
   middleText: string;
   bottomText: string;
   data?: Array<any>;
-}> = ({ topText, middleText, bottomText, data }) => {
+  id: string;
+}> = ({ topText, middleText, bottomText, data, id }) => {
   // const animation = (e: any) => {
   //   document.querySelectorAll(".animated").forEach((move: any) => {
   //     let value = move.getAttribute("id");
@@ -36,7 +37,10 @@ const Landing: FC<{
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center relative w-full h-screen overflow-hidden">
+    <div
+      id={id}
+      className="flex flex-col justify-center items-center relative w-full h-screen overflow-hidden"
+    >
       <div id="titles" className="flex flex-col w-full " style={{ zIndex: 1 }}>
         <p className="text-center font-semibold text-xl fadeUpMini sm:text-sm">
           {topText}
