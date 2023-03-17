@@ -1,6 +1,5 @@
 import React, { FC } from "react";
-import { Bubble, Cards } from "./";
-import { colors } from "../assets";
+import { Bubble } from "./";
 
 const Section: FC<{
   reverse?: boolean;
@@ -19,7 +18,13 @@ const Section: FC<{
       }`}
       style={{ backgroundColor: card ? "#f9f9f9" : color }}
     >
-      {image && <img src={image} alt="cintia-photo" className="sm:w-200 h-200 drop-shadow-lg" />}
+      {image && (
+        <img
+          src={image}
+          alt="cintia-profile"
+          className="sm:w-200 h-200 drop-shadow-lg"
+        />
+      )}
       {bubble && !doble && (
         <div className="grid grid-cols-4 gap-5 mr-20 sm:mr-0 sm:gap-1">
           {bubble.map((item: any, i: number) => (
