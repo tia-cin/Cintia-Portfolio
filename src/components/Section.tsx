@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import { colors } from "../assets";
 import { Bubble } from "./";
 
 const Section: FC<{
@@ -29,15 +30,14 @@ const Section: FC<{
           />
         </div>
       )}
-      {/* {bubble && !doble && (
-        <div className="grid grid-cols-4 gap-5 mr-20 sm:mr-0 sm:gap-1">
+      {bubble && !doble && (
+        <div className="grid grid-cols-4 gap-10 mr-20 sm:mr-0 sm:gap-1">
           {bubble.map((item: any, i: number) => (
             <Bubble
               key={i}
               link={item.link}
-              logo={item.logo}
-              alt={item.alt}
-              color={color}
+              name={item.alt}
+              color={colors[Math.floor(Math.random() * colors.length)]}
             />
           ))}
         </div>
@@ -47,39 +47,27 @@ const Section: FC<{
           <h1 className="text-center my-4 font-bold text-3xl">Design ideas</h1>
           <div className="flex my-2">
             {bubble[1]?.map((item: any, i: number) => (
-              <Bubble
-                key={i}
-                link={item.link}
-                logo={item.logo}
-                alt={item.alt}
-                color={color}
-              />
+              <Bubble key={i} link={item.link} name={item.alt} color={color} />
             ))}
           </div>
           <h1 className="text-center my-4 font-bold text-3xl">Customize UI</h1>
           <div className="flex my-2">
             {bubble[0]?.map((item: any, i: number) => (
-              <Bubble
-                key={i}
-                link={item.link}
-                logo={item.logo}
-                alt={item.alt}
-                color={color}
-              />
+              <Bubble key={i} link={item.link} name={item.alt} color={color} />
             ))}
           </div>
         </div>
-      )} */}
-      <div className={`w-3/4`}>
+      )}
+      <div className={`w-3/4 mr-20 px-20`}>
         <h1
           className={`uppercase text-4xl font-bold sm:text-lg ${
-            reverse && "text-center"
+            reverse && "text-right"
           }`}
         >
           {title}
         </h1>
         <p
-          className={`font-medium text-xl w-700 sm:w-400 text-gray-800 sm:text-sm ${
+          className={`font-medium text-xl  text-gray-800 sm:text-sm ${
             reverse && "text-right"
           }`}
         >

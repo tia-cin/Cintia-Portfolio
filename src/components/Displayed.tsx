@@ -36,26 +36,13 @@ export const Cards: FC<{
 
 export const Bubble: FC<{
   link: string;
-  logo: string;
-  alt: string;
+  name: string;
   color: string;
-}> = ({ link, logo, alt, color }) => {
+}> = ({ link, name }) => {
   return (
-    <div className="m-2 g-col-2">
+    <div className="m-2 rounded-xl w-32 bg-slate-50">
       <a href={link} style={{ textDecoration: "none" }}>
-        <div
-          style={{ backgroundColor: color }}
-          className="circle animated d-flex flex-column justify-content-center align-items-center"
-          id={(Math.random() * 5 + 2).toString()}
-        >
-          <div className="">
-            <img
-              src={logo}
-              alt={alt}
-              className="w-20 h-20 p-1 sm:w-16 sm:h-16 bg-slate-100 rounded-full object-contain"
-            />
-          </div>
-        </div>
+        <p className="uppercase text-lg text-center px-1">{name}</p>
       </a>
     </div>
   );
@@ -66,7 +53,7 @@ export const Links: FC<{
   href?: string;
   name: string;
   icon: any;
-}> = ({ link, href, name, icon }) => {
+}> = ({ link, href, icon }) => {
   return (
     <div className="my-2 mx-5 cursor-pointer">
       {link && <Link to={link}>{icon}</Link>}
