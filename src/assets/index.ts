@@ -41,6 +41,11 @@ import blob6 from "./svgs/output-onlinepngtools (6).png";
 import blob7 from "./svgs/output-onlinepngtools (7).png";
 import blob8 from "./svgs/output-onlinepngtools (8).png";
 
+import project1 from "./images/project-1.png";
+import project2 from "./images/project-2.png";
+import project3 from "./images/project-3.png";
+import project4 from "./images/project-4.png";
+
 export const blobs = [blob1, blob2, blob3, blob4, blob5, blob6, blob7, blob8];
 
 export const profile = {
@@ -201,42 +206,28 @@ export const social = [
 export const projects = [
   {
     link: "https://dashboard-shoppy.vercel.app/",
-    logo: "https://dashboard-shoppy.vercel.app/shopware-icon.png",
+    landing: project2,
     alt: "react-icon",
     title: "Dashboard",
     description: "Organize your team and projects",
   },
   {
-    link: "https://deploy-client-kappa.vercel.app/",
-    logo: mangaka,
-    alt: "mangaka-icon",
-    description: "E-Commerse project for mangas/comics chapters with reader",
-    title: "Mangaka",
-  },
-  {
-    link: "https://music-app-self.vercel.app",
-    title: "Music App",
-    description: "Simple song player app made with Vue JS",
-    logo: music,
-    alt: "music-app-icon",
-  },
-  {
-    link: "https://dictionary-app-omega.vercel.app",
-    logo: dictionary,
-    alt: "dictionary-app-icon",
-    description: "Search any word and find about their definition and more",
-    title: "Dictionary App",
-  },
-  {
     link: "https://ecommerce-store-tia-cin.vercel.app/",
-    logo: ecommerce,
+    landing: project4,
     alt: "ecommerce-store-icon",
     description: "Buy tech products in this ecommerce website",
     title: "Ecommerce Store",
   },
   {
     link: "https://nft-langing.vercel.app/",
-    logo: reactNative,
+    landing: project3,
+    alt: "landing-plane",
+    description: "Landing Pages Templates for business",
+    title: "Landing Plane",
+  },
+  {
+    link: "https://nft-langing.vercel.app/",
+    landing: project1,
     alt: "nft-market-landing",
     description: "Landing Page for NFT Market React Native App",
     title: "ProNef",

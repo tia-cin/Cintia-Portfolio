@@ -3,32 +3,31 @@ import { Link } from "react-router-dom";
 
 export const Cards: FC<{
   link: string;
-  logo: string;
+  landing: string;
   alt: string;
   title: string;
   description: string;
   color: string;
-}> = ({ link, logo, alt, title, description, color }) => {
+}> = ({ link, landing, alt, title, description, color }) => {
   return (
     <section
       style={{ backgroundColor: color }}
-      className="rounded drop-shadow-xl p-2 flex justify-between items-center w-full h-screen sm:w-fit sm:justify-center"
+      className="h-screen w-full relative"
     >
-      <div
-        className="my-2 mx-5 bg-slate-50 rounded w-20 h-20 sm:w-50 sm:h-50"
-        onClick={() => window.open(link, "_blank")}
-      >
-        <img src={logo} alt={alt} className="object-cover w-full h-full p-2" />
+      <div className="bg-black opacity-40 z-2 w-full">
+        <img src={landing} alt={alt} className=" w-full h-screen opacity-50 " />
       </div>
-      <div className="w-3/4 sm:hidden">
-        <p className="text-lg font-semibold m-0 ">{title}</p>
-        <p className="h-15 mb-3 ">{description}</p>
-        <button
-          className="rounded w-full bg-slate-50 my-2 py-2 uppercase font-semibold"
-          onClick={() => window.open(link, "_blank")}
-        >
-          Explore
-        </button>
+      <div className="h-screen z-10 absolute top-60 w-full">
+        <p className="text-8xl font-semibold m-0 text-center">{title}</p>
+        <p className="h-15 my-3 text-2xl ml-20 text-center">{description}</p>
+        <div className="flex justify-center">
+          <button
+            className="rounded w-60 bg-slate-50 my-2 py-2 uppercase font-semibold"
+            onClick={() => window.open(link, "_blank")}
+          >
+            Explore
+          </button>
+        </div>
       </div>
     </section>
   );
