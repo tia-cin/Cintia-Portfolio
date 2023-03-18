@@ -11,6 +11,7 @@ export const Cards: FC<{
 }> = ({ link, landing, alt, title, description, color }) => {
   return (
     <section
+      id="card"
       style={{ backgroundColor: color }}
       className="h-screen w-full relative"
     >
