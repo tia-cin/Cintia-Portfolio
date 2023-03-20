@@ -16,28 +16,28 @@ const Projects: React.FC<{
 }> = ({ projects }) => {
   React.useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+
     let sections = gsap.utils.toArray("#card");
+
     gsap.to(sections, {
       xPercent: -100 * (sections.length - 1),
       ease: "none",
-      // duration: 10,
       scrollTrigger: {
         trigger: "#projects-container",
-        toggleActions: "restart pause reverse pause",
+        // toggleActions: "resume pause reverse pause",
         start: "top top",
-        // pin: true,
-        scrub: 5,
-        //   snap: 1 / (sections.length - 1),
-        //   end: "+=3500",
-        markers: true,
+        pin: true,
+        scrub: 1,
+        snap: 1 / (sections.length - 1),
+        end: "bottom bottom",
       },
     });
   }, []);
   return (
     <div
       id="projects-container"
-      className="flex "
-      style={{ overscrollBehavior: "none", width: "400%" }}
+      className="flex overflow-hidden"
+      style={{ width: "400%", overscrollBehavior: "none" }}
     >
       {projects.map((p: ProjectItem, i: number) => (
         <Cards
