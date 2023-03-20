@@ -17,42 +17,42 @@ const Projects: React.FC<{
   React.useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    let sections = gsap.utils.toArray("#card");
+    const container = document.querySelector("#content");
+    const sections = gsap.utils.toArray("#card");
 
     gsap.to(sections, {
       xPercent: -100 * (sections.length - 1),
       ease: "none",
       scrollTrigger: {
-        trigger: "#projects-container",
-        // toggleActions: "play pause reverse pause",
-        // start: "top top",
+        trigger: container,
         pin: true,
-        scrub: 1,
+        scrub: 5,
         snap: 1 / (sections.length - 1),
-        end: "bottom bottom",
-        // end: () =>
-        //   (document.querySelector("#projects-container") as HTMLElement)
-        //     .offsetHeight,
+        end: () =>
+          (document.querySelector("#projects-container") as HTMLElement)
+            .offsetWidth,
       },
     });
   }, []);
   return (
-    <div
-      id="projects-container"
-      className="flex"
-      style={{ width: "400%", height: "100%", overscrollBehavior: "none" }}
-    >
-      {projects.map((p: ProjectItem, i: number) => (
-        <Cards
-          alt={p.alt}
-          color=""
-          description={p.description}
-          link={p.link}
-          landing={p.landing}
-          title={p.title}
-          key={i}
-        />
-      ))}
+    <div id="projects-container" className="h-screen overflow-hidden">
+      <div
+        id="content"
+        className="overflow-hidden flex relative h-screen"
+        style={{ width: "400%" }}
+      >
+        {projects.map((p: ProjectItem, i: number) => (
+          <Cards
+            alt={p.alt}
+            color=""
+            description={p.description}
+            link={p.link}
+            landing={p.landing}
+            title={p.title}
+            key={i}
+          />
+        ))}
+      </div>
     </div>
   );
 };
