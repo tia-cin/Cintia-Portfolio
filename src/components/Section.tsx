@@ -28,51 +28,37 @@ const Section: FC<SectionProps> = ({
   id,
 }) => {
   React.useEffect(() => {
-    const animateFrom = (elem: HTMLElement, direction?: any) => {
-      direction = direction || 1;
-      let x = 0,
-        y = direction * 100;
-      if (elem.classList.contains("fromLeft")) {
-        x = -100;
-        y = 0;
-      } else if (elem.classList.contains("fromRight")) {
-        x = 100;
-        y = 0;
-      }
-      elem.style.transform = "translate(" + x + "px, " + y + "px)";
-      elem.style.opacity = "0";
-      gsap.fromTo(
-        elem,
-        { x: x, y: y, autoAlpha: 0 },
-        {
-          duration: 1.25,
-          x: 0,
-          y: 0,
-          autoAlpha: 1,
-          ease: "expo",
-          overwrite: "auto",
-        }
-      );
-    };
+    gsap.registerPlugin(ScrollTrigger);
+    const imagesLeft = gsap.utils.toArray(".fromLeft") as HTMLElement[];
 
-    const hide = (elem: HTMLElement) => gsap.set(elem, { autoAlpha: 0 });
+    imagesLeft.forEach((item: HTMLElement) => {
+      const timeLine = gsap.timeline({
+        scrollTrigger: {
+          trigger: item,
+          toggleActions: "play reverse play reverse",
+        },
+      });
+      timeLine.from(item, {
+        x: -100,
+        opacity: 0,
+        duration: 1,
+      });
+    });
 
-    document.addEventListener("DOMContentLoaded", () => {
-      gsap.registerPlugin(ScrollTrigger);
+    const imagesRight = gsap.utils.toArray(".fromRight") as HTMLElement[];
 
-      (gsap.utils.toArray(".gs_reveal") as HTMLElement[]).forEach(
-        (elem: HTMLElement) => {
-          hide(elem);
-
-          ScrollTrigger.create({
-            trigger: elem,
-            markers: true,
-            onEnter: () => animateFrom(elem),
-            onEnterBack: () => animateFrom(elem, -1),
-            onLeave: () => hide(elem),
-          });
-        }
-      );
+    imagesRight.forEach((item: HTMLElement) => {
+      const timeLine = gsap.timeline({
+        scrollTrigger: {
+          trigger: item,
+          toggleActions: "play reverse play reverse",
+        },
+      });
+      timeLine.from(item, {
+        x: 100,
+        opacity: 0,
+        duration: 1,
+      });
     });
   }, []);
   return (
@@ -83,8 +69,6 @@ const Section: FC<SectionProps> = ({
       }`}
       style={{
         backgroundColor: card ? "#f9f9f9" : color,
-        opacity: 0,
-        visibility: "hidden",
       }}
     >
       {image && (
