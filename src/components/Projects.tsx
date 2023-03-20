@@ -24,22 +24,23 @@ const Projects: React.FC<{
       ease: "none",
       scrollTrigger: {
         trigger: "#projects-container",
-        toggleActions: "restart pause reverse pause",
-        start: "top top",
+        // toggleActions: "play pause reverse pause",
+        // start: "top top",
         pin: true,
         scrub: 1,
         snap: 1 / (sections.length - 1),
-        end: () =>
-          (document.querySelector("#projects-container") as HTMLElement)
-            .offsetHeight,
+        end: "bottom bottom",
+        // end: () =>
+        //   (document.querySelector("#projects-container") as HTMLElement)
+        //     .offsetHeight,
       },
     });
   }, []);
   return (
     <div
       id="projects-container"
-      className="flex overflow-hidden"
-      style={{ width: "400%", overscrollBehavior: "none" }}
+      className="flex"
+      style={{ width: "400%", height: "100%", overscrollBehavior: "none" }}
     >
       {projects.map((p: ProjectItem, i: number) => (
         <Cards
