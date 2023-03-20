@@ -9,27 +9,22 @@ const Projects: React.FC<{
   projects: any[];
 }> = ({ projects }) => {
   React.useEffect(() => {
-    let sections = gsap.utils.toArray("#card");
-
-    gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1),
-      ease: "none",
+    gsap.to("#projects-container", {
       scrollTrigger: {
-        trigger: "#projects-container",
+        scroller: "#projects-container",
+        scrub: true,
+        trigger: "#card",
         pin: true,
-        scrub: 1,
-        snap: 1 / (sections.length - 1),
-        end: () =>
-          "+=" +
-          (document.querySelector(".container") as HTMLElement)?.offsetWidth,
+        start: "top top",
+        end: "600vh",
       },
+      ease: "none",
     });
   }, []);
   return (
     <div
       id="projects-container"
       className="flex "
-      // className="flex flex-col justify-center items-center relative w-full min-h-screen overflow-hidden"
       style={{ overscrollBehavior: "none", width: "400%" }}
     >
       {projects.map((p: any, i: number) => (
