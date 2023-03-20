@@ -1,8 +1,10 @@
 import React, { FC } from "react";
 import { colors } from "../assets";
 import { Bubble } from "./";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
-const Section: FC<{
+interface SectionProps {
   reverse?: boolean;
   color: any | string;
   title: string;
@@ -12,14 +14,78 @@ const Section: FC<{
   card?: Array<any>;
   doble?: boolean;
   id: string;
-}> = ({ reverse, color, title, subtitle, image, bubble, card, doble, id }) => {
+}
+
+const Section: FC<SectionProps> = ({
+  reverse,
+  color,
+  title,
+  subtitle,
+  image,
+  bubble,
+  card,
+  doble,
+  id,
+}) => {
+  React.useEffect(() => {
+    const animateFrom = (elem: HTMLElement, direction?: any) => {
+      direction = direction || 1;
+      let x = 0,
+        y = direction * 100;
+      if (elem.classList.contains("fromLeft")) {
+        x = -100;
+        y = 0;
+      } else if (elem.classList.contains("fromRight")) {
+        x = 100;
+        y = 0;
+      }
+      elem.style.transform = "translate(" + x + "px, " + y + "px)";
+      elem.style.opacity = "0";
+      gsap.fromTo(
+        elem,
+        { x: x, y: y, autoAlpha: 0 },
+        {
+          duration: 1.25,
+          x: 0,
+          y: 0,
+          autoAlpha: 1,
+          ease: "expo",
+          overwrite: "auto",
+        }
+      );
+    };
+
+    const hide = (elem: HTMLElement) => gsap.set(elem, { autoAlpha: 0 });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      (gsap.utils.toArray(".gs_reveal") as HTMLElement[]).forEach(
+        (elem: HTMLElement) => {
+          hide(elem);
+
+          ScrollTrigger.create({
+            trigger: elem,
+            markers: true,
+            onEnter: () => animateFrom(elem),
+            onEnterBack: () => animateFrom(elem, -1),
+            onLeave: () => hide(elem),
+          });
+        }
+      );
+    });
+  }, []);
   return (
     <div
       id={id}
-      className={`flex justify-evenly h-screen items-center sm:flex-col-reverse overflow-hidden ${
-        reverse ? "flex-row-reverse" : ""
+      className={`gs_reveal flex justify-evenly h-screen items-center sm:flex-col-reverse overflow-hidden ${
+        reverse ? "flex-row-reverse fromLeft" : "fromRight"
       }`}
-      style={{ backgroundColor: card ? "#f9f9f9" : color }}
+      style={{
+        backgroundColor: card ? "#f9f9f9" : color,
+        opacity: 0,
+        visibility: "hidden",
+      }}
     >
       {image && (
         <div className="scale-75 drop-shadow-lg">
