@@ -24,12 +24,14 @@ const Projects: React.FC<{
       ease: "none",
       scrollTrigger: {
         trigger: "#projects-container",
-        // toggleActions: "resume pause reverse pause",
+        toggleActions: "restart pause reverse pause",
         start: "top top",
         pin: true,
         scrub: 1,
         snap: 1 / (sections.length - 1),
-        end: "bottom bottom",
+        end: () =>
+          (document.querySelector("#projects-container") as HTMLElement)
+            .offsetHeight,
       },
     });
   }, []);
