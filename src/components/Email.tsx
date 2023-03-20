@@ -20,7 +20,10 @@ const Email: FC = () => {
     }, 5000);
   };
   return (
-    <div className="flex justify-center items-center relative w-full h-screen overflow-hidden">
+    <div
+      id="email"
+      className="flex justify-center items-center relative w-full h-screen overflow-hidden"
+    >
       {/* <div style={{ zIndex: 0 }}>
         {blobs.slice(0, 4).map((b, i) => (
           <img
