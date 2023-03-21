@@ -118,7 +118,7 @@ const Section: FC<SectionProps> = ({
           </div>
         </div>
       )}
-      <div className={`w-3/4 mr-20 px-20`}>
+      <div className={`w-3/4 mr-20 px-20 gs_reveal`}>
         <h1
           className={`uppercase text-4xl font-bold sm:text-lg ${
             reverse && "text-right"
