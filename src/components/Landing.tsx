@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import { gsap, Expo } from "gsap";
 import { BsArrowDown } from "react-icons/bs";
 
 const Landing: FC<{
@@ -8,24 +7,10 @@ const Landing: FC<{
   bottomText: string;
   id: string;
 }> = ({ topText, middleText, bottomText, id }) => {
-  React.useEffect(() => {
-    gsap.fromTo(
-      "#titles",
-      { duration: 0.5, opacity: 0, y: -40 },
-      { duration: 0.5, opacity: 1, y: 0 }
-    );
-
-    gsap.fromTo(
-      "#scrolldown",
-      { opacity: 0, y: -40 },
-      { duration: 2.5, opacity: 1, y: 0, ease: Expo.easeInOut }
-    );
-  }, []);
-
   return (
     <div
       id={id}
-      className="flex flex-col justify-center items-center relative w-full h-screen overflow-hidden"
+      className="gs_reveal flex flex-col justify-center items-center relative w-full h-screen overflow-hidden"
     >
       <div id="titles" className="flex flex-col w-full " style={{ zIndex: 1 }}>
         <p className="text-center font-semibold text-xl fadeUpMini sm:text-sm">
