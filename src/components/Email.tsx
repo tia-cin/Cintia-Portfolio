@@ -28,11 +28,10 @@ const Email: FC = () => {
   return (
     <div
       id="contact"
-      className="flex justify-center items-center relative w-full h-screen overflow-hidden"
+      className="gs_reveal flex justify-center items-center relative w-full h-screen overflow-hidden"
     >
       <form
         onSubmit={sendMail}
-        style={{ zIndex: 1 }}
         className="flex flex-col items-center w-3/4 sm:w-full"
       >
         <h1 className="text-5xl font-bold  text-center mb-2 sm:w-full">
