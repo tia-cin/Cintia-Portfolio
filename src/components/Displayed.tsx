@@ -70,21 +70,14 @@ export const Inputs: FC<{
 }> = ({ title, name }) => {
   return (
     <div>
-      {title === "Message" ? (
-        <textarea
-          className="rounded border-color border my-3 p-2 w-80"
-          rows={5}
-          placeholder={title}
-          name={name}
-        ></textarea>
-      ) : (
-        <input
-          type="text"
-          placeholder={title}
-          name={name}
-          className="rounded border-color border my-3 p-2 w-80 placeholder-black"
-        />
-      )}
+      <input
+        type="text"
+        placeholder={title}
+        name={name}
+        className={`rounded border-color border my-3 p-2 w-full placeholder-black ${
+          title === "Message" && "pb-40"
+        }`}
+      />
     </div>
   );
 };

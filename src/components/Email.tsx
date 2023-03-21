@@ -2,9 +2,14 @@ import React, { FC, useState } from "react";
 import { Inputs } from ".";
 import emailjs from "@emailjs/browser";
 import { blobs } from "../assets";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Email: FC = () => {
   const [done, setDone] = useState(false);
+
   const sendMail = (e: any) => {
     e.preventDefault();
     emailjs.sendForm(
@@ -19,38 +24,29 @@ const Email: FC = () => {
       setDone(false);
     }, 5000);
   };
+
   return (
     <div
-      id="email"
+      id="contact"
       className="flex justify-center items-center relative w-full h-screen overflow-hidden"
     >
-      {/* <div style={{ zIndex: 0 }}>
-        {blobs.slice(0, 4).map((b, i) => (
-          <img
-            alt="blob"
-            src={b}
-            key={i}
-            className="animated absolute drop-shadow-lg w-full h-full top-0 left-0 object-contain sm:hidden"
-            id={(Math.floor(Math.random() * 4) + 1).toString()}
-          />
-        ))}
-      </div> */}
       <form
         onSubmit={sendMail}
         style={{ zIndex: 1 }}
-        className="flex flex-col items-center w-1/2 sm:w-full"
+        className="flex flex-col items-center w-3/4 sm:w-full"
       >
-        <h1 className="text-5xl font-bold w-3/4 text-center mb-2 sm:w-full">
+        <h1 className="text-5xl font-bold  text-center mb-2 sm:w-full">
           Hi There! <p className="text-lg font-medium">How can I help you?</p>
         </h1>
-
-        <Inputs title="Full Name" name="name" />
-        <Inputs title="Email" name="email" />
-        <Inputs title="Subject" name="subject" />
-        <Inputs title="Message" name="messge" />
+        <div className="w-3/5">
+          <Inputs title="Full Name" name="name" />
+          <Inputs title="Email" name="email" />
+          <Inputs title="Subject" name="subject" />
+          <Inputs title="Message" name="messge" />
+        </div>
         <button
           type="submit"
-          className="w-1/2 bg-teal-500 rounded my-2 py-3 uppercase font-semibold text-xl"
+          className="w-2/4 bg-teal-500 rounded my-2 py-3 uppercase font-semibold text-xl"
         >
           Send
         </button>
