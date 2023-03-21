@@ -27,26 +27,10 @@ import figma from "./images/figma-icon.png";
 
 import cintia from "./images/cintia-arce-profile.png";
 
-import dictionary from "./images/dictionary.png";
-import ecommerce from "./images/ecommerce-store.png";
-import mangaka from "./images/mangaca-icon.png";
-import music from "./images/music-app.png";
-
-import blob1 from "./svgs/output-onlinepngtools (1).png";
-import blob2 from "./svgs/output-onlinepngtools (2).png";
-import blob3 from "./svgs/output-onlinepngtools (3).png";
-import blob4 from "./svgs/output-onlinepngtools (4).png";
-import blob5 from "./svgs/output-onlinepngtools (5).png";
-import blob6 from "./svgs/output-onlinepngtools (6).png";
-import blob7 from "./svgs/output-onlinepngtools (7).png";
-import blob8 from "./svgs/output-onlinepngtools (8).png";
-
 import project1 from "./images/project-1.png";
 import project2 from "./images/project-2.png";
 import project3 from "./images/project-3.png";
 import project4 from "./images/project-4.png";
-
-export const blobs = [blob1, blob2, blob3, blob4, blob5, blob6, blob7, blob8];
 
 export const profile = {
   topText: "Hi, I'm Cintia Arce",

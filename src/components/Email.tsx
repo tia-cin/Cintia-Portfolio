@@ -1,7 +1,6 @@
 import React, { FC, useState } from "react";
 import { Inputs } from ".";
 import emailjs from "@emailjs/browser";
-import { blobs } from "../assets";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 

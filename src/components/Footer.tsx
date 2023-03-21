@@ -8,7 +8,7 @@ import { AiFillGithub } from "react-icons/ai";
 const Footer: FC = () => {
   return (
     <footer
-      className="flex flex-col items-center py-20"
+      className="gs_reveal flex flex-col items-center py-20"
       style={{
         backgroundImage: `url(${wave})`,
         backgroundRepeat: "no-repeat",

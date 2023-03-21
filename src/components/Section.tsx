@@ -82,11 +82,11 @@ const Section: FC<SectionProps> = ({
       }}
     >
       {image && (
-        <div className="scale-75 drop-shadow-lg">
+        <div className="scale-50 drop-shadow-lg">
           <img
             src={image}
             alt="cintia-profile"
-            className="w-full rounded-3xl bg-white"
+            className="w-full rounded-full bg-white"
           />
         </div>
       )}
@@ -105,20 +105,20 @@ const Section: FC<SectionProps> = ({
       {doble && (
         <div className="flex flex-col">
           <h1 className="text-center my-4 font-bold text-3xl">Design ideas</h1>
-          <div className="flex my-2">
+          <div className="flex my-2 gap-2">
             {bubble[1]?.map((item: any, i: number) => (
               <Bubble key={i} link={item.link} name={item.alt} color={color} />
             ))}
           </div>
           <h1 className="text-center my-4 font-bold text-3xl">Customize UI</h1>
-          <div className="flex my-2">
+          <div className="flex my-2 gap-4">
             {bubble[0]?.map((item: any, i: number) => (
               <Bubble key={i} link={item.link} name={item.alt} color={color} />
             ))}
           </div>
         </div>
       )}
-      <div className={`w-3/4 mr-20 px-20 gs_reveal`}>
+      <div className={`w-1/2 mr-20 gs_reveal ${reverse && "mx-5"}`}>
         <h1
           className={`uppercase text-4xl font-bold sm:text-lg ${
             reverse && "text-right"
@@ -127,7 +127,7 @@ const Section: FC<SectionProps> = ({
           {title}
         </h1>
         <p
-          className={`font-medium text-xl  text-gray-800 sm:text-sm ${
+          className={`font-medium text-xl text-gray-800 sm:text-sm ${
             reverse && "text-right"
           }`}
         >

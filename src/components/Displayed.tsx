@@ -40,7 +40,7 @@ export const Bubble: FC<{
   color: string;
 }> = ({ link, name }) => {
   return (
-    <div className="m-2 rounded-xl w-32 bg-slate-50">
+    <div className="p-2 rounded-full bg-slate-50">
       <a href={link} style={{ textDecoration: "none" }}>
         <p className="uppercase text-lg text-center px-1">{name}</p>
       </a>
