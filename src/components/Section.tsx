@@ -105,20 +105,26 @@ const Section: FC<SectionProps> = ({
       {doble && (
         <div className="flex flex-col">
           <h1 className="text-center my-4 font-bold text-3xl">Design ideas</h1>
-          <div className="flex my-2 gap-2">
+          <div className="flex my-2 gap-6">
             {bubble[1]?.map((item: any, i: number) => (
               <Bubble key={i} link={item.link} name={item.alt} color={color} />
             ))}
           </div>
           <h1 className="text-center my-4 font-bold text-3xl">Customize UI</h1>
-          <div className="flex my-2 gap-4">
+          <div className="flex my-2 gap-8">
             {bubble[0]?.map((item: any, i: number) => (
+              <Bubble key={i} link={item.link} name={item.alt} color={color} />
+            ))}
+          </div>
+          <h1 className="text-center my-4 font-bold text-3xl">Animation</h1>
+          <div className="flex my-2 gap-2">
+            {bubble[2]?.map((item: any, i: number) => (
               <Bubble key={i} link={item.link} name={item.alt} color={color} />
             ))}
           </div>
         </div>
       )}
-      <div className={`w-1/2 mr-20 gs_reveal ${reverse && "mx-5"}`}>
+      <div className={`w-1/2 mr-20 gs_reveal mx-5`}>
         <h1
           className={`uppercase text-4xl font-bold sm:text-lg ${
             reverse && "text-right"

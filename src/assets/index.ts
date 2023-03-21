@@ -40,9 +40,9 @@ export const profile = {
     "This software engineer is an independent student with a strong background in full-stack web development and design. They have experience in developing real projects, including an e-commerce platform for comic book chapters with innovative tools. They also have a passion for design and have honed their skills in design programs such as Photoshop, Illustrator, and Premiere. They are looking to make an impact in the industry and are eager to learn and demonstrate their skills.",
   photo: cintia,
   techStack:
-    "Frontend (client-side) and Backend (server-side). Both work together to create a working tech stack. This is also referred to as an application stack.",
+    "Our team is skilled in a range of programming languages and frameworks, enabling us to create powerful and efficient web applications that meet your business needs. With our full-stack tech stack, we can help you bring your project to life with the latest web development tools and techniques",
   style:
-    "Shape projects personalities into an good looking and user-friendly components",
+    "Our style tools empower us to create stunning and engaging user interfaces that leave a lasting impression on your visitors. Our design tools enable us to create stunning visuals and user interfaces that captivate and engage your audience. And with our animation tools, we can bring your website to life with dynamic and interactive elements that enhance the user experience",
 };
 
 export const colors = ["#ffce6d", "#ED5B2D", "#F7B9A1", "#51ABB2"];
@@ -90,6 +90,24 @@ export const technologies = {
       alt: "Figma",
       logo: figma,
       link: "https://www.figma.com/",
+    },
+  ],
+  animation: [
+    {
+      alt: "GSAP",
+      link: "https://greensock.com/gsap/",
+    },
+    {
+      alt: "ScrollTrigger",
+      link: "https://greensock.com/scrolltrigger/",
+    },
+    {
+      alt: "AnimeJS",
+      link: "https://animejs.com/",
+    },
+    {
+      alt: "CSS Animations",
+      link: "https://developer.mozilla.org/es/docs/Web/CSS",
     },
   ],
   development: [

@@ -39,7 +39,11 @@ export const App: React.FC = () => {
         title="Style and Design Tools"
         subtitle={profile.style}
         color={colors[3]}
-        bubble={[technologies.style, technologies.design]}
+        bubble={[
+          technologies.style,
+          technologies.design,
+          technologies.animation,
+        ]}
         doble
       />
       <Landing
