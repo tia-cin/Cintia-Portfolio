@@ -19,7 +19,7 @@ const Landing: FC<{
         <h1 className="text-center text-7xl font-bold fadeUpMini sm:text-3xl">
           {middleText}
         </h1>
-        <p className="text-center mt-5 text-lg fadeUpMini md:text-base">
+        <p className="text-center mt-5 text-lg fadeUpMini sm:text-base sm:mx-20">
           {bottomText}
         </p>
       </div>

@@ -82,7 +82,7 @@ const Section: FC<SectionProps> = ({
       }}
     >
       {image && (
-        <div className="scale-50 drop-shadow-lg">
+        <div className="scale-50 drop-shadow-lg sm:hidden">
           <img
             src={image}
             alt="cintia-profile"
@@ -91,7 +91,7 @@ const Section: FC<SectionProps> = ({
         </div>
       )}
       {bubble && !doble && (
-        <div className="grid grid-cols-4 gap-10 mr-20 sm:mr-0 sm:gap-1">
+        <div className="grid grid-cols-4 gap-10 mr-20 sm:mr-0 sm:gap-1 sm:hidden">
           {bubble.map((item: any, i: number) => (
             <Bubble
               key={i}
@@ -103,7 +103,7 @@ const Section: FC<SectionProps> = ({
         </div>
       )}
       {doble && (
-        <div className="flex flex-col">
+        <div className="flex flex-col sm:hidden">
           <h1 className="text-center my-4 font-bold text-3xl">Design ideas</h1>
           <div className="flex my-2 gap-6">
             {bubble[1]?.map((item: any, i: number) => (
@@ -124,17 +124,17 @@ const Section: FC<SectionProps> = ({
           </div>
         </div>
       )}
-      <div className={`w-1/2 mr-20 gs_reveal mx-5`}>
+      <div className={`w-1/2 mr-20 gs_reveal mx-5 sm:text-center`}>
         <h1
           className={`uppercase text-4xl font-bold sm:text-lg ${
-            reverse && "text-right"
+            reverse && "text-right sm:text-center"
           }`}
         >
           {title}
         </h1>
         <p
           className={`font-medium text-xl text-gray-800 sm:text-sm ${
-            reverse && "text-right"
+            reverse && "text-right sm:text-center"
           }`}
         >
           {subtitle}

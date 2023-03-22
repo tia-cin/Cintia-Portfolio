@@ -11,7 +11,7 @@ import { colors, profile, technologies, projects } from "./assets";
 
 export const App: React.FC = () => {
   return (
-    <div className="m-0 p-0 w-full h-screen">
+    <div className="m-0 p-0 w-full h-screen sm:w-screen">
       <Navbar />
       <Landing
         id="home"

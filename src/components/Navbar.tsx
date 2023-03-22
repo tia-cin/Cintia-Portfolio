@@ -32,11 +32,11 @@ const Navbar: React.FC = () => {
       className="fixed flex justify-between w-full h-80 top-0 uppercase "
       style={{ zIndex: 1 }}
     >
-      <div className="m-5">
+      <div className="p-5">
         <p className="text-xl font-semibold">Portfolio</p>
       </div>
       {wrap ? (
-        <ul className="m-5 flex justify-around w-1/2">
+        <ul className="p-5 flex justify-around w-1/2">
           <li>
             <a href="#home">home</a>
           </li>
@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
           </li>
         </ul>
       ) : (
-        <div className="mx-10 m-5 text-xl">
+        <div className=" p-5 text-xl">
           <BsList onClick={() => setActiveMenu(true)} />
         </div>
       )}
