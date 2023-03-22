@@ -16,11 +16,15 @@ export const Cards: FC<{
       className="h-screen w-full relative"
     >
       <div className="bg-black opacity-40 z-2 w-full">
-        <img src={landing} alt={alt} className=" w-full h-screen opacity-50 " />
+        <img src={landing} alt={alt} className=" w-full h-screen opacity-50" />
       </div>
       <div className="h-screen z-10 absolute top-60 w-full">
-        <p className="text-8xl font-semibold m-0 text-center">{title}</p>
-        <p className="h-15 my-3 text-2xl ml-20 text-center">{description}</p>
+        <p className="text-8xl font-semibold m-0 text-center sm:text-4xl">
+          {title}
+        </p>
+        <p className="h-15 my-3 text-2xl ml-20 text-center sm:text-lg sm:mx-20">
+          {description}
+        </p>
         <div className="flex justify-center">
           <button
             className="rounded w-60 bg-slate-50 my-2 py-2 uppercase font-semibold"
