@@ -5,6 +5,7 @@ import Landing from "./Landing";
 import Section from "./Section";
 import Email from "./Email";
 import Projects from "./Projects";
+import Grid from "./Grid";
 
 export {
   Bubble,
@@ -17,4 +18,5 @@ export {
   Section,
   Email,
   Projects,
+  Grid,
 };

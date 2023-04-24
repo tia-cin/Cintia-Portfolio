@@ -6,8 +6,15 @@ import {
   Section,
   Email,
   Projects,
+  Grid,
 } from "./components";
-import { colors, profile, technologies, projects } from "./assets";
+import {
+  colors,
+  profile,
+  technologies,
+  projects,
+  certifications,
+} from "./assets";
 
 export const App: React.FC = () => {
   return (
@@ -51,6 +58,7 @@ export const App: React.FC = () => {
         middleText="Certifications"
         topText="Check out my"
       />
+      <Grid items={certifications} />
       <Landing
         middleText="Here are some of my projects"
         bottomText="Explore the source code"

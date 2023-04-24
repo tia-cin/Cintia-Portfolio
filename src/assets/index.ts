@@ -37,7 +37,7 @@ const google =
 const microsoft =
   "https://www.freepngimg.com/thumb/microsoft/28413-3-microsoft-logo-transparent-background.png";
 const harvard =
-  "https://s3.amazonaws.com/freebiesupply/large/2x/harvard-logo-transparent.png";
+  "https://logos-world.net/wp-content/uploads/2020/12/Harvard-Emblem.png";
 const freecodecamp =
   "https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_large.png";
 
@@ -249,7 +249,7 @@ export const certifications = [
   {
     title: "Web Development Fundamentals",
     from: "IBM SkillsBuild",
-    img: "https://skillsbuild.org/_next/image?url=https%3A%2F%2Fskillsbuild.wpengine.com%2Fwp-content%2Fuploads%2F2023%2F02%2FWeb_Development_Fundamentals.png&w=1920&q=100",
+    img: "https://cityandguildsfoundation.org/wp-content/uploads/2022/08/Skillsbuild-logo.jpg",
   },
   {
     title: "Data Analysis Fundamentals",
