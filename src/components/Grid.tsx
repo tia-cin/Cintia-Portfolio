@@ -8,11 +8,11 @@ interface Item {
 
 const Grid: React.FC<{ items: Item[]; color: string }> = ({ items, color }) => {
   return (
-    <section className=" gs_reveal grid grid-cols-4 gap-5 mx-10">
+    <section className="  grid grid-cols-4 gap-5 mx-10">
       {items.map((e) => (
         <div
           id="item"
-          className="h-60 rounded-xl flex flex-col items-center p-2 px-5 drop-shadow-xl"
+          className="gs_reveal h-60 rounded-xl flex flex-col items-center p-2 px-5 drop-shadow-xl"
           style={{ backgroundColor: color }}
         >
           <div className="bg-main-bg w-full flex justify-center m-2 rounded-xl">
