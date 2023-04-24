@@ -32,6 +32,15 @@ import project2 from "./images/project-2.png";
 import project3 from "./images/project-3.png";
 import project4 from "./images/project-4.png";
 
+const google =
+  "https://purepng.com/public/uploads/large/purepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png";
+const microsoft =
+  "https://www.freepngimg.com/thumb/microsoft/28413-3-microsoft-logo-transparent-background.png";
+const harvard =
+  "https://s3.amazonaws.com/freebiesupply/large/2x/harvard-logo-transparent.png";
+const freecodecamp =
+  "https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_large.png";
+
 export const profile = {
   topText: "Hi, I'm Cintia Arce",
   middleText: "Full Stack Developer",
@@ -233,5 +242,66 @@ export const projects = [
     alt: "nft-market-landing",
     description: "Landing Page for NFT Market React Native App",
     title: "ProNef",
+  },
+];
+
+export const certifications = [
+  {
+    title: "Web Development Fundamentals",
+    from: "IBM SkillsBuild",
+    img: "https://skillsbuild.org/_next/image?url=https%3A%2F%2Fskillsbuild.wpengine.com%2Fwp-content%2Fuploads%2F2023%2F02%2FWeb_Development_Fundamentals.png&w=1920&q=100",
+  },
+  {
+    title: "Data Analysis Fundamentals",
+    from: "Microsoft & LinkdIn",
+    img: microsoft,
+  },
+  {
+    title: "Software Development Fundamentals",
+    from: "Microsoft & LinkedIn",
+    img: microsoft,
+  },
+  {
+    title: "We Development Introduction I & II",
+    from: "Google Learning",
+    img: google,
+  },
+  { title: "Business Development", from: "Google Learning", img: google },
+  {
+    title: "Fundamentals of Digital MArketing",
+    from: "Google Learning",
+    img: google,
+  },
+  { title: "Cybersecurity", from: "Google Activate", img: google },
+  {
+    title: "Scientific Computing with Python",
+    from: "freeCodeCamp",
+    img: freecodecamp,
+  },
+  {
+    title: "Front End Development Libraries",
+    from: "freeCodeCamp",
+    img: freecodecamp,
+  },
+  {
+    title: "JavaScript Algorithms & Data Structure",
+    from: "freeCodeCamp",
+    img: freecodecamp,
+  },
+  { title: "Responsive Web Design", from: "freeCodeCamp", img: freecodecamp },
+  {
+    title: "Web Programming with Python & JavaScript",
+    from: "CS50 Harvard",
+    img: harvard,
+  },
+  {
+    title: "Mobile App Development with React Native",
+    from: "CS50 Harvard",
+    img: harvard,
+  },
+  {
+    title: "Introduction to Computer Science",
+    from: "CS50 Harvard",
+    img: harvard,
   },
 ];
