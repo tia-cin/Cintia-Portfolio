@@ -44,7 +44,6 @@ const Projects: React.FC<{
         {projects.map((p: ProjectItem, i: number) => (
           <Cards
             alt={p.alt}
-            color=""
             description={p.description}
             link={p.link}
             landing={p.landing}

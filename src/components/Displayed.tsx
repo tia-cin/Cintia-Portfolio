@@ -7,7 +7,7 @@ export const Cards: FC<{
   alt: string;
   title: string;
   description: string;
-  color: string;
+  color?: string;
 }> = ({ link, landing, alt, title, description, color }) => {
   return (
     <section

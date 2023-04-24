@@ -11,7 +11,7 @@ const Grid: React.FC<{ items: Item[]; color: string }> = ({ items, color }) => {
     <section className="grid grid-cols-4 gap-5 mx-10">
       {items.map((e) => (
         <div
-          className="h-60 rounded-xl flex flex-col items-center p-2 px-5"
+          className="h-60 rounded-xl flex flex-col items-center p-2 px-5 drop-shadow-xl"
           style={{ backgroundColor: color }}
         >
           <div className="bg-main-bg w-full flex justify-center m-2 rounded-xl">
