@@ -38,7 +38,7 @@ const Projects: React.FC<{
     <div id="projects-container" className="h-screen overflow-hidden">
       <div
         id="content"
-        className="overflow-hidden flex relative h-screen"
+        className="overflow-hidden flex relative"
         style={{ width: "400%" }}
       >
         {projects.map((p: ProjectItem, i: number) => (
