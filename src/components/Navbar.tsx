@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
   }, [screenSize]);
   return (
     <nav
-      className="fixed flex justify-between w-full h-80 top-0 uppercase "
+      className="fixed flex justify-between w-full h-80 top-0 uppercase bg-main-bg"
       style={{ zIndex: 1 }}
     >
       <div className="p-5">
@@ -44,10 +44,7 @@ const Navbar: React.FC = () => {
             <a href="#about">about me</a>
           </li>
           <li>
-            <a href="#tech-stack">technologies</a>
-          </li>
-          <li>
-            <a href="#design">design</a>
+            <a href="#certifications">certifications</a>
           </li>
           <li>
             <a href="#projects">projects</a>

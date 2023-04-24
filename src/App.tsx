@@ -47,6 +47,11 @@ export const App: React.FC = () => {
         doble
       />
       <Landing
+        id="certifications"
+        middleText="Certifications"
+        topText="Check out my"
+      />
+      <Landing
         middleText="Here are some of my projects"
         bottomText="Explore the source code"
         id="projects"

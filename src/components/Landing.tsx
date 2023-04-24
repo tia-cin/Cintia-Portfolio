@@ -4,7 +4,7 @@ import { BsArrowDown } from "react-icons/bs";
 const Landing: FC<{
   topText?: string;
   middleText: string;
-  bottomText: string;
+  bottomText?: string;
   id: string;
 }> = ({ topText, middleText, bottomText, id }) => {
   return (
