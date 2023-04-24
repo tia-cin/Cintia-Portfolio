@@ -214,11 +214,11 @@ export const projects = [
     description: "Organize your team and projects",
   },
   {
-    link: "https://ecommerce-store-tia-cin.vercel.app/",
+    link: "https://techvibe-ecommerce.vercel.app/",
     landing: project4,
     alt: "ecommerce-store-icon",
     description: "Buy tech products in this ecommerce website",
-    title: "Ecommerce Store",
+    title: "TechVibe",
   },
   {
     link: "https://nft-langing.vercel.app/",
