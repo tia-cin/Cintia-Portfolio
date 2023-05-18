@@ -13,7 +13,6 @@ import nextJs from "./images/nextJs-icon.png";
 import nodeJs from "./images/nodeJs-icon.png";
 import postgreSQL from "./images/postgreSQL-icon.png";
 import react from "./images/react-icon.png";
-import reactNative from "./images/react-native.png";
 import redux from "./images/redux-icon.png";
 import sass from "./images/sass-icon.png";
 import tailwind from "./images/tailwind-icon.png";
