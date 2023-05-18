@@ -37,7 +37,7 @@ export const App: React.FC = () => {
       <Section
         id=""
         title="Tools"
-        subtitle={profile.techStack}
+        subtitle={profile.tools}
         color={colors[1]}
         bubble={technologies.tools}
       />

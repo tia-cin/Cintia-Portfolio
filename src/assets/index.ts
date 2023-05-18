@@ -31,8 +31,6 @@ import harvard from "./images/harvard.png";
 import freecodecamp from "./images/freecodecamp.png";
 import ibmSkillbuild from "./images/ibm-skillbuild.jpg";
 
-import cintia from "./images/cintia-arce-profile.png";
-
 import project1 from "./images/project-1.png";
 import project2 from "./images/project-2.png";
 import project3 from "./images/project-3.png";
@@ -44,11 +42,14 @@ export const profile = {
   bottomText: "Showcasing My Passion for Software Engineering and Design",
   about:
     "This software engineer is an independent student with a strong background in full-stack web development and design. They have experience in developing real projects, including an e-commerce platform for comic book chapters with innovative tools. They also have a passion for design and have honed their skills in design programs such as Photoshop, Illustrator, and Premiere. They are looking to make an impact in the industry and are eager to learn and demonstrate their skills.",
-  photo: cintia,
   techStack:
-    "Our team is skilled in a range of programming languages and frameworks, enabling us to create powerful and efficient web applications that meet your business needs. With our full-stack tech stack, we can help you bring your project to life with the latest web development tools and techniques",
+    "The main tech stack consists of widely-used programming languages, frameworks, and databases. These technologies allow me to build robust web applications and APIs. Version control systems like Git help teams collaborate effectively and manage code efficiently.",
+  tools:
+    "In addition to the core tech stack, I often utilize various tools to enhance their workflow. Tools like Redux provide a predictable state management solution for JavaScript applications, while Next.js, Angular, and Vue are frameworks that streamline the development of scalable and performant web applications. Express.js is a popular backend framework for creating APIs, and GraphQL offers a flexible way to query and manipulate data.",
   style:
-    "Our style tools empower us to create stunning and engaging user interfaces that leave a lasting impression on your visitors. Our design tools enable us to create stunning visuals and user interfaces that captivate and engage your audience. And with our animation tools, we can bring your website to life with dynamic and interactive elements that enhance the user experience",
+    "Focusing on the visual appearance and user interface of applications. Frameworks like Bootstrap, Tailwind CSS, and Material-UI to create responsive and attractive designs. Additionally, CSS preprocessors like Sass and Less help streamline the styling process by offering advanced features such as variables, mixins, and nesting.",
+  design:
+    "Design tools creates visually appealing and engaging user experiences. Figma is a collaborative design tool that enables to create and prototype interfaces. Canva provides an easy-to-use platform for creating graphics, presentations, and marketing materials. Adobe Photoshop and Illustrator are powerful software for creating and editing images, while Adobe Premiere is widely used for video editing and post-production tasks.  ",
 };
 
 export const colors = ["#51ABB2", "#F7B9A1", "#FFCE6D", "#6D8CAE"];
