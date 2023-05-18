@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
+import lozad from "lozad";
 
 export const Cards: FC<{
   link: string;
@@ -9,6 +10,11 @@ export const Cards: FC<{
   description: string;
   color?: string;
 }> = ({ link, landing, alt, title, description, color }) => {
+  React.useEffect(() => {
+    const observer = lozad("#card");
+    observer.observe();
+    // return () => observer.disconnect()
+  }, []);
   return (
     <section
       id="card"
@@ -44,10 +50,15 @@ export const Bubble: FC<{
   color: string;
   logo?: string;
 }> = ({ link, name, logo }) => {
+  React.useEffect(() => {
+    const observer = lozad(".logos");
+    observer.observe();
+    // return () => observer.disconnect()
+  }, []);
   return (
     <div className="p-4 rounded-full w-20 h-20 bg-main-bg">
       <a href={link} style={{ textDecoration: "none" }}>
-        <img src={logo} alt={name} />
+        <img src={logo} alt={name} className="logos lozad" />
         {/* <p className="uppercase text-lg text-center px-1">{name}</p> */}
       </a>
     </div>

@@ -15,8 +15,14 @@ import {
   projects,
   certifications,
 } from "./assets";
+import lozad from "lozad";
 
 export const App: React.FC = () => {
+  React.useEffect(() => {
+    const observer = lozad(".gs_reveal");
+    observer.observe();
+    // return () => observer.disconnect()
+  }, []);
   return (
     <div className="m-0 p-0 w-full h-screen sm:w-screen">
       <Navbar />

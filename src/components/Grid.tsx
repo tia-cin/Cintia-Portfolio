@@ -1,4 +1,5 @@
 import React from "react";
+import lozad from "lozad";
 
 interface Item {
   title: string;
@@ -7,6 +8,11 @@ interface Item {
 }
 
 const Grid: React.FC<{ items: Item[]; color: string }> = ({ items, color }) => {
+  React.useEffect(() => {
+    const observer = lozad("#item");
+    observer.observe();
+    // return () => observer.disconnect()
+  }, []);
   return (
     <section className="  grid grid-cols-4 gap-5 mx-10">
       {items.map((e) => (
