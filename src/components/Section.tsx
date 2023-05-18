@@ -12,7 +12,6 @@ interface SectionProps {
   image?: any;
   bubble?: any;
   card?: Array<any>;
-  doble?: boolean;
   id: string;
 }
 
@@ -24,7 +23,6 @@ const Section: FC<SectionProps> = ({
   image,
   bubble,
   card,
-  doble,
   id,
 }) => {
   React.useEffect(() => {
@@ -90,38 +88,15 @@ const Section: FC<SectionProps> = ({
           />
         </div>
       )}
-      {bubble && !doble && (
-        <div className="grid grid-cols-4 gap-10 mr-20 sm:mr-0 sm:gap-1 sm:hidden">
+      {bubble && (
+        <div className="grid grid-cols-3 gap-10 mr-20 sm:mr-0 sm:gap-1 sm:hidden">
           {bubble.map((item: any, i: number) => (
             <Bubble
               key={i}
-              link={item.link}
-              name={item.alt}
+              {...item}
               color={colors[Math.floor(Math.random() * colors.length)]}
             />
           ))}
-        </div>
-      )}
-      {doble && (
-        <div className="flex flex-col sm:hidden">
-          <h1 className="text-center my-4 font-bold text-3xl">Design ideas</h1>
-          <div className="flex my-2 gap-6">
-            {bubble[1]?.map((item: any, i: number) => (
-              <Bubble key={i} link={item.link} name={item.alt} color={color} />
-            ))}
-          </div>
-          <h1 className="text-center my-4 font-bold text-3xl">Customize UI</h1>
-          <div className="flex my-2 gap-8">
-            {bubble[0]?.map((item: any, i: number) => (
-              <Bubble key={i} link={item.link} name={item.alt} color={color} />
-            ))}
-          </div>
-          <h1 className="text-center my-4 font-bold text-3xl">Animation</h1>
-          <div className="flex my-2 gap-2">
-            {bubble[2]?.map((item: any, i: number) => (
-              <Bubble key={i} link={item.link} name={item.alt} color={color} />
-            ))}
-          </div>
         </div>
       )}
       <div className={`w-1/2 mr-20 gs_reveal mx-5 sm:text-center`}>

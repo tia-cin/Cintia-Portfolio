@@ -10,7 +10,6 @@ import postgreSQL from "./images/postgreSQL-icon.png";
 import react from "./images/react-icon.png";
 import redux from "./images/redux-icon.png";
 import tailwind from "./images/tailwind-icon.png";
-import typescript from "./images/typescript-icon.png";
 
 import photoshop from "./images/photoshop.png";
 import illustrator from "./images/illustrator.png";
@@ -32,7 +31,6 @@ const harvard =
   "https://logos-world.net/wp-content/uploads/2020/12/Harvard-Emblem.png";
 const freecodecamp =
   "https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_large.png";
-
 const ibmSkillbuild =
   "https://cityandguildsfoundation.org/wp-content/uploads/2022/08/Skillsbuild-logo.jpg";
 
@@ -49,7 +47,7 @@ export const profile = {
     "Our style tools empower us to create stunning and engaging user interfaces that leave a lasting impression on your visitors. Our design tools enable us to create stunning visuals and user interfaces that captivate and engage your audience. And with our animation tools, we can bring your website to life with dynamic and interactive elements that enhance the user experience",
 };
 
-export const colors = ["#ffce6d", "#ED5B2D", "#F7B9A1", "#51ABB2"];
+export const colors = ["#51ABB2", "#F7B9A1", "#FFCE6D", "#6D8CAE"];
 
 export const technologies = {
   style: [
@@ -65,8 +63,18 @@ export const technologies = {
     },
     {
       link: "https://tailwind.com",
-      logo: tailwind,
+      logo: "https://cdn.icon-icons.com/icons2/2699/PNG/512/tailwindcss_logo_icon_167923.png",
       alt: "Tailwind",
+    },
+    {
+      link: "",
+      logo: "https://cdn-icons-png.flaticon.com/512/5968/5968358.png",
+      alt: "Sass",
+    },
+    {
+      link: "",
+      logo: "https://cdn2.iconfinder.com/data/icons/designer-skills/128/less-512.png",
+      alt: "Less",
     },
   ],
   design: [
@@ -87,53 +95,20 @@ export const technologies = {
     },
     {
       alt: "Figma",
-      logo: figma,
+      logo: "https://cdn-icons-png.flaticon.com/512/5968/5968705.png",
       link: "https://www.figma.com/",
     },
-  ],
-  animation: [
     {
-      alt: "GSAP",
-      link: "https://greensock.com/gsap/",
-    },
-    {
-      alt: "ScrollTrigger",
-      link: "https://greensock.com/scrolltrigger/",
-    },
-    {
-      alt: "AnimeJS",
-      link: "https://animejs.com/",
-    },
-    {
-      alt: "CSS Animations",
-      link: "https://developer.mozilla.org/es/docs/Web/CSS",
+      alt: "Canva",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Canva_icon_2021.svg/600px-Canva_icon_2021.svg.png",
+      link: "",
     },
   ],
-  development: [
-    {
-      link: "https://reactjs.org/",
-      logo: react,
-      alt: "React JS",
-    },
+  tools: [
     {
       link: "https://redux.js.org/",
       logo: redux,
       alt: "Redux",
-    },
-    {
-      link: "https://www.typescriptlang.org/",
-      logo: typescript,
-      alt: "Typescript",
-    },
-    {
-      link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-      logo: javascript,
-      alt: "Javascript",
-    },
-    {
-      link: "https://nextjs.org/",
-      logo: nextJs,
-      alt: "NextJS",
     },
     {
       link: "https://expressjs.com",
@@ -141,13 +116,60 @@ export const technologies = {
       alt: "Express",
     },
     {
+      link: "https://nextjs.org/",
+      logo: nextJs,
+      alt: "NextJS",
+    },
+    {
+      link: "https://angular.io.org/",
+      logo: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/21_Angular_logo_logos-512.png",
+      alt: "Angular",
+    },
+    {
+      link: "https://vuejs.org/",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/768px-Vue.js_Logo_2.svg.png?20170919082558",
+      alt: "Vue JS",
+    },
+    {
+      link: "https://graphql.org/",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/768px-GraphQL_Logo.svg.png?20161105194737",
+      alt: "GraphQL",
+    },
+  ],
+  main: [
+    {
+      link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      logo: javascript,
+      alt: "Javascript",
+    },
+    {
+      link: "https://www.typescriptlang.org/",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png",
+      alt: "Typescript",
+    },
+    {
+      link: "https://www.python.org/",
+      logo: "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/community/logos/python-logo-only.png",
+      alt: "Python",
+    },
+    {
+      link: "https://reactjs.org/",
+      logo: react,
+      alt: "React JS",
+    },
+    {
       link: "https://nodejs.org",
       logo: nodeJs,
       alt: "Nodejs",
     },
     {
+      link: "https://www.djangoproject.com/",
+      logo: "https://w7.pngwing.com/pngs/10/113/png-transparent-django-web-development-web-framework-python-software-framework-django-text-trademark-logo-thumbnail.png",
+      alt: "Django",
+    },
+    {
       link: "https://www.postgresql.org",
-      logo: postgreSQL,
+      logo: "https://wiki.postgresql.org/images/3/30/PostgreSQL_logo.3colors.120x120.png",
       alt: "PostgreSQL",
     },
     {
@@ -238,7 +260,7 @@ export const certifications = [
   },
   { title: "Business Development", from: "Google Learning", img: google },
   {
-    title: "Fundamentals of Digital MArketing",
+    title: "Fundamentals of Digital Marketing",
     from: "Google Learning",
     img: google,
   },

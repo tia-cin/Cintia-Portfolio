@@ -42,11 +42,13 @@ export const Bubble: FC<{
   link: string;
   name: string;
   color: string;
-}> = ({ link, name }) => {
+  logo?: string;
+}> = ({ link, name, logo }) => {
   return (
-    <div className="p-2 rounded-full bg-slate-50">
+    <div className="p-4 rounded-full w-20 h-20 bg-main-bg">
       <a href={link} style={{ textDecoration: "none" }}>
-        <p className="uppercase text-lg text-center px-1">{name}</p>
+        <img src={logo} alt={name} />
+        {/* <p className="uppercase text-lg text-center px-1">{name}</p> */}
       </a>
     </div>
   );

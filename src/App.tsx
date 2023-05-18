@@ -27,31 +27,34 @@ export const App: React.FC = () => {
         bottomText={profile.bottomText}
       />
       <Section
-        color={colors[2]}
-        title={"About Me"}
-        subtitle={profile.about}
-        image={profile.photo}
-        id="about"
-      />
-      <Section
         id="tech-stack"
         reverse
         title="Tech-Stack"
         subtitle={profile.techStack}
         color={colors[0]}
-        bubble={technologies.development}
+        bubble={technologies.main}
       />
       <Section
-        id="design"
-        title="Style and Design Tools"
+        id=""
+        title="Tools"
+        subtitle={profile.techStack}
+        color={colors[1]}
+        bubble={technologies.tools}
+      />
+      <Section
+        id=""
+        reverse
+        title="Style"
+        subtitle={profile.techStack}
+        color={colors[2]}
+        bubble={technologies.style}
+      />
+      <Section
+        id=""
+        title="Design Tools"
         subtitle={profile.style}
         color={colors[3]}
-        bubble={[
-          technologies.style,
-          technologies.design,
-          technologies.animation,
-        ]}
-        doble
+        bubble={technologies.design}
       />
       <Landing
         id="certifications"
