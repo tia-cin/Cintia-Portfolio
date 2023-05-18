@@ -11,7 +11,7 @@ const Grid: React.FC<{ items: Item[]; color: string }> = ({ items, color }) => {
   React.useEffect(() => {
     const observer = lozad("#item");
     observer.observe();
-    // return () => observer.disconnect()
+    return () => observer.observer.disconnect();
   }, []);
   return (
     <section className="  grid grid-cols-4 gap-5 mx-10">

@@ -13,7 +13,7 @@ export const Cards: FC<{
   React.useEffect(() => {
     const observer = lozad("#card");
     observer.observe();
-    // return () => observer.disconnect()
+    return () => observer.observer.disconnect();
   }, []);
   return (
     <section
@@ -53,13 +53,12 @@ export const Bubble: FC<{
   React.useEffect(() => {
     const observer = lozad(".logos");
     observer.observe();
-    // return () => observer.disconnect()
+    return () => observer.observer.disconnect();
   }, []);
   return (
     <div className="p-4 rounded-full w-20 h-20 bg-main-bg">
       <a href={link} style={{ textDecoration: "none" }}>
         <img src={logo} alt={name} className="logos lozad" />
-        {/* <p className="uppercase text-lg text-center px-1">{name}</p> */}
       </a>
     </div>
   );
