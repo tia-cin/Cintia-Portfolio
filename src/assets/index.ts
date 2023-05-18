@@ -235,32 +235,32 @@ export const projects = [
 
 export const certifications = [
   {
-    title: "Web Development Fundamentals",
+    desc: "Online platform offering diverse technical courses and certifications for skill enhancement in areas like cloud computing, AI, data science, and cybersecurity.",
     from: "IBM SkillsBuild",
     img: ibmSkillbuild,
   },
   {
-    title: "Data Analysis Fundamentals",
-    from: "Microsoft & LinkdIn",
+    desc: "Provides a wide range of learning resources, including courses, tutorials, and certifications, covering programming, cloud computing, data analysis, and productivity tools.",
+    from: "Microsoft",
     img: microsoft,
   },
   {
-    title: "Mobile Development",
+    desc: "Educational platform offering resources and training programs to enhance digital skills and promote technological literacy, covering coding, data analysis, digital marketing, and cloud computing",
     from: "Google Learning",
     img: google,
   },
   {
-    title: "Front End Development Libraries",
+    desc: "Nonprofit interactive learning platform focused on teaching coding and web development skills through a comprehensive curriculum and hands-on coding challenges.",
     from: "freeCodeCamp",
     img: freecodecamp,
   },
   {
-    title: "Web Programming with Python & JavaScript",
+    desc: "Popular computer science course at Harvard University, providing an introduction to programming, algorithms, data structures, web development, and cybersecurity, emphasizing problem-solving and critical thinking skills.",
     from: "CS50 Harvard",
     img: harvard,
   },
   {
-    title: "",
+    desc: "Online platform with a vast library of video courses spanning business, technology, creative skills, and personal development, taught by industry experts.",
     from: "LinkedIn Learning",
     img: linkedin,
   },

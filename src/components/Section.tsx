@@ -3,6 +3,7 @@ import { colors } from "../assets";
 import { Bubble } from "./";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import lozad from "lozad";
 
 interface SectionProps {
   reverse?: boolean;
@@ -26,6 +27,9 @@ const Section: FC<SectionProps> = ({
   id,
 }) => {
   React.useEffect(() => {
+    const observer = lozad(".gs_reveal");
+    observer.observe();
+
     gsap.registerPlugin(ScrollTrigger);
     const animateFrom = (elem: HTMLElement, direction?: any) => {
       direction = direction || 1;
@@ -68,6 +72,8 @@ const Section: FC<SectionProps> = ({
         });
       }
     );
+
+    return () => observer.observer.disconnect();
   }, []);
   return (
     <div
