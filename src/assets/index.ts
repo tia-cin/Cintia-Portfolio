@@ -1,23 +1,16 @@
-import babel from "./images/babel-icon.png";
 import bootstrap from "./images/bootstrap.png";
-import css from "./images/css-icon.png";
-import expressJs from "./images/expressJs-icon.png";
 import git from "./images/git-icon.png";
-import html from "./images/html-icon.png";
+import expressJs from "./images/expressJs-icon.png";
 import javascript from "./images/javascript-icon.png";
-import jest from "./images/jest-icon.png";
 import materialUi from "./images/materialUi-icon.png";
-import mocha from "./images/mocha-icon.png";
 import mongodb from "./images/mongodb-icon.png";
 import nextJs from "./images/nextJs-icon.png";
 import nodeJs from "./images/nodeJs-icon.png";
 import postgreSQL from "./images/postgreSQL-icon.png";
 import react from "./images/react-icon.png";
 import redux from "./images/redux-icon.png";
-import sass from "./images/sass-icon.png";
 import tailwind from "./images/tailwind-icon.png";
 import typescript from "./images/typescript-icon.png";
-import webpack from "./images/webpack-icon.png";
 
 import photoshop from "./images/photoshop.png";
 import illustrator from "./images/illustrator.png";
@@ -40,6 +33,9 @@ const harvard =
 const freecodecamp =
   "https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_large.png";
 
+const ibmSkillbuild =
+  "https://cityandguildsfoundation.org/wp-content/uploads/2022/08/Skillsbuild-logo.jpg";
+
 export const profile = {
   topText: "Hi, I'm Cintia Arce",
   middleText: "Full Stack Developer",
@@ -61,11 +57,6 @@ export const technologies = {
       link: "https:/mui.com",
       logo: materialUi,
       alt: "Material-UI",
-    },
-    {
-      link: "https://sass-lang.com",
-      logo: sass,
-      alt: "Sass",
     },
     {
       link: "https://getbootstrap.com",
@@ -120,16 +111,6 @@ export const technologies = {
   ],
   development: [
     {
-      link: "https://www.w3.org/html/",
-      logo: html,
-      alt: "HTML5",
-    },
-    {
-      link: "https://www.w3schools.com/css/",
-      logo: css,
-      alt: "CSS3",
-    },
-    {
       link: "https://reactjs.org/",
       logo: react,
       alt: "React JS",
@@ -165,16 +146,6 @@ export const technologies = {
       alt: "Nodejs",
     },
     {
-      link: "https://jestjs.io",
-      logo: jest,
-      alt: "Jest",
-    },
-    {
-      link: "https://mochajs.org",
-      logo: mocha,
-      alt: "Mocha",
-    },
-    {
       link: "https://www.postgresql.org",
       logo: postgreSQL,
       alt: "PostgreSQL",
@@ -188,16 +159,6 @@ export const technologies = {
       link: "https://git-scm.com/",
       logo: git,
       alt: "Git",
-    },
-    {
-      link: "https://webpack.js.org/",
-      logo: webpack,
-      alt: "Webpack",
-    },
-    {
-      link: "https://babel.dev/",
-      logo: babel,
-      alt: "Babel",
     },
   ],
 };
@@ -246,9 +207,14 @@ export const projects = [
 
 export const certifications = [
   {
+    title: "Information Technology Fundamentals",
+    from: "IBM SkillsBuild",
+    img: ibmSkillbuild,
+  },
+  {
     title: "Web Development Fundamentals",
     from: "IBM SkillsBuild",
-    img: "https://cityandguildsfoundation.org/wp-content/uploads/2022/08/Skillsbuild-logo.jpg",
+    img: ibmSkillbuild,
   },
   {
     title: "Data Analysis Fundamentals",
@@ -259,6 +225,11 @@ export const certifications = [
     title: "Software Development Fundamentals",
     from: "Microsoft & LinkedIn",
     img: microsoft,
+  },
+  {
+    title: "Mobile Development",
+    from: "Google Learning",
+    img: google,
   },
   {
     title: "We Development Introduction I & II",

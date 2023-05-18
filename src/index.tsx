@@ -5,19 +5,17 @@ import "./index.css";
 // components
 import { App } from "./App";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import UnderConstrucion from "./pages/UnderConstrucion";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <UnderConstrucion />
-    {/* <BrowserRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
       </Routes>
-    </BrowserRouter> */}
+    </BrowserRouter>
   </React.StrictMode>
 );
 
