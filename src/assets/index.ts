@@ -30,6 +30,7 @@ import microsoft from "./images/microsoft.png";
 import harvard from "./images/harvard.png";
 import freecodecamp from "./images/freecodecamp.png";
 import ibmSkillbuild from "./images/ibm-skillbuild.jpg";
+import linkedin from "./images/linkedin.png";
 
 import project1 from "./images/project-1.png";
 import project2 from "./images/project-2.png";
@@ -257,5 +258,10 @@ export const certifications = [
     title: "Web Programming with Python & JavaScript",
     from: "CS50 Harvard",
     img: harvard,
+  },
+  {
+    title: "",
+    from: "LinkedIn Learning",
+    img: linkedin,
   },
 ];
