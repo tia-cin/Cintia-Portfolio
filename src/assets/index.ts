@@ -6,15 +6,30 @@ import materialUi from "./images/materialUi-icon.png";
 import mongodb from "./images/mongodb-icon.png";
 import nextJs from "./images/nextJs-icon.png";
 import nodeJs from "./images/nodeJs-icon.png";
-import postgreSQL from "./images/postgreSQL-icon.png";
+import postgreSQL from "./images/postgresql.png";
 import react from "./images/react-icon.png";
 import redux from "./images/redux-icon.png";
-import tailwind from "./images/tailwind-icon.png";
+import tailwind from "./images/tailwindcss.png";
+import less from "./images/less.png";
+import sass from "./images/sass.png";
+import angular from "./images/angular.png";
+import vue from "./images/vue.png";
+import graphql from "./images/graphql.png";
+import django from "./images/django.png";
+import typescript from "./images/typescript.png";
+import python from "./images/python.png";
 
 import photoshop from "./images/photoshop.png";
 import illustrator from "./images/illustrator.png";
 import premiere from "./images/premiere.png";
-import figma from "./images/figma-icon.png";
+import figma from "./images/figma.png";
+import canva from "./images/canva.png";
+
+import google from "./images/google.png";
+import microsoft from "./images/microsoft.png";
+import harvard from "./images/harvard.png";
+import freecodecamp from "./images/freecodecamp.png";
+import ibmSkillbuild from "./images/ibm-skillbuild.jpg";
 
 import cintia from "./images/cintia-arce-profile.png";
 
@@ -22,17 +37,6 @@ import project1 from "./images/project-1.png";
 import project2 from "./images/project-2.png";
 import project3 from "./images/project-3.png";
 import project4 from "./images/project-4.png";
-
-const google =
-  "https://purepng.com/public/uploads/large/purepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png";
-const microsoft =
-  "https://www.freepngimg.com/thumb/microsoft/28413-3-microsoft-logo-transparent-background.png";
-const harvard =
-  "https://logos-world.net/wp-content/uploads/2020/12/Harvard-Emblem.png";
-const freecodecamp =
-  "https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_large.png";
-const ibmSkillbuild =
-  "https://cityandguildsfoundation.org/wp-content/uploads/2022/08/Skillsbuild-logo.jpg";
 
 export const profile = {
   topText: "Hi, I'm Cintia Arce",
@@ -63,17 +67,17 @@ export const technologies = {
     },
     {
       link: "https://tailwind.com",
-      logo: "https://cdn.icon-icons.com/icons2/2699/PNG/512/tailwindcss_logo_icon_167923.png",
+      logo: tailwind,
       alt: "Tailwind",
     },
     {
-      link: "",
-      logo: "https://cdn-icons-png.flaticon.com/512/5968/5968358.png",
+      link: "https://sass-lang.com/",
+      logo: sass,
       alt: "Sass",
     },
     {
-      link: "",
-      logo: "https://cdn2.iconfinder.com/data/icons/designer-skills/128/less-512.png",
+      link: "https://lesscss.org/",
+      logo: less,
       alt: "Less",
     },
   ],
@@ -95,13 +99,13 @@ export const technologies = {
     },
     {
       alt: "Figma",
-      logo: "https://cdn-icons-png.flaticon.com/512/5968/5968705.png",
+      logo: figma,
       link: "https://www.figma.com/",
     },
     {
       alt: "Canva",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Canva_icon_2021.svg/600px-Canva_icon_2021.svg.png",
-      link: "",
+      logo: canva,
+      link: "https://canva.com/",
     },
   ],
   tools: [
@@ -122,17 +126,17 @@ export const technologies = {
     },
     {
       link: "https://angular.io.org/",
-      logo: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/21_Angular_logo_logos-512.png",
+      logo: angular,
       alt: "Angular",
     },
     {
       link: "https://vuejs.org/",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/768px-Vue.js_Logo_2.svg.png?20170919082558",
+      logo: vue,
       alt: "Vue JS",
     },
     {
       link: "https://graphql.org/",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/768px-GraphQL_Logo.svg.png?20161105194737",
+      logo: graphql,
       alt: "GraphQL",
     },
   ],
@@ -144,12 +148,12 @@ export const technologies = {
     },
     {
       link: "https://www.typescriptlang.org/",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png",
+      logo: typescript,
       alt: "Typescript",
     },
     {
       link: "https://www.python.org/",
-      logo: "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/community/logos/python-logo-only.png",
+      logo: python,
       alt: "Python",
     },
     {
@@ -164,12 +168,12 @@ export const technologies = {
     },
     {
       link: "https://www.djangoproject.com/",
-      logo: "https://w7.pngwing.com/pngs/10/113/png-transparent-django-web-development-web-framework-python-software-framework-django-text-trademark-logo-thumbnail.png",
+      logo: django,
       alt: "Django",
     },
     {
       link: "https://www.postgresql.org",
-      logo: "https://wiki.postgresql.org/images/3/30/PostgreSQL_logo.3colors.120x120.png",
+      logo: postgreSQL,
       alt: "PostgreSQL",
     },
     {
@@ -229,11 +233,6 @@ export const projects = [
 
 export const certifications = [
   {
-    title: "Information Technology Fundamentals",
-    from: "IBM SkillsBuild",
-    img: ibmSkillbuild,
-  },
-  {
     title: "Web Development Fundamentals",
     from: "IBM SkillsBuild",
     img: ibmSkillbuild,
@@ -244,31 +243,9 @@ export const certifications = [
     img: microsoft,
   },
   {
-    title: "Software Development Fundamentals",
-    from: "Microsoft & LinkedIn",
-    img: microsoft,
-  },
-  {
     title: "Mobile Development",
     from: "Google Learning",
     img: google,
-  },
-  {
-    title: "We Development Introduction I & II",
-    from: "Google Learning",
-    img: google,
-  },
-  { title: "Business Development", from: "Google Learning", img: google },
-  {
-    title: "Fundamentals of Digital Marketing",
-    from: "Google Learning",
-    img: google,
-  },
-  { title: "Cybersecurity", from: "Google Activate", img: google },
-  {
-    title: "Scientific Computing with Python",
-    from: "freeCodeCamp",
-    img: freecodecamp,
   },
   {
     title: "Front End Development Libraries",
@@ -276,23 +253,7 @@ export const certifications = [
     img: freecodecamp,
   },
   {
-    title: "JavaScript Algorithms & Data Structure",
-    from: "freeCodeCamp",
-    img: freecodecamp,
-  },
-  { title: "Responsive Web Design", from: "freeCodeCamp", img: freecodecamp },
-  {
     title: "Web Programming with Python & JavaScript",
-    from: "CS50 Harvard",
-    img: harvard,
-  },
-  {
-    title: "Mobile App Development with React Native",
-    from: "CS50 Harvard",
-    img: harvard,
-  },
-  {
-    title: "Introduction to Computer Science",
     from: "CS50 Harvard",
     img: harvard,
   },
