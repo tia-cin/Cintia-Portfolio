@@ -321,27 +321,7 @@ export const certifications = [
       },
     ],
   },
-  {
-    from: "CS50 Harvard",
-    img: harvard,
-    exp: [
-      {
-        title: "Web Programming with Python and JavaScript",
-        skills: ["Python", "JavaScript", "Web Development"],
-        credential: "#",
-      },
-      {
-        title: "Mobile App Developent with React Native",
-        skills: ["Mobile Development", "React Native"],
-        credential: "#",
-      },
-      {
-        title: "Introduction to Computer Science",
-        skills: ["Software Development", "Computer Science", "Data Structures"],
-        credential: "#",
-      },
-    ],
-  },
+
   {
     from: "LinkedIn Learning",
     img: linkedin,
@@ -361,6 +341,27 @@ export const certifications = [
         title: "Full-Stack Web Development",
         skills: ["MERN", "SCRUM", "Web Development"],
         credential: "https://shorturl.at/pwzOT",
+      },
+    ],
+  },
+  {
+    from: "CS50 Harvard",
+    img: harvard,
+    exp: [
+      {
+        title: "Web Programming with Python and JavaScript",
+        skills: ["Python", "JavaScript", "Web Development"],
+        credential: "#",
+      },
+      {
+        title: "Mobile App Developent with React Native",
+        skills: ["Mobile Development", "React Native"],
+        credential: "#",
+      },
+      {
+        title: "Introduction to Computer Science",
+        skills: ["Software Development", "Computer Science", "Data Structures"],
+        credential: "#",
       },
     ],
   },

@@ -26,17 +26,16 @@ const Grid: React.FC<{ items: Item[] }> = ({ items }) => {
         <div
           id="item"
           className="rounded-xl flex flex-col items-center p-2 px-5 shadow-xl"
-          // style={{ backgroundColor: color }}
         >
           <div className="bg-main-bg w-full flex justify-center m-2 rounded-xl ">
             <img src={e.img} alt={e.from} className="h-20 p-2 object-contain" />
           </div>
-          <div className="flex justify-between h-full">
-            <div className="flex flex-col items-center">
+          <div className="flex justify-between h-full w-full">
+            <div className="flex flex-col items-center w-1/5">
               <TbCertificate className="text-6xl" />
               <div className="border-l border-gray-500 h-full" />
             </div>
-            <div className="w-4/5">
+            <div className="flex flex-col w-4/5">
               {e.exp.map((ex: Experience) => (
                 <div key={ex.title}>
                   <h3 className="font-bold">{ex.title}</h3>
