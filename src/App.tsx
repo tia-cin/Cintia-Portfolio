@@ -7,6 +7,7 @@ import {
   Email,
   Projects,
   Grid,
+  Profile,
 } from "./components";
 import {
   colors,
@@ -32,6 +33,7 @@ export const App: React.FC = () => {
         middleText={profile.middleText}
         bottomText={profile.bottomText}
       />
+      <Profile photo={profile.photo} introduction={profile.about} />
       <Section
         id="tech-stack"
         reverse

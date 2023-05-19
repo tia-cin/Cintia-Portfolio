@@ -38,7 +38,9 @@ import project2 from "./images/project-2.png";
 import project3 from "./images/project-3.png";
 import project4 from "./images/project-4.png";
 
+import photo from "./images/photo.png";
 export const profile = {
+  photo,
   topText: "Hi, I'm Cintia Arce",
   middleText: "Full Stack Developer Extraordinaire",
   bottomText:

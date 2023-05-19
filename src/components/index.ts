@@ -6,6 +6,7 @@ import Section from "./Section";
 import Email from "./Email";
 import Projects from "./Projects";
 import Grid from "./Grid";
+import Profile from "./Profile";
 
 export {
   Bubble,
@@ -19,4 +20,5 @@ export {
   Email,
   Projects,
   Grid,
+  Profile,
 };
