@@ -40,8 +40,9 @@ import project4 from "./images/project-4.png";
 
 export const profile = {
   topText: "Hi, I'm Cintia Arce",
-  middleText: "Full Stack Developer",
-  bottomText: "Showcasing My Passion for Software Engineering and Design",
+  middleText: "Full Stack Developer Extraordinaire",
+  bottomText:
+    "From Vision to Reality: Unveiling My Passion for Software Engineering and Design",
   about:
     "This software engineer is an independent student with a strong background in full-stack web development and design. They have experience in developing real projects, including an e-commerce platform for comic book chapters with innovative tools. They also have a passion for design and have honed their skills in design programs such as Photoshop, Illustrator, and Premiere. They are looking to make an impact in the industry and are eager to learn and demonstrate their skills.",
   techStack:

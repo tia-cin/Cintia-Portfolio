@@ -64,8 +64,8 @@ export const App: React.FC = () => {
       />
       <Landing
         id="certifications"
-        middleText="Certifications"
-        topText="Check out my"
+        middleText="Professional Journey"
+        topText="Discover My"
       />
       <Grid items={certifications} />
       <Landing
