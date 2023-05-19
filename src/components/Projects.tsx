@@ -10,29 +10,32 @@ interface ProjectItem {
   landing: string;
   title: string;
 }
+gsap.registerPlugin(ScrollTrigger);
 
 const Projects: React.FC<{
   projects: any[];
 }> = ({ projects }) => {
   React.useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    const container = document.querySelector(
+      "#projects-container"
+    ) as HTMLElement;
+    const sections = gsap.utils.toArray("#card") as HTMLElement[];
 
-    const container = document.querySelector("#content");
-    const sections = gsap.utils.toArray("#card");
-
-    gsap.to(sections, {
+    let to = gsap.to(sections, {
       xPercent: -100 * (sections.length - 1),
       ease: "none",
       scrollTrigger: {
         trigger: container,
         pin: true,
-        scrub: 5,
+        scrub: 0.5,
         snap: 1 / (sections.length - 1),
-        end: () =>
-          (document.querySelector("#projects-container") as HTMLElement)
-            .offsetWidth,
+        end: () => "+=" + window.innerWidth,
       },
     });
+
+    return () => {
+      to.kill();
+    };
   }, []);
   return (
     <div id="projects-container" className="h-screen overflow-hidden">
@@ -42,14 +45,7 @@ const Projects: React.FC<{
         style={{ width: "400%" }}
       >
         {projects.map((p: ProjectItem, i: number) => (
-          <Cards
-            alt={p.alt}
-            description={p.description}
-            link={p.link}
-            landing={p.landing}
-            title={p.title}
-            key={i}
-          />
+          <Cards {...p} key={i} />
         ))}
       </div>
     </div>
