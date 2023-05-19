@@ -67,7 +67,7 @@ export const App: React.FC = () => {
         middleText="Certifications"
         topText="Check out my"
       />
-      <Grid items={certifications} color={colors[1]} />
+      <Grid items={certifications} color={colors[4]} />
       <Landing
         middleText="Here are some of my projects"
         bottomText="Explore the source code"

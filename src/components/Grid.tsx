@@ -22,11 +22,7 @@ const Grid: React.FC<{ items: Item[]; color: string }> = ({ items, color }) => {
           style={{ backgroundColor: color }}
         >
           <div className="bg-main-bg w-full flex justify-center m-2 rounded-xl">
-            <img
-              src={e.img}
-              alt={`${e.from} cerification`}
-              className="h-20 p-2 object-contain"
-            />
+            <img src={e.img} alt={e.from} className="h-20 p-2 object-contain" />
           </div>
           <div className="flex flex-col justify-between h-full flex-wrap">
             <p className="text-base font-medium text-center">{e.desc}</p>

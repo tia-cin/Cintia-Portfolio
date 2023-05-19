@@ -31,6 +31,7 @@ import harvard from "./images/harvard.png";
 import freecodecamp from "./images/freecodecamp.png";
 import ibmSkillbuild from "./images/ibm-skillbuild.jpg";
 import linkedin from "./images/linkedin.png";
+import henry from "./images/henry.png";
 
 import project1 from "./images/project-1.png";
 import project2 from "./images/project-2.png";
@@ -53,7 +54,7 @@ export const profile = {
     "Design tools creates visually appealing and engaging user experiences. Figma is a collaborative design tool that enables to create and prototype interfaces. Canva provides an easy-to-use platform for creating graphics, presentations, and marketing materials. Adobe Photoshop and Illustrator are powerful software for creating and editing images, while Adobe Premiere is widely used for video editing and post-production tasks.  ",
 };
 
-export const colors = ["#51ABB2", "#F7B9A1", "#FFCE6D", "#6D8CAE"];
+export const colors = ["#51ABB2", "#F7B9A1", "#FFCE6D", "#6D8CAE", "#A46CC1"];
 
 export const technologies = {
   style: [
@@ -263,5 +264,10 @@ export const certifications = [
     desc: "Online platform with a vast library of video courses spanning business, technology, creative skills, and personal development, taught by industry experts.",
     from: "LinkedIn Learning",
     img: linkedin,
+  },
+  {
+    desc: "",
+    from: "HENRY",
+    img: henry,
   },
 ];
