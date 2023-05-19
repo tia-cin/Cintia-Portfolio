@@ -236,38 +236,132 @@ export const projects = [
 
 export const certifications = [
   {
-    desc: "Online platform offering diverse technical courses and certifications for skill enhancement in areas like cloud computing, AI, data science, and cybersecurity.",
     from: "IBM SkillsBuild",
     img: ibmSkillbuild,
+    exp: [
+      {
+        title: "IT Support Fundamentals",
+        skills: [
+          "Computer Security",
+          "Customer Support",
+          "Hardware",
+          "IT Support",
+          "Troubleshooting (Problem Solving)",
+        ],
+        credential: "https://shorturl.at/bloDT",
+      },
+      {
+        title: "Web Development Fundamentals",
+        skills: [
+          "Deployment",
+          "DevOps",
+          "Responsive Design",
+          "Software Development Lifecycle",
+          "Testing",
+        ],
+        credential: "https://www.credly.com/go/TjASNj1O",
+      },
+    ],
   },
   {
-    desc: "Provides a wide range of learning resources, including courses, tutorials, and certifications, covering programming, cloud computing, data analysis, and productivity tools.",
     from: "Microsoft",
     img: microsoft,
+    exp: [
+      {
+        title: "Software Development Fundamentals",
+        skills: ["Programming", "Software Development"],
+        credential: "https://shorturl.at/hLTVZ",
+      },
+      {
+        title: "Data Analysis",
+        skills: ["Data Analytics", "Data Science"],
+        credential: "https://shorturl.at/zDOU2",
+      },
+    ],
   },
   {
-    desc: "Educational platform offering resources and training programs to enhance digital skills and promote technological literacy, covering coding, data analysis, digital marketing, and cloud computing",
     from: "Google Learning",
     img: google,
+    exp: [
+      {
+        title: "Mobile Apps Development",
+        skills: ["Design", "Android", "iOS", "Stores"],
+        credential: "https://learndigital.withgoogle.com/link/1nur091p2ww",
+      },
+      {
+        title: "Cloud Computing",
+        skills: ["Cloud", "Security"],
+        credential: "https://learndigital.withgoogle.com/link/1nur091p2ww",
+      },
+      {
+        title: "Introduction to Web Development I && II",
+        skills: ["Web Development", "HTML", "CSS", "Hosting", "SEO"],
+        credential: "https://learndigital.withgoogle.com/link/1nur091p2ww",
+      },
+    ],
   },
   {
-    desc: "Nonprofit interactive learning platform focused on teaching coding and web development skills through a comprehensive curriculum and hands-on coding challenges.",
     from: "freeCodeCamp",
     img: freecodecamp,
+    exp: [
+      {
+        title: "Scientific Computing with Python",
+        skills: ["Computer Science", "Python", "Software Development"],
+        credential: "https://shorturl.at/hnsQT",
+      },
+      {
+        title: "Front End Development Libraries",
+        skills: ["React", "Redux", "SASS", "JQuery"],
+        credential: "https://shorturl.at/yABHT",
+      },
+      {
+        title: "JavaScript Algorithms 6 Data Structures",
+        skills: ["JavaScript", "Data Structures", "Algotithms"],
+        credential: "https://shorturl.at/kmrJU",
+      },
+    ],
   },
   {
-    desc: "Popular computer science course at Harvard University, providing an introduction to programming, algorithms, data structures, web development, and cybersecurity, emphasizing problem-solving and critical thinking skills.",
     from: "CS50 Harvard",
     img: harvard,
+    exp: [
+      {
+        title: "Web Programming with Python and JavaScript",
+        skills: ["Python", "JavaScript", "Web Development"],
+        credential: "#",
+      },
+      {
+        title: "Mobile App Developent with React Native",
+        skills: ["Mobile Development", "React Native"],
+        credential: "#",
+      },
+      {
+        title: "Introduction to Computer Science",
+        skills: ["Software Development", "Computer Science", "Data Structures"],
+        credential: "#",
+      },
+    ],
   },
   {
-    desc: "Online platform with a vast library of video courses spanning business, technology, creative skills, and personal development, taught by industry experts.",
     from: "LinkedIn Learning",
     img: linkedin,
+    exp: [
+      {
+        title: "Software Development Skills",
+        skills: ["Tech Career Skills"],
+        credential: "https://shorturl.at/jpEW7",
+      },
+    ],
   },
   {
-    desc: "",
     from: "HENRY",
     img: henry,
+    exp: [
+      {
+        title: "Full-Stack Web Development",
+        skills: ["MERN", "SCRUM", "Web Development"],
+        credential: "https://shorturl.at/pwzOT",
+      },
+    ],
   },
 ];
