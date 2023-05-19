@@ -50,6 +50,9 @@ module.exports = {
       minHeight: {
         590: "590px",
       },
+      lineHeight: {
+        extra: "3rem",
+      },
     },
   },
   plugins: [],

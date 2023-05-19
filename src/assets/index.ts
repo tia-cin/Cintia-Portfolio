@@ -46,7 +46,7 @@ export const profile = {
   bottomText:
     "From Vision to Reality: Unveiling My Passion for Software Engineering and Design",
   about:
-    "This software engineer is an independent student with a strong background in full-stack web development and design. They have experience in developing real projects, including an e-commerce platform for comic book chapters with innovative tools. They also have a passion for design and have honed their skills in design programs such as Photoshop, Illustrator, and Premiere. They are looking to make an impact in the industry and are eager to learn and demonstrate their skills.",
+    "As an independent software engineer student with a robust background in full-stack web development. With a deep passion for design, I have honed my skills in tools like Photoshop, Illustrator, and Premiere. I am driven to make a significant impact in the industry and constantly seek opportunities to learn and showcase my skills.",
   techStack:
     "The main tech stack consists of widely-used programming languages, frameworks, and databases. These technologies allow me to build robust web applications and APIs. Version control systems like Git help teams collaborate effectively and manage code efficiently.",
   tools:
@@ -57,7 +57,7 @@ export const profile = {
     "Design tools creates visually appealing and engaging user experiences. Figma is a collaborative design tool that enables to create and prototype interfaces. Canva provides an easy-to-use platform for creating graphics, presentations, and marketing materials. Adobe Photoshop and Illustrator are powerful software for creating and editing images, while Adobe Premiere is widely used for video editing and post-production tasks.  ",
 };
 
-export const colors = ["#51ABB2", "#F7B9A1", "#FFCE6D", "#6D8CAE", "#A46CC1"];
+export const colors = ["#51ABB2", "#F7B9A1", "#FFCE6D", "#6D8CAE"];
 
 export const technologies = {
   style: [

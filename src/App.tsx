@@ -33,7 +33,7 @@ export const App: React.FC = () => {
         middleText={profile.middleText}
         bottomText={profile.bottomText}
       />
-      <Profile photo={profile.photo} introduction={profile.about} />
+      <Profile photo={profile.photo} colors={colors} />
       <Section
         id="tech-stack"
         reverse
