@@ -35,7 +35,7 @@ export const App: React.FC = () => {
       />
       <Profile photo={profile.photo} colors={colors} />
       <Section
-        id="tech-stack"
+        id="tech"
         reverse
         title="Tech-Stack"
         subtitle={profile.techStack}
