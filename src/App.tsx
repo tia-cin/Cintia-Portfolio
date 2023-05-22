@@ -25,7 +25,7 @@ export const App: React.FC = () => {
     return () => observer.observer.disconnect();
   }, []);
   return (
-    <div className="m-0 p-0 w-full h-screen sm:w-screen">
+    <>
       <Navbar />
       <Landing
         id="home"
@@ -78,6 +78,6 @@ export const App: React.FC = () => {
       <Projects projects={projects} />
       <Email />
       <Footer />
-    </div>
+    </>
   );
 };

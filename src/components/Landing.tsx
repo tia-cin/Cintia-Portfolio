@@ -10,16 +10,16 @@ const Landing: FC<{
   return (
     <div
       id={id}
-      className="gs_reveal flex flex-col justify-center items-center relative w-full h-screen overflow-hidden"
+      className="gs_reveal flex flex-col justify-center items-center w-full relative h-screen overflow-hidden"
     >
-      <div id="titles" className="flex flex-col w-full " style={{ zIndex: 1 }}>
-        <p className="text-center font-semibold text-xl fadeUpMini sm:text-sm">
+      <div id="titles" className="flex flex-col w-full">
+        <p className="text-center font-semibold text-xl sm:text-sm">
           {topText}
         </p>
-        <h1 className="text-center text-7xl font-bold fadeUpMini sm:text-3xl">
+        <h1 className="text-center text-7xl font-bold sm:text-3xl">
           {middleText}
         </h1>
-        <p className="text-center mt-5 text-lg fadeUpMini sm:text-base sm:mx-20">
+        <p className="text-center mt-5 text-lg sm:text-base sm:mx-5 lg:mx-20">
           {bottomText}
         </p>
       </div>
