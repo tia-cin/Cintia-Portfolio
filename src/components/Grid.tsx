@@ -22,12 +22,13 @@ const Grid: React.FC<{ items: Item[] }> = ({ items }) => {
   }, []);
   return (
     <section className="gs_reveal grid grid-cols-3 gap-5 mx-10">
-      {items.map((e) => (
+      {items.map((e: Item, i: number) => (
         <div
+          key={i}
           id="item"
           className="rounded-xl flex flex-col items-center p-2 px-5 shadow-xl"
         >
-          <div className="bg-main-bg w-full flex justify-center m-2 rounded-xl ">
+          <div className="bg-main-bg w-full flex justify-center m-2 rounded-xl">
             <img src={e.img} alt={e.from} className="h-20 p-2 object-contain" />
           </div>
           <div className="flex justify-between h-full w-full">
@@ -36,8 +37,8 @@ const Grid: React.FC<{ items: Item[] }> = ({ items }) => {
               <div className="border-l border-gray-500 h-full" />
             </div>
             <div className="flex flex-col w-4/5">
-              {e.exp.map((ex: Experience) => (
-                <div key={ex.title}>
+              {e.exp.map((ex: Experience, i: number) => (
+                <div key={i}>
                   <h3 className="font-bold">{ex.title}</h3>
                   <p className="font-medium text-xs">
                     Skills:{" "}
