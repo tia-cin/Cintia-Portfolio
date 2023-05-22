@@ -6,18 +6,22 @@ const Profile: React.FC<{ photo: string; colors: string[] }> = ({
 }) => {
   return (
     <div
-      className="gs_reveal h-screen flex justify-evenly items-center"
+      className="gs_reveal h-screen flex justify-evenly items-center sm:flex-col"
       id="about"
     >
       <div>
-        <img src={photo} alt="cintia-arce" className="rounded-full w-[400px]" />
+        <img
+          src={photo}
+          alt="cintia-arce"
+          className="rounded-full w-[400px] sm:w-[200px]"
+        />
       </div>
-      <div className="w-1/2 h-[400px]">
-        <h2 className="text-4xl font-bold leading-extra">
+      <div className="w-1/2 h-[400px] sm:w-auto sm:mx-5 sm:text-center">
+        <h2 className="text-4xl font-bold leading-extra sm:text-xl">
           Passionate and Driven Independent Software Engineer Student with a
           Robust Background in Full-Stack Development and Design
         </h2>
-        <p className="text-lg text-gray-700">
+        <p className="text-lg text-gray-700 sm:text-base">
           Driven to make a significant impact in the industry, constantly
           seeking opportunities to learn, and showcasing expertise in web
           development, design, and industry-standard tools.
