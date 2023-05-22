@@ -81,9 +81,7 @@ const Section: FC<SectionProps> = ({
       className={`gs_reveal flex justify-evenly h-screen items-center sm:flex-col-reverse overflow-hidden ${
         reverse ? "flex-row-reverse fromLeft" : "fromRight"
       }`}
-      style={{
-        backgroundColor: card ? "#f9f9f9" : color,
-      }}
+      style={{ backgroundColor: color }}
     >
       {image && (
         <div className="scale-50 drop-shadow-lg sm:hidden">
@@ -95,7 +93,7 @@ const Section: FC<SectionProps> = ({
         </div>
       )}
       {bubble && (
-        <div className="grid grid-cols-3 gap-10 mr-20 sm:mr-0 sm:gap-1 sm:hidden">
+        <div className="grid grid-cols-3 gap-10 mr-20 sm:mr-0">
           {bubble.map((item: any, i: number) => (
             <Bubble
               key={i}
@@ -105,9 +103,11 @@ const Section: FC<SectionProps> = ({
           ))}
         </div>
       )}
-      <div className={`w-1/2 mr-20 gs_reveal mx-5 sm:text-center`}>
+      <div
+        className={`w-1/2 mr-20 gs_reveal mx-5 sm:w-full sm:mx-5 sm:text-center`}
+      >
         <h1
-          className={`uppercase text-4xl font-bold sm:text-lg ${
+          className={`uppercase text-4xl font-bold sm:text-2xl ${
             reverse && "text-right sm:text-center"
           }`}
         >
