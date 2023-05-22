@@ -21,7 +21,7 @@ const Grid: React.FC<{ items: Item[] }> = ({ items }) => {
     return () => observer.observer.disconnect();
   }, []);
   return (
-    <section className="gs_reveal grid grid-cols-3 gap-5 mx-10">
+    <section className="gs_reveal grid grid-cols-3 gap-5 mx-10 sm:grid-cols-1">
       {items.map((e: Item, i: number) => (
         <div
           key={i}
